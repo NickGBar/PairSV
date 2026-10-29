@@ -106,13 +106,13 @@ Directly comparing the two designs' F1 drops for the same three branches:
 | Branch | Post-hoc zero ΔF1 | Retrained-removal ΔF1 | Ratio (overstatement) |
 |---|---|---|---|
 | Candidate | −0.00543 | −0.00107 | **5.1x** |
-| Read | −0.00751 | −0.00072 | **10.4x** |
+| Read | −0.00751 | −0.00072 | **10.5x** |
 | Scalar | −0.01002 | −0.00151 | **6.6x** |
 
 
 ![Figure 4. Post-hoc zero-ablation compared with retrained branch-removal.](figures/fig4_zero_ablation_vs_retrained.png)
 
-**Figure 4. Post-hoc zero-ablation compared with retrained branch-removal.** ΔF1 for removing each of the three added branches, measured two ways. Annotations give the ratio between the two designs: post-hoc zeroing yields drops 5.1x (candidate), 10.4x (read) and 6.6x (scalar) larger than retraining the model without that branch.
+**Figure 4. Post-hoc zero-ablation compared with retrained branch-removal.** ΔF1 for removing each of the three added branches, measured two ways. Annotations give the ratio between the two designs: post-hoc zeroing yields drops 5.1x (candidate), 10.5x (read) and 6.6x (scalar) larger than retraining the model without that branch.
 
 This is the primary ablation finding: **naive post-hoc zero-ablation overstates each modality's true marginal contribution by roughly 5-10x** relative to a properly retrained branch-removal control. The retrained-removal numbers themselves are small (0.07-0.15 F1 percentage points per branch) — consistent with the branches being **largely redundant with each other rather than strongly additive**, and consistent with §9.2's finding that M4 does not significantly exceed M2 on the internal test. Neither ablation design provides evidence that any single added modality is strictly necessary; each contributes a small, measurable, but individually modest amount, and removing any one is largely compensated for by the rest of the network.
 

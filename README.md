@@ -142,18 +142,25 @@ python3 08_matched_reliability_control.py    # контроль при равн�
 **Обученных моделей.** 15 замороженных моделей (5 версий × 3 повтора) хранятся
 отдельно; их контрольные суммы — в `reports/train40/frozen_checkpoint_checksums.json`.
 
-## Известные расхождения, которые нужно исправить до подачи
+## Исправленные расхождения
 
-1. **Коэффициент завышения для ветви прочтений: в тексте 10,4×, верно 10,5×.**
-   Отношение посчитано по уже округлённым числам таблицы. Рисунок 4 считает из
-   исходных данных и подписывает 10,5×, поэтому текст и рисунок сейчас
-   расходятся. Затронуты `paper/results_v1_draft.md` и
-   `paper/discussion_limitations_conclusion_v1_draft.md`, а через них — собранный
-   текст и переводы.
-2. **«M4 на 2,2 пункта ниже цели 95%» — неверная привязка.** До цели M4 не
-   хватает 1,7 пункта (0,95 − 0,9327); 2,2 — это разрыв с M2. Затронуты
-   `paper/intro_related_work_v1_draft.md` и
-   `paper/discussion_limitations_conclusion_v1_draft.md`.
+Две числовые ошибки найдены и исправлены 29.10.2026; подробности, исходные
+значения и причины —
+[`paper/MANUSCRIPT_NUMERIC_CORRECTIONS.md`](paper/MANUSCRIPT_NUMERIC_CORRECTIONS.md).
+
+1. **Коэффициент завышения для ветви прочтений: было 10,4×, стало 10,5×.**
+   Отношение считалось по уже округлённым числам таблицы (0,00751/0,00072),
+   тогда как из исходных значений выходит 10,498. Рисунок 4 всегда считал из
+   источника и подписывал 10,5×, так что текст расходился с собственным
+   рисунком.
+2. **«M4 на 2,2 пункта ниже цели 95%»: было 2,2, стало 1,7.** Само число верное,
+   но это разрыв между M2 и M4, а не расстояние M4 до цели: 0,95 − 0,9327 =
+   1,7 пункта. Предподачный аудит проверил число и не проверил, к чему оно
+   отнесено.
+
+Ни один замороженный артефакт при этом не пересчитывался и когорта из 30 человек
+не открывалась заново. Обе ошибки нашлись потому, что числа для доклада
+извлекаются скриптом из файлов с результатами, а не переносятся из статьи.
 
 Черновики разделов — редактируемый источник; собранный текст получается из них
 скриптом `paper/merge_manuscript.py`.
@@ -196,7 +203,11 @@ target). See [`PAPER2_RESEARCH_PLAN.md`](PAPER2_RESEARCH_PLAN.md).
 No number in either manuscript is hand-typed: each is extracted by script from a
 result file whose SHA-256 is verified before reading. Sample-level data and
 trained checkpoints are not redistributed here; see *Чего здесь нет* above.
-Two known numerical discrepancies to fix before submission are listed in
-*Известные расхождения*.
+Two numerical errors found while building the progress-report deck — a ratio
+computed from rounded table values (10.4x → 10.5x) and a shortfall measured
+against the wrong referent (2.2 → 1.7 points below the 95% target) — were
+corrected on 2026-10-29 and are documented in
+[`paper/MANUSCRIPT_NUMERIC_CORRECTIONS.md`](paper/MANUSCRIPT_NUMERIC_CORRECTIONS.md).
+No frozen artifact was recomputed and the 30-person cohort was not reopened.
 
 Licensed under [MIT](LICENSE).
