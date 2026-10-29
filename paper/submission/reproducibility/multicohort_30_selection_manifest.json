@@ -1,0 +1,339 @@
+{
+  "manifest_version": "MULTIPERSON_COHORT_30_SELECTION_v1",
+  "generated_utc": "2026-08-06T02:52:32.781358+00:00",
+  "purpose": "Untouched multi-person external cohort for population-level transfer evidence, Week 3 Part 3. Selected deterministically BEFORE any Manta run or model evaluation.",
+  "selection_rule": "For each of 5 superpopulations (AFR/AMR/EAS/EUR/SAS), candidates drawn from the full 1000G phase3 panel (integrated_call_samples_v3.20130502.ALL.panel, 2504 people) filtered to: (1) not among the 55 people already used (50 controlled-benchmark + 5 realistic-POC), (2) CRAM available in the NYGC 30x high-coverage collection (1000G_2504_high_coverage.sequence.index), (3) PanGenie genotype present in the HGSVC2 merged VCF header (pangenie_merged_bi_nosnvs.vcf.gz, 3202 samples), (4) family ID (per 20130606_g1k.ped) does not match any of the 55 already-used people's family IDs (no cross-cohort relatedness / leakage risk), (5) family ID distinct from every other selected person in the new 30 (no within-cohort sibling/parent-child pairs). Within each superpopulation, eligible candidates sorted alphabetically by sample ID and the first 6 distinct-family matches taken -- fully deterministic, no performance-based selection.",
+  "excluded_people": {
+    "controlled_benchmark_50": "40 train + 5 val + 5 test, see train40_snapshot.json",
+    "realistic_poc_5": [
+      "HG00108",
+      "HG01912",
+      "HG00736",
+      "HG00436",
+      "HG02601"
+    ],
+    "hg002": "GIAB HG002_NA24385_son (not a 1000G sample, included for completeness)"
+  },
+  "relatedness_verification": {
+    "method": "20130606_g1k.ped Family ID field, official 1000 Genomes pedigree (3502 individuals incl. non-sequenced trio members)",
+    "cross_cohort_family_collisions_found_and_excluded": [
+      "HG01956 (family of excluded HG01885)",
+      "HG00737 (family of excluded POC person HG00736)",
+      "HG01047 (family of excluded HG00734)",
+      "HG00437 (family of excluded POC person HG00436)"
+    ],
+    "within_new_cohort_relatedness": "none -- 30 distinct family IDs, verified programmatically",
+    "status": "PASSED"
+  },
+  "n_people": 30,
+  "n_per_superpop": {
+    "AFR": 6,
+    "AMR": 6,
+    "EAS": 6,
+    "EUR": 6,
+    "SAS": 6
+  },
+  "total_cram_download_bytes": 480318915587,
+  "people": [
+    {
+      "sample": "HG00109",
+      "super_pop": "EUR",
+      "pop": "GBR",
+      "sex": "male",
+      "family_id": "HG00109",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240125/HG00109.final.cram",
+      "cram_size_bytes": 17540111101,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00110",
+      "super_pop": "EUR",
+      "pop": "GBR",
+      "sex": "female",
+      "family_id": "HG00110",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240126/HG00110.final.cram",
+      "cram_size_bytes": 15220417431,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00111",
+      "super_pop": "EUR",
+      "pop": "GBR",
+      "sex": "female",
+      "family_id": "HG00111",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240127/HG00111.final.cram",
+      "cram_size_bytes": 17089031242,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00112",
+      "super_pop": "EUR",
+      "pop": "GBR",
+      "sex": "male",
+      "family_id": "HG00112",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240128/HG00112.final.cram",
+      "cram_size_bytes": 15815959014,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00113",
+      "super_pop": "EUR",
+      "pop": "GBR",
+      "sex": "male",
+      "family_id": "HG00113",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240129/HG00113.final.cram",
+      "cram_size_bytes": 13570450025,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00114",
+      "super_pop": "EUR",
+      "pop": "GBR",
+      "sex": "male",
+      "family_id": "HG00114",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240130/HG00114.final.cram",
+      "cram_size_bytes": 15535136834,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00442",
+      "super_pop": "EAS",
+      "pop": "CHS",
+      "sex": "male",
+      "family_id": "SH014",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240183/HG00442.final.cram",
+      "cram_size_bytes": 15384000566,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00445",
+      "super_pop": "EAS",
+      "pop": "CHS",
+      "sex": "male",
+      "family_id": "SH015",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240185/HG00445.final.cram",
+      "cram_size_bytes": 18276728210,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00448",
+      "super_pop": "EAS",
+      "pop": "CHS",
+      "sex": "male",
+      "family_id": "SH016",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240187/HG00448.final.cram",
+      "cram_size_bytes": 18600585471,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00451",
+      "super_pop": "EAS",
+      "pop": "CHS",
+      "sex": "male",
+      "family_id": "SH017",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240189/HG00451.final.cram",
+      "cram_size_bytes": 16495357018,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00457",
+      "super_pop": "EAS",
+      "pop": "CHS",
+      "sex": "male",
+      "family_id": "SH019",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3241675/HG00457.final.cram",
+      "cram_size_bytes": 16089102022,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00463",
+      "super_pop": "EAS",
+      "pop": "CHS",
+      "sex": "male",
+      "family_id": "SH021",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240191/HG00463.final.cram",
+      "cram_size_bytes": 15341904508,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00739",
+      "super_pop": "AMR",
+      "pop": "PUR",
+      "sex": "male",
+      "family_id": "PR09",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3241758/HG00739.final.cram",
+      "cram_size_bytes": 18194912816,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG00742",
+      "super_pop": "AMR",
+      "pop": "PUR",
+      "sex": "male",
+      "family_id": "PR10",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242767/HG00742.final.cram",
+      "cram_size_bytes": 17582258991,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01048",
+      "super_pop": "AMR",
+      "pop": "PUR",
+      "sex": "male",
+      "family_id": "PR08",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3241761/HG01048.final.cram",
+      "cram_size_bytes": 20604425577,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01051",
+      "super_pop": "AMR",
+      "pop": "PUR",
+      "sex": "male",
+      "family_id": "PR11",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3241805/HG01051.final.cram",
+      "cram_size_bytes": 14019670939,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01054",
+      "super_pop": "AMR",
+      "pop": "PUR",
+      "sex": "male",
+      "family_id": "PR12",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3241763/HG01054.final.cram",
+      "cram_size_bytes": 15642063456,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01058",
+      "super_pop": "AMR",
+      "pop": "PUR",
+      "sex": "female",
+      "family_id": "PR13",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242769/HG01058.final.cram",
+      "cram_size_bytes": 15902436874,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01914",
+      "super_pop": "AFR",
+      "pop": "ACB",
+      "sex": "male",
+      "family_id": "BB09",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242218/HG01914.final.cram",
+      "cram_size_bytes": 14251546192,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01958",
+      "super_pop": "AFR",
+      "pop": "ACB",
+      "sex": "female",
+      "family_id": "BB10",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242221/HG01958.final.cram",
+      "cram_size_bytes": 15792928351,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01985",
+      "super_pop": "AFR",
+      "pop": "ACB",
+      "sex": "female",
+      "family_id": "BB08",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242296/HG01985.final.cram",
+      "cram_size_bytes": 14105804778,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01988",
+      "super_pop": "AFR",
+      "pop": "ACB",
+      "sex": "male",
+      "family_id": "BB11",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242297/HG01988.final.cram",
+      "cram_size_bytes": 14752069285,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG01990",
+      "super_pop": "AFR",
+      "pop": "ACB",
+      "sex": "male",
+      "family_id": "BB12",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242222/HG01990.final.cram",
+      "cram_size_bytes": 14564077272,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG02009",
+      "super_pop": "AFR",
+      "pop": "ACB",
+      "sex": "male",
+      "family_id": "BB13",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242197/HG02009.final.cram",
+      "cram_size_bytes": 13979547695,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG02603",
+      "super_pop": "SAS",
+      "pop": "PJL",
+      "sex": "male",
+      "family_id": "PK10",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242401/HG02603.final.cram",
+      "cram_size_bytes": 15483383526,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG02648",
+      "super_pop": "SAS",
+      "pop": "PJL",
+      "sex": "male",
+      "family_id": "PK11",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3243011/HG02648.final.cram",
+      "cram_size_bytes": 16130079977,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG02651",
+      "super_pop": "SAS",
+      "pop": "PJL",
+      "sex": "male",
+      "family_id": "PK12",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3243013/HG02651.final.cram",
+      "cram_size_bytes": 15373289998,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG02654",
+      "super_pop": "SAS",
+      "pop": "PJL",
+      "sex": "male",
+      "family_id": "PK13",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242403/HG02654.final.cram",
+      "cram_size_bytes": 15676941828,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG02657",
+      "super_pop": "SAS",
+      "pop": "PJL",
+      "sex": "male",
+      "family_id": "PK14",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242405/HG02657.final.cram",
+      "cram_size_bytes": 16800028961,
+      "pangenie_genotype_available": true
+    },
+    {
+      "sample": "HG02660",
+      "super_pop": "SAS",
+      "pop": "PJL",
+      "sex": "male",
+      "family_id": "PK15",
+      "cram_url": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242407/HG02660.final.cram",
+      "cram_size_bytes": 16504665629,
+      "pangenie_genotype_available": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+[2026-08-02T15:10:16Z] === MANUAL RETRY START HG00436 (CRAM reused, Docker-only retry) ===
+[2026-08-02T15:10:16Z] HG00436: quickcheck (re-verified) PASSED
+[2026-08-02T15:10:17Z] HG00436: configManta exit=0
+[2026-08-02T15:29:37Z] HG00436: runWorkflow exit=1 elapsed=1160s peak_mem_mib=0.0
+[2026-08-02T15:30:34Z] HG00436: local CRAM sha256=c8b673ecf6c4879ada515b23bfc3a0692ee7aa43cab1172632a0d250af8a303c
+[2026-08-02T15:30:34Z] HG00436: WARNING runWorkflow did not exit 0 -- KEEPING CRAM for investigation
+[2026-08-02T15:30:34Z] === MANUAL RETRY END HG00436 ===

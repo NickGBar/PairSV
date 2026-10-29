@@ -1,0 +1,81 @@
+{
+  "poc": {
+    "source": "poc",
+    "source_file": "person_level_scores__poc.json",
+    "n_people": 5,
+    "target_recall": 0.95,
+    "by_model": {
+      "M0": {
+        "status": "INFEASIBLE",
+        "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.166667 = B/(N+1) at N=5. max_guaranteed_recall at this N is 0.833333. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+        "N": 5,
+        "target_recall": 0.95,
+        "alpha": 0.050000000000000044,
+        "max_guaranteed_recall": 0.8333333333333334,
+        "degenerate_threshold": -Infinity,
+        "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+      },
+      "M2": {
+        "status": "INFEASIBLE",
+        "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.166667 = B/(N+1) at N=5. max_guaranteed_recall at this N is 0.833333. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+        "N": 5,
+        "target_recall": 0.95,
+        "alpha": 0.050000000000000044,
+        "max_guaranteed_recall": 0.8333333333333334,
+        "degenerate_threshold": -Infinity,
+        "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+      },
+      "M4": {
+        "status": "INFEASIBLE",
+        "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.166667 = B/(N+1) at N=5. max_guaranteed_recall at this N is 0.833333. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+        "N": 5,
+        "target_recall": 0.95,
+        "alpha": 0.050000000000000044,
+        "max_guaranteed_recall": 0.8333333333333334,
+        "degenerate_threshold": -Infinity,
+        "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+      }
+    }
+  },
+  "cohort": {
+    "source": "cohort",
+    "source_file": "person_level_scores__cohort.json",
+    "n_people": 30,
+    "target_recall": 0.95,
+    "by_model": {
+      "M0": {
+        "status": "OK",
+        "N": 30,
+        "target_recall": 0.95,
+        "alpha": 0.050000000000000044,
+        "max_guaranteed_recall": 0.967741935483871,
+        "threshold": 0.49408083,
+        "achieved_risk_estimate": 0.04999829793901323,
+        "guarantee_statement": "E[1 - recall] <= 0.050000000000000044 in expectation over the randomness of the calibration set (N=30 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      },
+      "M2": {
+        "status": "OK",
+        "N": 30,
+        "target_recall": 0.95,
+        "alpha": 0.050000000000000044,
+        "max_guaranteed_recall": 0.967741935483871,
+        "threshold": 0.52624983,
+        "achieved_risk_estimate": 0.04999996813902278,
+        "guarantee_statement": "E[1 - recall] <= 0.050000000000000044 in expectation over the randomness of the calibration set (N=30 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      },
+      "M4": {
+        "status": "OK",
+        "N": 30,
+        "target_recall": 0.95,
+        "alpha": 0.050000000000000044,
+        "max_guaranteed_recall": 0.967741935483871,
+        "threshold": 0.56487769,
+        "achieved_risk_estimate": 0.04999989154736789,
+        "guarantee_statement": "E[1 - recall] <= 0.050000000000000044 in expectation over the randomness of the calibration set (N=30 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      }
+    }
+  }
+}

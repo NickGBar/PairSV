@@ -1,0 +1,8 @@
+REAL_EXIT_CODE=0
+ELAPSED_SECONDS=1751
+START_UTC=2026-08-06T04:12:23Z
+END_UTC=2026-08-06T04:41:34Z
+ENVIRONMENT=icgbio_slurm_cluster_singularity
+MANTA_IMAGE_DIGEST=sha256:48d0c2464fa0129935438c5cddec5f67c4b3d65e8f7a647f95164ee51662cc70
+INPUT_BAM=/scratch/igorno-deepsv_poc/local_slices/HG002_hs37d5_full/HG002.hs37d5.60x.1.bam
+REFERENCE_USED=/scratch/igorno-deepsv_poc/reference/hs37d5.fa

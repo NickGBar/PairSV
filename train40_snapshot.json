@@ -1,0 +1,183 @@
+{
+ "schema_version": "pairsv-train40-snapshot-v1",
+ "n_train_people": 40,
+ "train_samples_sorted": [
+  "HG00096",
+  "HG00097",
+  "HG00099",
+  "HG00100",
+  "HG00101",
+  "HG00102",
+  "HG00103",
+  "HG00105",
+  "HG00403",
+  "HG00404",
+  "HG00406",
+  "HG00407",
+  "HG00409",
+  "HG00410",
+  "HG00419",
+  "HG00421",
+  "HG00551",
+  "HG00553",
+  "HG00554",
+  "HG00637",
+  "HG00638",
+  "HG00640",
+  "HG00641",
+  "HG00731",
+  "HG01583",
+  "HG01586",
+  "HG01589",
+  "HG01593",
+  "HG01879",
+  "HG01880",
+  "HG01882",
+  "HG01883",
+  "HG01885",
+  "HG01886",
+  "HG01889",
+  "HG01890",
+  "HG02490",
+  "HG02491",
+  "HG02493",
+  "HG02494"
+ ],
+ "n_shards": 8,
+ "per_shard": {
+  "1": {
+   "path": "kaggle/deepsv-ms-extract-train-shard1/output-v1/pairsv_shard_01.h5",
+   "sha256": "23f178baaedaa24a16bd74ed94bf7641780cd8c741187d34e92dace7c0972efd",
+   "n_rows": 10000,
+   "n_success": 9970,
+   "n_failed": 30,
+   "samples": [
+    "HG00096",
+    "HG00403",
+    "HG00551",
+    "HG01583",
+    "HG01879"
+   ]
+  },
+  "2": {
+   "path": "kaggle/deepsv-ms-extract-train-shard2/output-v1/pairsv_shard_02.h5",
+   "sha256": "b62fa72761ef2cc37e51a28e3ecc6d2706a103f2262d97c719e57fd18bb8eb89",
+   "n_rows": 10000,
+   "n_success": 9971,
+   "n_failed": 29,
+   "samples": [
+    "HG00097",
+    "HG00404",
+    "HG00553",
+    "HG01586",
+    "HG01880"
+   ]
+  },
+  "3": {
+   "path": "kaggle/deepsv-ms-extract-train-shard3/output-v1/pairsv_shard_03.h5",
+   "sha256": "a670ecef8684927dfe8aca7d2d102e67d1af9749e1fbc7ac376b0aae7ca6000b",
+   "n_rows": 10000,
+   "n_success": 9983,
+   "n_failed": 17,
+   "samples": [
+    "HG00099",
+    "HG00406",
+    "HG00554",
+    "HG01589",
+    "HG01882"
+   ]
+  },
+  "4": {
+   "path": "kaggle/deepsv-ms-extract-train-shard4/output-v1/pairsv_shard_04.h5",
+   "sha256": "be1e5fadff75aeea217f2ba560f5c4dfdb8c9745c80255521714ac69dbb7e0c7",
+   "n_rows": 10000,
+   "n_success": 9975,
+   "n_failed": 25,
+   "samples": [
+    "HG00100",
+    "HG00407",
+    "HG00637",
+    "HG01593",
+    "HG01883"
+   ]
+  },
+  "5": {
+   "path": "kaggle/deepsv-ms-extract-train-shard5/output-v1/pairsv_shard_05.h5",
+   "sha256": "28e892e64c70cb803ebe081c37fb6bb83b6a62ff49a9441ffbc21a90747e1b26",
+   "n_rows": 10000,
+   "n_success": 9980,
+   "n_failed": 20,
+   "samples": [
+    "HG00101",
+    "HG00409",
+    "HG00638",
+    "HG01885",
+    "HG02490"
+   ]
+  },
+  "6": {
+   "path": "kaggle/deepsv-ms-extract-train-shard6/output-v1/pairsv_shard_06.h5",
+   "sha256": "e7a1178b271241b228869223ff1e12dd5f1de4bb11ccd8893bf9821da45971b8",
+   "n_rows": 10000,
+   "n_success": 9980,
+   "n_failed": 20,
+   "samples": [
+    "HG00102",
+    "HG00410",
+    "HG00640",
+    "HG01886",
+    "HG02491"
+   ]
+  },
+  "7": {
+   "path": "kaggle/deepsv-ms-extract-train-shard7/output-v1/pairsv_shard_07.h5",
+   "sha256": "0b1a26ca772caa7ee6d45371c2ef910ae918bf4bd17c03acbafa18fbb526eb3b",
+   "n_rows": 10000,
+   "n_success": 9964,
+   "n_failed": 36,
+   "samples": [
+    "HG00103",
+    "HG00419",
+    "HG00641",
+    "HG01889",
+    "HG02493"
+   ]
+  },
+  "8": {
+   "path": "kaggle/deepsv-ms-extract-train-shard8/output-v1/pairsv_shard_08.h5",
+   "sha256": "253ecaad513f2cfa54298dec1aa994b4ae7780a7158adff9d8d388d3f48d88e0",
+   "n_rows": 10000,
+   "n_success": 9978,
+   "n_failed": 22,
+   "samples": [
+    "HG00105",
+    "HG00421",
+    "HG00731",
+    "HG01890",
+    "HG02494"
+   ]
+  }
+ },
+ "total_rows": 80000,
+ "total_successful": 79801,
+ "total_failed": 199,
+ "label_balance_successful": {
+  "pos": 39842,
+  "neg": 39959
+ },
+ "val_samples_excluded": [
+  "HG00106",
+  "HG00422",
+  "HG00732",
+  "HG01894",
+  "HG02597"
+ ],
+ "test_samples_excluded_untouched": [
+  "HG00107",
+  "HG00428",
+  "HG00734",
+  "HG01896",
+  "HG02600"
+ ],
+ "content_fingerprint_sha256": "916bbcbdd54d5e34a345be2449373bef621b8cbb8e0ccfd53821b866215a1d33"
+}

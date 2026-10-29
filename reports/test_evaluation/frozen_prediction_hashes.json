@@ -1,0 +1,31 @@
+{
+ "file": "kaggle/deepsv-ms-test-inference/output-v1/pairsv_test_predictions_LABEL_BLIND.csv",
+ "sha256": "bf185a21dc00b096b6949359a8595fa81f5971f92466e9a07e10d9fcd1f6213c",
+ "n_rows": 149670,
+ "n_models": 5,
+ "n_seeds": 3,
+ "models": [
+  "M0",
+  "M1",
+  "M2",
+  "M3",
+  "M4"
+ ],
+ "seeds": [
+  20260720,
+  20260721,
+  20260722
+ ],
+ "columns": [
+  "seed",
+  "model",
+  "row_id",
+  "sample",
+  "candidate_id",
+  "length",
+  "threshold",
+  "probability",
+  "prediction"
+ ],
+ "label_blind_verified": true
+}

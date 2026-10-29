@@ -1,0 +1,321 @@
+{
+  "sample": "HG002",
+  "truth_source": "GIAB v5.0q GRCh38 stvar (PRIMARY, Draft status)",
+  "note_secondary_not_pooled": "NIST SV v0.6 GRCh37 secondary/sensitivity pass is a separate pipeline, not reported here, never pooled with this primary result",
+  "manta_pass_del_total": 5461,
+  "class_counts": {
+    "positive": 4333,
+    "known_negative": 512
+  },
+  "unknown_excluded_by_benchmark_region_rule": 616,
+  "extraction_failures": {
+    "n": 5,
+    "reasons": {
+      "CandidateExtractionError": 5
+    },
+    "n_eligible": 4761,
+    "n_success": 4756
+  },
+  "accept_all_manta_baseline": {
+    "n": 4756,
+    "prevalence": 0.9032800672834315,
+    "recall": 1.0,
+    "specificity": 0.0,
+    "precision": 0.9032800672834315,
+    "f1": 0.9491825011047283,
+    "mcc": 0.0,
+    "roc_auc": 0.5,
+    "pr_auc": 0.9032800672834315
+  },
+  "manta_own_recall_against_v5.0q_truth_in_benchmark_regions": "see hg002_gate2_classification_report.json / truvari_v5.0q_primary/summary.txt for Manta's own end-to-end recall (SEPARATE from PAIR-SV-as-filter metrics below, per ADDENDUM section 12)",
+  "results_by_model": {
+    "M0": {
+      "primary_at_frozen_threshold": {
+        "tp": 4075,
+        "fn": 221,
+        "tn": 126,
+        "fp": 334,
+        "recall": 0.9485567970204841,
+        "specificity": 0.27391304347826084,
+        "precision": 0.9242458607393967,
+        "f1": 0.9362435381964388,
+        "balanced_accuracy": 0.6112349202493725,
+        "mcc": 0.25284094731183215,
+        "n": 4756,
+        "filtered_candidate_rate": 0.07296047098402018,
+        "roc_auc": 0.790572625698324,
+        "pr_auc": 0.9713359224574465,
+        "threshold": 0.6977411905924479
+      },
+      "length_subgroups": {
+        "50-200bp_primary": {
+          "tp": 2027,
+          "fn": 165,
+          "tn": 88,
+          "fp": 223,
+          "recall": 0.9247262773722628,
+          "specificity": 0.2829581993569132,
+          "precision": 0.9008888888888889,
+          "f1": 0.9126519585772175,
+          "balanced_accuracy": 0.603842238364588,
+          "mcc": 0.22727569076600282,
+          "n": 2503,
+          "filtered_candidate_rate": 0.10107870555333599,
+          "roc_auc": 0.7367642054122563,
+          "pr_auc": 0.9472202088863171
+        },
+        "200-1000bp_secondary": {
+          "tp": 1505,
+          "fn": 14,
+          "tn": 19,
+          "fp": 88,
+          "recall": 0.9907834101382489,
+          "specificity": 0.17757009345794392,
+          "precision": 0.9447583176396736,
+          "f1": 0.967223650385604,
+          "balanced_accuracy": 0.5841767517980964,
+          "mcc": 0.29602478668336085,
+          "n": 1626,
+          "filtered_candidate_rate": 0.02029520295202952,
+          "roc_auc": 0.8666055508727458,
+          "pr_auc": 0.9889959880055609
+        },
+        "1000-10000bp_exploratory": {
+          "tp": 543,
+          "fn": 42,
+          "tn": 19,
+          "fp": 23,
+          "recall": 0.9282051282051282,
+          "specificity": 0.4523809523809524,
+          "precision": 0.9593639575971732,
+          "f1": 0.9435273675065161,
+          "balanced_accuracy": 0.6902930402930403,
+          "mcc": 0.3210571496164346,
+          "n": 627,
+          "filtered_candidate_rate": 0.09728867623604466,
+          "roc_auc": 0.8064713064713064,
+          "pr_auc": 0.9818263183259243
+        }
+      },
+      "breakpoint_error_subgroups_positive_only": {
+        "exact_0bp": {
+          "n": 3397,
+          "accepted_rate": 0.968501619075655,
+          "median_score": 0.9956286748250326
+        },
+        "1-10bp": {
+          "n": 546,
+          "accepted_rate": 0.9413919413919414,
+          "median_score": 0.9896172086397808
+        },
+        "11-50bp": {
+          "n": 203,
+          "accepted_rate": 0.8768472906403941,
+          "median_score": 0.9583703875541688
+        },
+        "51-100bp": {
+          "n": 70,
+          "accepted_rate": 0.6714285714285714,
+          "median_score": 0.850719541311264
+        },
+        ">100bp": {
+          "n": 80,
+          "accepted_rate": 0.575,
+          "median_score": 0.731153815984726
+        }
+      }
+    },
+    "M2": {
+      "primary_at_frozen_threshold": {
+        "tp": 4103,
+        "fn": 193,
+        "tn": 115,
+        "fp": 345,
+        "recall": 0.9550744878957169,
+        "specificity": 0.25,
+        "precision": 0.9224370503597122,
+        "f1": 0.9384720951509606,
+        "balanced_accuracy": 0.6025372439478585,
+        "mcc": 0.24630029974409232,
+        "n": 4756,
+        "filtered_candidate_rate": 0.06476030277544155,
+        "roc_auc": 0.7888546473969719,
+        "pr_auc": 0.9703218871268815,
+        "threshold": 0.6957056125005087
+      },
+      "length_subgroups": {
+        "50-200bp_primary": {
+          "tp": 2045,
+          "fn": 147,
+          "tn": 88,
+          "fp": 223,
+          "recall": 0.9329379562043796,
+          "specificity": 0.2829581993569132,
+          "precision": 0.9016754850088183,
+          "f1": 0.9170403587443946,
+          "balanced_accuracy": 0.6079480777806464,
+          "mcc": 0.24416866132008475,
+          "n": 2503,
+          "filtered_candidate_rate": 0.09388733519776268,
+          "roc_auc": 0.7396686577322975,
+          "pr_auc": 0.9462357242573838
+        },
+        "200-1000bp_secondary": {
+          "tp": 1507,
+          "fn": 12,
+          "tn": 19,
+          "fp": 88,
+          "recall": 0.9921000658327848,
+          "specificity": 0.17757009345794392,
+          "precision": 0.9448275862068966,
+          "f1": 0.9678869621066153,
+          "balanced_accuracy": 0.5848350796453643,
+          "mcc": 0.30762034346845823,
+          "n": 1626,
+          "filtered_candidate_rate": 0.019065190651906518,
+          "roc_auc": 0.8646613303144592,
+          "pr_auc": 0.9886863422866301
+        },
+        "1000-10000bp_exploratory": {
+          "tp": 551,
+          "fn": 34,
+          "tn": 8,
+          "fp": 34,
+          "recall": 0.9418803418803419,
+          "specificity": 0.19047619047619047,
+          "precision": 0.9418803418803419,
+          "f1": 0.9418803418803419,
+          "balanced_accuracy": 0.5661782661782662,
+          "mcc": 0.13235653235653236,
+          "n": 627,
+          "filtered_candidate_rate": 0.06698564593301436,
+          "roc_auc": 0.7796499796499796,
+          "pr_auc": 0.978699037416869
+        }
+      },
+      "breakpoint_error_subgroups_positive_only": {
+        "exact_0bp": {
+          "n": 3397,
+          "accepted_rate": 0.9702678834265528,
+          "median_score": 0.99107297261556
+        },
+        "1-10bp": {
+          "n": 546,
+          "accepted_rate": 0.9468864468864469,
+          "median_score": 0.9822578926881155
+        },
+        "11-50bp": {
+          "n": 203,
+          "accepted_rate": 0.9014778325123153,
+          "median_score": 0.9424156347910564
+        },
+        "51-100bp": {
+          "n": 70,
+          "accepted_rate": 0.7714285714285715,
+          "median_score": 0.858671635389328
+        },
+        ">100bp": {
+          "n": 80,
+          "accepted_rate": 0.6625,
+          "median_score": 0.7530074119567871
+        }
+      }
+    },
+    "M4": {
+      "primary_at_frozen_threshold": {
+        "tp": 4007,
+        "fn": 289,
+        "tn": 148,
+        "fp": 312,
+        "recall": 0.9327281191806331,
+        "specificity": 0.3217391304347826,
+        "precision": 0.9277610557999537,
+        "f1": 0.9302379570516541,
+        "balanced_accuracy": 0.6272336248077078,
+        "mcc": 0.2603818015347801,
+        "n": 4756,
+        "filtered_candidate_rate": 0.09188393608074012,
+        "roc_auc": 0.7864945146142013,
+        "pr_auc": 0.9697660786288553,
+        "threshold": 0.7305400371551514
+      },
+      "length_subgroups": {
+        "50-200bp_primary": {
+          "tp": 1952,
+          "fn": 240,
+          "tn": 117,
+          "fp": 194,
+          "recall": 0.8905109489051095,
+          "specificity": 0.3762057877813505,
+          "precision": 0.9095992544268406,
+          "f1": 0.8999538958045182,
+          "balanced_accuracy": 0.63335836834323,
+          "mcc": 0.2515948640814881,
+          "n": 2503,
+          "filtered_candidate_rate": 0.14262884538553736,
+          "roc_auc": 0.7352591710282348,
+          "pr_auc": 0.9434385911024639
+        },
+        "200-1000bp_secondary": {
+          "tp": 1499,
+          "fn": 20,
+          "tn": 17,
+          "fp": 90,
+          "recall": 0.9868334430546412,
+          "specificity": 0.1588785046728972,
+          "precision": 0.9433606041535557,
+          "f1": 0.9646074646074646,
+          "balanced_accuracy": 0.5728559738637692,
+          "mcc": 0.24227194648325126,
+          "n": 1626,
+          "filtered_candidate_rate": 0.022755227552275523,
+          "roc_auc": 0.8631231811385995,
+          "pr_auc": 0.9886253616353798
+        },
+        "1000-10000bp_exploratory": {
+          "tp": 556,
+          "fn": 29,
+          "tn": 14,
+          "fp": 28,
+          "recall": 0.9504273504273504,
+          "specificity": 0.3333333333333333,
+          "precision": 0.952054794520548,
+          "f1": 0.9512403763900771,
+          "balanced_accuracy": 0.6418803418803418,
+          "mcc": 0.2806817327045844,
+          "n": 627,
+          "filtered_candidate_rate": 0.0685805422647528,
+          "roc_auc": 0.7950752950752951,
+          "pr_auc": 0.9792533577833059
+        }
+      },
+      "breakpoint_error_subgroups_positive_only": {
+        "exact_0bp": {
+          "n": 3397,
+          "accepted_rate": 0.952310862525758,
+          "median_score": 0.9916629791259766
+        },
+        "1-10bp": {
+          "n": 546,
+          "accepted_rate": 0.9175824175824175,
+          "median_score": 0.979988306760788
+        },
+        "11-50bp": {
+          "n": 203,
+          "accepted_rate": 0.8325123152709359,
+          "median_score": 0.950073023637136
+        },
+        "51-100bp": {
+          "n": 70,
+          "accepted_rate": 0.7285714285714285,
+          "median_score": 0.8687908947467804
+        },
+        ">100bp": {
+          "n": 80,
+          "accepted_rate": 0.6375,
+          "median_score": 0.8028903901576996
+        }
+      }
+    }
+  }
+}

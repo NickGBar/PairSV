@@ -1,0 +1,498 @@
+[2026-08-01T09:48:24Z] === RETRY START HG02601 ===
+[2026-08-01T09:48:24Z] HG02601: CRAM already present and complete (15275521140 bytes), skipping download
+[2026-08-01T09:48:24Z] HG02601: quickcheck PASSED
+[2026-08-01T09:48:31Z] HG02601: configManta exit=0
+[2026-08-01T11:40:07Z] HG02601: runWorkflow exit=125 elapsed=6695s peak_mem_mib=0.0
+[2026-08-01T11:42:39Z] HG02601: local CRAM sha256=bbdaf7894c2e1bd437f654f25c75c7a233407635d9ea4646eeaf51173ed0ecdb
+[2026-08-01T11:42:39Z] HG02601: WARNING runWorkflow did not exit 0 -- KEEPING CRAM for investigation
+[2026-08-01T11:42:39Z] === RETRY END HG02601 ===
+[2026-08-01T11:42:39Z] === RETRY START HG01912 ===
+[2026-08-01T11:42:39Z] HG01912: download attempt 1, resuming from 0/14133539017
+[2026-08-01T11:47:29Z] HG01912: attempt 1 curl exit=28 have=294239777
+[2026-08-01T11:47:32Z] HG01912: download attempt 2, resuming from 294239777/14133539017
+[2026-08-01T11:48:02Z] HG01912: attempt 2 curl exit=6 have=294239777
+[2026-08-01T11:48:05Z] HG01912: download attempt 3, resuming from 294239777/14133539017
+[2026-08-01T11:48:35Z] HG01912: attempt 3 curl exit=6 have=294239777
+[2026-08-01T11:48:38Z] HG01912: download attempt 4, resuming from 294239777/14133539017
+[2026-08-01T11:49:08Z] HG01912: attempt 4 curl exit=6 have=294239777
+[2026-08-01T11:49:11Z] HG01912: download attempt 5, resuming from 294239777/14133539017
+[2026-08-01T11:49:41Z] HG01912: attempt 5 curl exit=6 have=294239777
+[2026-08-01T11:49:44Z] HG01912: download attempt 6, resuming from 294239777/14133539017
+[2026-08-01T11:50:14Z] HG01912: attempt 6 curl exit=6 have=294239777
+[2026-08-01T11:50:17Z] HG01912: download attempt 7, resuming from 294239777/14133539017
+[2026-08-01T11:50:47Z] HG01912: attempt 7 curl exit=6 have=294239777
+[2026-08-01T11:50:51Z] HG01912: download attempt 8, resuming from 294239777/14133539017
+[2026-08-01T11:51:21Z] HG01912: attempt 8 curl exit=6 have=294239777
+[2026-08-01T11:51:24Z] HG01912: download attempt 9, resuming from 294239777/14133539017
+[2026-08-01T11:51:54Z] HG01912: attempt 9 curl exit=6 have=294239777
+[2026-08-01T11:51:57Z] HG01912: download attempt 10, resuming from 294239777/14133539017
+[2026-08-01T11:52:27Z] HG01912: attempt 10 curl exit=6 have=294239777
+[2026-08-01T11:52:30Z] HG01912: download attempt 11, resuming from 294239777/14133539017
+[2026-08-01T11:53:00Z] HG01912: attempt 11 curl exit=6 have=294239777
+[2026-08-01T11:53:03Z] HG01912: download attempt 12, resuming from 294239777/14133539017
+[2026-08-01T11:53:33Z] HG01912: attempt 12 curl exit=6 have=294239777
+[2026-08-01T11:53:36Z] HG01912: download attempt 13, resuming from 294239777/14133539017
+[2026-08-01T11:54:06Z] HG01912: attempt 13 curl exit=6 have=294239777
+[2026-08-01T11:54:09Z] HG01912: download attempt 14, resuming from 294239777/14133539017
+[2026-08-01T11:54:39Z] HG01912: attempt 14 curl exit=6 have=294239777
+[2026-08-01T11:54:42Z] HG01912: download attempt 15, resuming from 294239777/14133539017
+[2026-08-01T11:55:12Z] HG01912: attempt 15 curl exit=6 have=294239777
+[2026-08-01T11:55:15Z] HG01912: download attempt 16, resuming from 294239777/14133539017
+[2026-08-01T11:55:45Z] HG01912: attempt 16 curl exit=6 have=294239777
+[2026-08-01T11:55:48Z] HG01912: download attempt 17, resuming from 294239777/14133539017
+[2026-08-01T11:56:19Z] HG01912: attempt 17 curl exit=6 have=294239777
+[2026-08-01T11:56:22Z] HG01912: download attempt 18, resuming from 294239777/14133539017
+[2026-08-01T11:56:52Z] HG01912: attempt 18 curl exit=6 have=294239777
+[2026-08-01T11:56:55Z] HG01912: download attempt 19, resuming from 294239777/14133539017
+[2026-08-01T11:57:25Z] HG01912: attempt 19 curl exit=6 have=294239777
+[2026-08-01T11:57:28Z] HG01912: download attempt 20, resuming from 294239777/14133539017
+[2026-08-01T11:57:58Z] HG01912: attempt 20 curl exit=6 have=294239777
+[2026-08-01T11:58:01Z] HG01912: download attempt 21, resuming from 294239777/14133539017
+[2026-08-01T11:58:31Z] HG01912: attempt 21 curl exit=6 have=294239777
+[2026-08-01T11:58:34Z] HG01912: download attempt 22, resuming from 294239777/14133539017
+[2026-08-01T11:59:04Z] HG01912: attempt 22 curl exit=6 have=294239777
+[2026-08-01T11:59:07Z] HG01912: download attempt 23, resuming from 294239777/14133539017
+[2026-08-01T11:59:37Z] HG01912: attempt 23 curl exit=6 have=294239777
+[2026-08-01T11:59:40Z] HG01912: download attempt 24, resuming from 294239777/14133539017
+[2026-08-01T12:00:10Z] HG01912: attempt 24 curl exit=6 have=294239777
+[2026-08-01T12:00:13Z] HG01912: download attempt 25, resuming from 294239777/14133539017
+[2026-08-01T12:00:43Z] HG01912: attempt 25 curl exit=6 have=294239777
+[2026-08-01T12:00:47Z] HG01912: download attempt 26, resuming from 294239777/14133539017
+[2026-08-01T12:01:17Z] HG01912: attempt 26 curl exit=6 have=294239777
+[2026-08-01T12:01:20Z] HG01912: download attempt 27, resuming from 294239777/14133539017
+[2026-08-01T12:01:50Z] HG01912: attempt 27 curl exit=6 have=294239777
+[2026-08-01T12:01:53Z] HG01912: download attempt 28, resuming from 294239777/14133539017
+[2026-08-01T12:02:23Z] HG01912: attempt 28 curl exit=6 have=294239777
+[2026-08-01T12:02:26Z] HG01912: download attempt 29, resuming from 294239777/14133539017
+[2026-08-01T12:02:56Z] HG01912: attempt 29 curl exit=6 have=294239777
+[2026-08-01T12:02:59Z] HG01912: download attempt 30, resuming from 294239777/14133539017
+[2026-08-01T12:03:29Z] HG01912: attempt 30 curl exit=6 have=294239777
+[2026-08-01T12:03:32Z] HG01912: download attempt 31, resuming from 294239777/14133539017
+[2026-08-01T12:04:02Z] HG01912: attempt 31 curl exit=6 have=294239777
+[2026-08-01T12:04:05Z] HG01912: download attempt 32, resuming from 294239777/14133539017
+[2026-08-01T12:04:35Z] HG01912: attempt 32 curl exit=6 have=294239777
+[2026-08-01T12:04:38Z] HG01912: download attempt 33, resuming from 294239777/14133539017
+[2026-08-01T12:05:08Z] HG01912: attempt 33 curl exit=6 have=294239777
+[2026-08-01T12:05:11Z] HG01912: download attempt 34, resuming from 294239777/14133539017
+[2026-08-01T12:05:41Z] HG01912: attempt 34 curl exit=6 have=294239777
+[2026-08-01T12:05:44Z] HG01912: download attempt 35, resuming from 294239777/14133539017
+[2026-08-01T12:06:14Z] HG01912: attempt 35 curl exit=6 have=294239777
+[2026-08-01T12:06:17Z] HG01912: download attempt 36, resuming from 294239777/14133539017
+[2026-08-01T12:06:47Z] HG01912: attempt 36 curl exit=6 have=294239777
+[2026-08-01T12:06:50Z] HG01912: download attempt 37, resuming from 294239777/14133539017
+[2026-08-01T12:07:20Z] HG01912: attempt 37 curl exit=6 have=294239777
+[2026-08-01T12:07:24Z] HG01912: download attempt 38, resuming from 294239777/14133539017
+[2026-08-01T12:07:54Z] HG01912: attempt 38 curl exit=6 have=294239777
+[2026-08-01T12:07:57Z] HG01912: download attempt 39, resuming from 294239777/14133539017
+[2026-08-01T12:08:27Z] HG01912: attempt 39 curl exit=6 have=294239777
+[2026-08-01T12:08:30Z] HG01912: download attempt 40, resuming from 294239777/14133539017
+[2026-08-01T12:09:00Z] HG01912: attempt 40 curl exit=6 have=294239777
+[2026-08-01T12:09:03Z] HG01912: download attempt 41, resuming from 294239777/14133539017
+[2026-08-01T12:09:33Z] HG01912: attempt 41 curl exit=6 have=294239777
+[2026-08-01T12:09:36Z] HG01912: download attempt 42, resuming from 294239777/14133539017
+[2026-08-01T12:10:06Z] HG01912: attempt 42 curl exit=6 have=294239777
+[2026-08-01T12:10:09Z] HG01912: download attempt 43, resuming from 294239777/14133539017
+[2026-08-01T12:10:39Z] HG01912: attempt 43 curl exit=6 have=294239777
+[2026-08-01T12:10:42Z] HG01912: download attempt 44, resuming from 294239777/14133539017
+[2026-08-01T12:11:12Z] HG01912: attempt 44 curl exit=6 have=294239777
+[2026-08-01T12:11:15Z] HG01912: download attempt 45, resuming from 294239777/14133539017
+[2026-08-01T12:11:45Z] HG01912: attempt 45 curl exit=6 have=294239777
+[2026-08-01T12:11:48Z] HG01912: download attempt 46, resuming from 294239777/14133539017
+[2026-08-01T12:12:18Z] HG01912: attempt 46 curl exit=6 have=294239777
+[2026-08-01T12:12:21Z] HG01912: download attempt 47, resuming from 294239777/14133539017
+[2026-08-01T12:12:51Z] HG01912: attempt 47 curl exit=6 have=294239777
+[2026-08-01T12:12:54Z] HG01912: download attempt 48, resuming from 294239777/14133539017
+[2026-08-01T12:13:24Z] HG01912: attempt 48 curl exit=6 have=294239777
+[2026-08-01T12:13:27Z] HG01912: download attempt 49, resuming from 294239777/14133539017
+[2026-08-01T12:13:58Z] HG01912: attempt 49 curl exit=6 have=294239777
+[2026-08-01T12:14:01Z] HG01912: download attempt 50, resuming from 294239777/14133539017
+[2026-08-01T12:14:31Z] HG01912: attempt 50 curl exit=6 have=294239777
+[2026-08-01T12:14:34Z] HG01912: download attempt 51, resuming from 294239777/14133539017
+[2026-08-01T12:15:04Z] HG01912: attempt 51 curl exit=6 have=294239777
+[2026-08-01T12:15:07Z] HG01912: download attempt 52, resuming from 294239777/14133539017
+[2026-08-01T12:15:37Z] HG01912: attempt 52 curl exit=6 have=294239777
+[2026-08-01T12:15:40Z] HG01912: download attempt 53, resuming from 294239777/14133539017
+[2026-08-01T12:16:10Z] HG01912: attempt 53 curl exit=6 have=294239777
+[2026-08-01T12:16:13Z] HG01912: download attempt 54, resuming from 294239777/14133539017
+[2026-08-01T12:16:43Z] HG01912: attempt 54 curl exit=6 have=294239777
+[2026-08-01T12:16:46Z] HG01912: download attempt 55, resuming from 294239777/14133539017
+[2026-08-01T12:17:16Z] HG01912: attempt 55 curl exit=6 have=294239777
+[2026-08-01T12:17:19Z] HG01912: download attempt 56, resuming from 294239777/14133539017
+[2026-08-01T12:17:49Z] HG01912: attempt 56 curl exit=6 have=294239777
+[2026-08-01T12:17:52Z] HG01912: download attempt 57, resuming from 294239777/14133539017
+[2026-08-01T12:18:22Z] HG01912: attempt 57 curl exit=6 have=294239777
+[2026-08-01T12:18:25Z] HG01912: download attempt 58, resuming from 294239777/14133539017
+[2026-08-01T12:18:55Z] HG01912: attempt 58 curl exit=6 have=294239777
+[2026-08-01T12:18:58Z] HG01912: download attempt 59, resuming from 294239777/14133539017
+[2026-08-01T12:19:28Z] HG01912: attempt 59 curl exit=6 have=294239777
+[2026-08-01T12:19:31Z] HG01912: download attempt 60, resuming from 294239777/14133539017
+[2026-08-01T12:20:01Z] HG01912: attempt 60 curl exit=6 have=294239777
+[2026-08-01T12:20:04Z] HG01912: download attempt 61, resuming from 294239777/14133539017
+[2026-08-01T12:20:35Z] HG01912: attempt 61 curl exit=6 have=294239777
+[2026-08-01T12:20:38Z] HG01912: download attempt 62, resuming from 294239777/14133539017
+[2026-08-01T12:21:08Z] HG01912: attempt 62 curl exit=6 have=294239777
+[2026-08-01T12:21:11Z] HG01912: download attempt 63, resuming from 294239777/14133539017
+[2026-08-01T12:21:41Z] HG01912: attempt 63 curl exit=6 have=294239777
+[2026-08-01T12:21:44Z] HG01912: download attempt 64, resuming from 294239777/14133539017
+[2026-08-01T12:22:14Z] HG01912: attempt 64 curl exit=6 have=294239777
+[2026-08-01T12:22:17Z] HG01912: download attempt 65, resuming from 294239777/14133539017
+[2026-08-01T12:22:47Z] HG01912: attempt 65 curl exit=6 have=294239777
+[2026-08-01T12:22:50Z] HG01912: download attempt 66, resuming from 294239777/14133539017
+[2026-08-01T12:23:20Z] HG01912: attempt 66 curl exit=6 have=294239777
+[2026-08-01T12:23:23Z] HG01912: download attempt 67, resuming from 294239777/14133539017
+[2026-08-01T12:23:53Z] HG01912: attempt 67 curl exit=6 have=294239777
+[2026-08-01T12:23:56Z] HG01912: download attempt 68, resuming from 294239777/14133539017
+[2026-08-01T12:24:26Z] HG01912: attempt 68 curl exit=6 have=294239777
+[2026-08-01T12:24:29Z] HG01912: download attempt 69, resuming from 294239777/14133539017
+[2026-08-01T12:24:59Z] HG01912: attempt 69 curl exit=6 have=294239777
+[2026-08-01T12:25:02Z] HG01912: download attempt 70, resuming from 294239777/14133539017
+[2026-08-01T12:25:32Z] HG01912: attempt 70 curl exit=6 have=294239777
+[2026-08-01T12:25:35Z] HG01912: download attempt 71, resuming from 294239777/14133539017
+[2026-08-01T12:26:05Z] HG01912: attempt 71 curl exit=6 have=294239777
+[2026-08-01T12:26:08Z] HG01912: download attempt 72, resuming from 294239777/14133539017
+[2026-08-01T12:26:38Z] HG01912: attempt 72 curl exit=6 have=294239777
+[2026-08-01T12:26:42Z] HG01912: download attempt 73, resuming from 294239777/14133539017
+[2026-08-01T12:27:12Z] HG01912: attempt 73 curl exit=6 have=294239777
+[2026-08-01T12:27:15Z] HG01912: download attempt 74, resuming from 294239777/14133539017
+[2026-08-01T12:27:45Z] HG01912: attempt 74 curl exit=6 have=294239777
+[2026-08-01T12:27:48Z] HG01912: download attempt 75, resuming from 294239777/14133539017
+[2026-08-01T12:28:18Z] HG01912: attempt 75 curl exit=6 have=294239777
+[2026-08-01T12:28:21Z] HG01912: download attempt 76, resuming from 294239777/14133539017
+[2026-08-01T12:28:51Z] HG01912: attempt 76 curl exit=6 have=294239777
+[2026-08-01T12:28:54Z] HG01912: download attempt 77, resuming from 294239777/14133539017
+[2026-08-01T12:29:24Z] HG01912: attempt 77 curl exit=6 have=294239777
+[2026-08-01T12:29:27Z] HG01912: download attempt 78, resuming from 294239777/14133539017
+[2026-08-01T12:29:57Z] HG01912: attempt 78 curl exit=6 have=294239777
+[2026-08-01T12:30:00Z] HG01912: download attempt 79, resuming from 294239777/14133539017
+[2026-08-01T12:30:30Z] HG01912: attempt 79 curl exit=6 have=294239777
+[2026-08-01T12:30:33Z] HG01912: download attempt 80, resuming from 294239777/14133539017
+[2026-08-01T12:31:03Z] HG01912: attempt 80 curl exit=6 have=294239777
+[2026-08-01T12:31:06Z] HG01912: download attempt 81, resuming from 294239777/14133539017
+[2026-08-01T12:31:36Z] HG01912: attempt 81 curl exit=6 have=294239777
+[2026-08-01T12:31:39Z] HG01912: download attempt 82, resuming from 294239777/14133539017
+[2026-08-01T12:32:09Z] HG01912: attempt 82 curl exit=6 have=294239777
+[2026-08-01T12:32:12Z] HG01912: download attempt 83, resuming from 294239777/14133539017
+[2026-08-01T12:32:42Z] HG01912: attempt 83 curl exit=6 have=294239777
+[2026-08-01T12:32:45Z] HG01912: download attempt 84, resuming from 294239777/14133539017
+[2026-08-01T12:33:16Z] HG01912: attempt 84 curl exit=6 have=294239777
+[2026-08-01T12:33:19Z] HG01912: download attempt 85, resuming from 294239777/14133539017
+[2026-08-01T12:33:49Z] HG01912: attempt 85 curl exit=6 have=294239777
+[2026-08-01T12:33:52Z] HG01912: download attempt 86, resuming from 294239777/14133539017
+[2026-08-01T12:34:22Z] HG01912: attempt 86 curl exit=6 have=294239777
+[2026-08-01T12:34:25Z] HG01912: download attempt 87, resuming from 294239777/14133539017
+[2026-08-01T12:34:55Z] HG01912: attempt 87 curl exit=6 have=294239777
+[2026-08-01T12:34:58Z] HG01912: download attempt 88, resuming from 294239777/14133539017
+[2026-08-01T12:35:28Z] HG01912: attempt 88 curl exit=6 have=294239777
+[2026-08-01T12:35:31Z] HG01912: download attempt 89, resuming from 294239777/14133539017
+[2026-08-01T12:36:01Z] HG01912: attempt 89 curl exit=6 have=294239777
+[2026-08-01T12:36:04Z] HG01912: download attempt 90, resuming from 294239777/14133539017
+[2026-08-01T12:36:34Z] HG01912: attempt 90 curl exit=6 have=294239777
+[2026-08-01T12:36:37Z] HG01912: download attempt 91, resuming from 294239777/14133539017
+[2026-08-01T12:37:07Z] HG01912: attempt 91 curl exit=6 have=294239777
+[2026-08-01T12:37:10Z] HG01912: download attempt 92, resuming from 294239777/14133539017
+[2026-08-01T12:37:40Z] HG01912: attempt 92 curl exit=6 have=294239777
+[2026-08-01T12:37:43Z] HG01912: download attempt 93, resuming from 294239777/14133539017
+[2026-08-01T12:38:13Z] HG01912: attempt 93 curl exit=6 have=294239777
+[2026-08-01T12:38:16Z] HG01912: download attempt 94, resuming from 294239777/14133539017
+[2026-08-01T12:38:46Z] HG01912: attempt 94 curl exit=6 have=294239777
+[2026-08-01T12:38:49Z] HG01912: download attempt 95, resuming from 294239777/14133539017
+[2026-08-01T12:39:19Z] HG01912: attempt 95 curl exit=6 have=294239777
+[2026-08-01T12:39:22Z] HG01912: download attempt 96, resuming from 294239777/14133539017
+[2026-08-01T12:39:53Z] HG01912: attempt 96 curl exit=6 have=294239777
+[2026-08-01T12:39:56Z] HG01912: download attempt 97, resuming from 294239777/14133539017
+[2026-08-01T12:40:26Z] HG01912: attempt 97 curl exit=6 have=294239777
+[2026-08-01T12:40:29Z] HG01912: download attempt 98, resuming from 294239777/14133539017
+[2026-08-01T12:40:59Z] HG01912: attempt 98 curl exit=6 have=294239777
+[2026-08-01T12:41:02Z] HG01912: download attempt 99, resuming from 294239777/14133539017
+[2026-08-01T12:41:32Z] HG01912: attempt 99 curl exit=6 have=294239777
+[2026-08-01T12:41:35Z] HG01912: download attempt 100, resuming from 294239777/14133539017
+[2026-08-01T12:42:05Z] HG01912: attempt 100 curl exit=6 have=294239777
+[2026-08-01T12:42:08Z] HG01912: download attempt 101, resuming from 294239777/14133539017
+[2026-08-01T12:42:38Z] HG01912: attempt 101 curl exit=6 have=294239777
+[2026-08-01T12:42:41Z] HG01912: download attempt 102, resuming from 294239777/14133539017
+[2026-08-01T12:43:11Z] HG01912: attempt 102 curl exit=6 have=294239777
+[2026-08-01T12:43:14Z] HG01912: download attempt 103, resuming from 294239777/14133539017
+[2026-08-01T12:43:44Z] HG01912: attempt 103 curl exit=6 have=294239777
+[2026-08-01T12:43:47Z] HG01912: download attempt 104, resuming from 294239777/14133539017
+[2026-08-01T12:44:17Z] HG01912: attempt 104 curl exit=6 have=294239777
+[2026-08-01T12:44:20Z] HG01912: download attempt 105, resuming from 294239777/14133539017
+[2026-08-01T12:44:50Z] HG01912: attempt 105 curl exit=6 have=294239777
+[2026-08-01T12:44:53Z] HG01912: download attempt 106, resuming from 294239777/14133539017
+[2026-08-01T12:45:24Z] HG01912: attempt 106 curl exit=6 have=294239777
+[2026-08-01T12:45:27Z] HG01912: download attempt 107, resuming from 294239777/14133539017
+[2026-08-01T12:45:57Z] HG01912: attempt 107 curl exit=6 have=294239777
+[2026-08-01T12:46:00Z] HG01912: download attempt 108, resuming from 294239777/14133539017
+[2026-08-01T12:46:30Z] HG01912: attempt 108 curl exit=6 have=294239777
+[2026-08-01T12:46:33Z] HG01912: download attempt 109, resuming from 294239777/14133539017
+[2026-08-01T12:47:03Z] HG01912: attempt 109 curl exit=6 have=294239777
+[2026-08-01T12:47:06Z] HG01912: download attempt 110, resuming from 294239777/14133539017
+[2026-08-01T12:47:36Z] HG01912: attempt 110 curl exit=6 have=294239777
+[2026-08-01T12:47:39Z] HG01912: download attempt 111, resuming from 294239777/14133539017
+[2026-08-01T12:48:09Z] HG01912: attempt 111 curl exit=6 have=294239777
+[2026-08-01T12:48:12Z] HG01912: download attempt 112, resuming from 294239777/14133539017
+[2026-08-01T12:48:42Z] HG01912: attempt 112 curl exit=6 have=294239777
+[2026-08-01T12:48:45Z] HG01912: download attempt 113, resuming from 294239777/14133539017
+[2026-08-01T12:49:15Z] HG01912: attempt 113 curl exit=6 have=294239777
+[2026-08-01T12:49:18Z] HG01912: download attempt 114, resuming from 294239777/14133539017
+[2026-08-01T12:49:48Z] HG01912: attempt 114 curl exit=6 have=294239777
+[2026-08-01T12:49:51Z] HG01912: download attempt 115, resuming from 294239777/14133539017
+[2026-08-01T12:50:21Z] HG01912: attempt 115 curl exit=6 have=294239777
+[2026-08-01T12:50:24Z] HG01912: download attempt 116, resuming from 294239777/14133539017
+[2026-08-01T12:50:54Z] HG01912: attempt 116 curl exit=6 have=294239777
+[2026-08-01T12:50:57Z] HG01912: download attempt 117, resuming from 294239777/14133539017
+[2026-08-01T12:51:27Z] HG01912: attempt 117 curl exit=6 have=294239777
+[2026-08-01T12:51:30Z] HG01912: download attempt 118, resuming from 294239777/14133539017
+[2026-08-01T12:52:01Z] HG01912: attempt 118 curl exit=6 have=294239777
+[2026-08-01T12:52:04Z] HG01912: download attempt 119, resuming from 294239777/14133539017
+[2026-08-01T12:52:34Z] HG01912: attempt 119 curl exit=6 have=294239777
+[2026-08-01T12:52:37Z] HG01912: download attempt 120, resuming from 294239777/14133539017
+[2026-08-01T12:53:07Z] HG01912: attempt 120 curl exit=6 have=294239777
+[2026-08-01T12:53:10Z] HG01912: download attempt 121, resuming from 294239777/14133539017
+[2026-08-01T12:53:40Z] HG01912: attempt 121 curl exit=6 have=294239777
+[2026-08-01T12:53:43Z] HG01912: download attempt 122, resuming from 294239777/14133539017
+[2026-08-01T12:54:13Z] HG01912: attempt 122 curl exit=6 have=294239777
+[2026-08-01T12:54:16Z] HG01912: download attempt 123, resuming from 294239777/14133539017
+[2026-08-01T12:54:46Z] HG01912: attempt 123 curl exit=6 have=294239777
+[2026-08-01T12:54:49Z] HG01912: download attempt 124, resuming from 294239777/14133539017
+[2026-08-01T12:55:19Z] HG01912: attempt 124 curl exit=6 have=294239777
+[2026-08-01T12:55:22Z] HG01912: download attempt 125, resuming from 294239777/14133539017
+[2026-08-01T12:55:52Z] HG01912: attempt 125 curl exit=6 have=294239777
+[2026-08-01T12:55:55Z] HG01912: download attempt 126, resuming from 294239777/14133539017
+[2026-08-01T12:56:25Z] HG01912: attempt 126 curl exit=6 have=294239777
+[2026-08-01T12:56:28Z] HG01912: download attempt 127, resuming from 294239777/14133539017
+[2026-08-01T12:56:58Z] HG01912: attempt 127 curl exit=6 have=294239777
+[2026-08-01T12:57:01Z] HG01912: download attempt 128, resuming from 294239777/14133539017
+[2026-08-01T12:57:31Z] HG01912: attempt 128 curl exit=6 have=294239777
+[2026-08-01T12:57:34Z] HG01912: download attempt 129, resuming from 294239777/14133539017
+[2026-08-01T12:58:04Z] HG01912: attempt 129 curl exit=6 have=294239777
+[2026-08-01T12:58:07Z] HG01912: download attempt 130, resuming from 294239777/14133539017
+[2026-08-01T12:58:38Z] HG01912: attempt 130 curl exit=6 have=294239777
+[2026-08-01T12:58:41Z] HG01912: download attempt 131, resuming from 294239777/14133539017
+[2026-08-01T12:59:11Z] HG01912: attempt 131 curl exit=6 have=294239777
+[2026-08-01T12:59:14Z] HG01912: download attempt 132, resuming from 294239777/14133539017
+[2026-08-01T12:59:44Z] HG01912: attempt 132 curl exit=6 have=294239777
+[2026-08-01T12:59:47Z] HG01912: download attempt 133, resuming from 294239777/14133539017
+[2026-08-01T13:00:17Z] HG01912: attempt 133 curl exit=6 have=294239777
+[2026-08-01T13:00:20Z] HG01912: download attempt 134, resuming from 294239777/14133539017
+[2026-08-01T13:00:50Z] HG01912: attempt 134 curl exit=6 have=294239777
+[2026-08-01T13:00:53Z] HG01912: download attempt 135, resuming from 294239777/14133539017
+[2026-08-01T13:01:23Z] HG01912: attempt 135 curl exit=6 have=294239777
+[2026-08-01T13:01:26Z] HG01912: download attempt 136, resuming from 294239777/14133539017
+[2026-08-01T13:01:56Z] HG01912: attempt 136 curl exit=6 have=294239777
+[2026-08-01T13:01:59Z] HG01912: download attempt 137, resuming from 294239777/14133539017
+[2026-08-01T13:02:29Z] HG01912: attempt 137 curl exit=6 have=294239777
+[2026-08-01T13:02:32Z] HG01912: download attempt 138, resuming from 294239777/14133539017
+[2026-08-01T13:03:02Z] HG01912: attempt 138 curl exit=6 have=294239777
+[2026-08-01T13:03:05Z] HG01912: download attempt 139, resuming from 294239777/14133539017
+[2026-08-01T13:03:35Z] HG01912: attempt 139 curl exit=6 have=294239777
+[2026-08-01T13:03:38Z] HG01912: download attempt 140, resuming from 294239777/14133539017
+[2026-08-01T13:04:08Z] HG01912: attempt 140 curl exit=6 have=294239777
+[2026-08-01T13:04:11Z] HG01912: download attempt 141, resuming from 294239777/14133539017
+[2026-08-01T13:04:41Z] HG01912: attempt 141 curl exit=6 have=294239777
+[2026-08-01T13:04:44Z] HG01912: download attempt 142, resuming from 294239777/14133539017
+[2026-08-01T13:05:15Z] HG01912: attempt 142 curl exit=6 have=294239777
+[2026-08-01T13:05:18Z] HG01912: download attempt 143, resuming from 294239777/14133539017
+[2026-08-01T14:09:18Z] HG01912: attempt 143 curl exit=28 have=1863991485
+[2026-08-01T14:09:21Z] HG01912: download attempt 144, resuming from 1863991485/14133539017
+[2026-08-01T14:09:51Z] HG01912: attempt 144 curl exit=6 have=1863991485
+[2026-08-01T14:09:54Z] HG01912: download attempt 145, resuming from 1863991485/14133539017
+[2026-08-01T14:10:24Z] HG01912: attempt 145 curl exit=6 have=1863991485
+[2026-08-01T14:10:28Z] HG01912: download attempt 146, resuming from 1863991485/14133539017
+[2026-08-01T14:10:58Z] HG01912: attempt 146 curl exit=6 have=1863991485
+[2026-08-01T14:11:01Z] HG01912: download attempt 147, resuming from 1863991485/14133539017
+[2026-08-01T14:11:04Z] HG01912: attempt 147 curl exit=6 have=1863991485
+[2026-08-01T14:11:07Z] HG01912: download attempt 148, resuming from 1863991485/14133539017
+[2026-08-01T14:11:07Z] HG01912: attempt 148 curl exit=6 have=1863991485
+[2026-08-01T14:11:10Z] HG01912: download attempt 149, resuming from 1863991485/14133539017
+[2026-08-01T14:12:00Z] HG01912: attempt 149 curl exit=28 have=1931031192
+[2026-08-01T14:12:03Z] HG01912: download attempt 150, resuming from 1931031192/14133539017
+[2026-08-01T14:12:33Z] HG01912: attempt 150 curl exit=6 have=1931031192
+[2026-08-01T14:12:36Z] HG01912: download attempt 151, resuming from 1931031192/14133539017
+[2026-08-01T14:13:06Z] HG01912: attempt 151 curl exit=6 have=1931031192
+[2026-08-01T14:13:09Z] HG01912: download attempt 152, resuming from 1931031192/14133539017
+[2026-08-01T14:13:39Z] HG01912: attempt 152 curl exit=6 have=1931031192
+[2026-08-01T14:13:42Z] HG01912: download attempt 153, resuming from 1931031192/14133539017
+[2026-08-01T14:14:12Z] HG01912: attempt 153 curl exit=6 have=1931031192
+[2026-08-01T14:14:15Z] HG01912: download attempt 154, resuming from 1931031192/14133539017
+[2026-08-01T14:14:45Z] HG01912: attempt 154 curl exit=6 have=1931031192
+[2026-08-01T14:14:48Z] HG01912: download attempt 155, resuming from 1931031192/14133539017
+[2026-08-01T14:15:18Z] HG01912: attempt 155 curl exit=6 have=1931031192
+[2026-08-01T14:15:21Z] HG01912: download attempt 156, resuming from 1931031192/14133539017
+[2026-08-01T14:15:51Z] HG01912: attempt 156 curl exit=6 have=1931031192
+[2026-08-01T14:15:54Z] HG01912: download attempt 157, resuming from 1931031192/14133539017
+[2026-08-01T14:16:25Z] HG01912: attempt 157 curl exit=6 have=1931031192
+[2026-08-01T14:16:28Z] HG01912: download attempt 158, resuming from 1931031192/14133539017
+[2026-08-01T14:16:58Z] HG01912: attempt 158 curl exit=6 have=1931031192
+[2026-08-01T14:17:01Z] HG01912: download attempt 159, resuming from 1931031192/14133539017
+[2026-08-01T14:17:31Z] HG01912: attempt 159 curl exit=6 have=1931031192
+[2026-08-01T14:17:34Z] HG01912: download attempt 160, resuming from 1931031192/14133539017
+[2026-08-01T14:18:04Z] HG01912: attempt 160 curl exit=6 have=1931031192
+[2026-08-01T14:18:07Z] HG01912: download attempt 161, resuming from 1931031192/14133539017
+[2026-08-01T14:18:37Z] HG01912: attempt 161 curl exit=6 have=1931031192
+[2026-08-01T14:18:40Z] HG01912: download attempt 162, resuming from 1931031192/14133539017
+[2026-08-01T14:19:10Z] HG01912: attempt 162 curl exit=6 have=1931031192
+[2026-08-01T14:19:13Z] HG01912: download attempt 163, resuming from 1931031192/14133539017
+[2026-08-01T14:19:43Z] HG01912: attempt 163 curl exit=6 have=1931031192
+[2026-08-01T14:19:46Z] HG01912: download attempt 164, resuming from 1931031192/14133539017
+[2026-08-01T14:20:16Z] HG01912: attempt 164 curl exit=6 have=1931031192
+[2026-08-01T14:20:19Z] HG01912: download attempt 165, resuming from 1931031192/14133539017
+[2026-08-01T14:20:49Z] HG01912: attempt 165 curl exit=6 have=1931031192
+[2026-08-01T14:20:52Z] HG01912: download attempt 166, resuming from 1931031192/14133539017
+[2026-08-01T14:21:23Z] HG01912: attempt 166 curl exit=6 have=1931031192
+[2026-08-01T14:21:26Z] HG01912: download attempt 167, resuming from 1931031192/14133539017
+[2026-08-01T14:40:36Z] HG01912: attempt 167 curl exit=23 have=6374621848
+[2026-08-01T14:40:39Z] HG01912: download attempt 168, resuming from 6374621848/14133539017
+[2026-08-01T14:40:40Z] HG01912: attempt 168 curl exit=23 have=6374621848
+[2026-08-01T14:40:43Z] HG01912: download attempt 169, resuming from 6374621848/14133539017
+[2026-08-01T14:40:43Z] HG01912: attempt 169 curl exit=23 have=6374621848
+[2026-08-01T14:40:46Z] HG01912: download attempt 170, resuming from 6374621848/14133539017
+[2026-08-01T14:40:46Z] HG01912: attempt 170 curl exit=23 have=6374621848
+[2026-08-01T14:40:49Z] HG01912: download attempt 171, resuming from 6374621848/14133539017
+[2026-08-01T14:40:50Z] HG01912: attempt 171 curl exit=23 have=6374621848
+[2026-08-01T14:40:53Z] HG01912: download attempt 172, resuming from 6374621848/14133539017
+[2026-08-01T14:40:53Z] HG01912: attempt 172 curl exit=23 have=6374621848
+tee: /Users/nikolai/DNA/deletion_calling/manta_poc/retry_four_wgs_master.log: No space left on device
+[2026-08-01T14:40:56Z] HG01912: download attempt 173, resuming from 6374621848/14133539017
+[2026-08-01T14:41:00Z] HG01912: attempt 173 curl exit=23 have=6374621848
+tee: /Users/nikolai/DNA/deletion_calling/manta_poc/retry_four_wgs_master.log: No space left on device
+[2026-08-01T14:41:03Z] HG01912: download attempt 174, resuming from 6374621848/14133539017
+tee: : stdout: tee: [2026-08-01T14:41:34Z] HG01912: download attempt 183, resuming from 6374621848/14133539017
+[2026-08-01T14:41:40Z] HG01912: attempt 183 curl exit=23 have=6382408344
+[2026-08-01T14:41:43Z] HG01912: download attempt 184, resuming from 6382408344/14133539017
+[2026-08-01T14:41:44Z] HG01912: attempt 184 curl exit=23 have=6382408344
+[2026-08-01T14:41:47Z] HG01912: download attempt 185, resuming from 6382408344/14133539017
+[2026-08-01T14:41:47Z] HG01912: attempt 185 curl exit=23 have=6382408344
+[2026-08-01T14:41:50Z] HG01912: download attempt 186, resuming from 6382408344/14133539017
+[2026-08-01T14:41:51Z] HG01912: attempt 186 curl exit=23 have=6382408344
+[2026-08-01T14:41:54Z] HG01912: download attempt 187, resuming from 6382408344/14133539017
+[2026-08-01T14:41:54Z] HG01912: attempt 187 curl exit=23 have=6382408344
+[2026-08-01T14:41:57Z] HG01912: download attempt 188, resuming from 6382408344/14133539017
+[2026-08-01T14:41:58Z] HG01912: attempt 188 curl exit=23 have=6382408344
+[2026-08-01T14:42:01Z] HG01912: download attempt 189, resuming from 6382408344/14133539017
+[2026-08-01T14:42:01Z] HG01912: attempt 189 curl exit=23 have=6382408344
+[2026-08-01T14:42:04Z] HG01912: download attempt 190, resuming from 6382408344/14133539017
+[2026-08-01T14:42:04Z] HG01912: attempt 190 curl exit=23 have=6382408344
+[2026-08-01T14:42:07Z] HG01912: download attempt 191, resuming from 6382408344/14133539017
+[2026-08-01T14:42:08Z] HG01912: attempt 191 curl exit=23 have=6382408344
+[2026-08-01T14:42:11Z] HG01912: download attempt 192, resuming from 6382408344/14133539017
+[2026-08-01T14:42:11Z] HG01912: attempt 192 curl exit=23 have=6382408344
+[2026-08-01T14:42:14Z] HG01912: download attempt 193, resuming from 6382408344/14133539017
+[2026-08-01T14:42:15Z] HG01912: attempt 193 curl exit=23 have=6382408344
+[2026-08-01T14:42:18Z] HG01912: download attempt 194, resuming from 6382408344/14133539017
+[2026-08-01T14:42:18Z] HG01912: attempt 194 curl exit=23 have=6382408344
+[2026-08-01T14:42:21Z] HG01912: download attempt 195, resuming from 6382408344/14133539017
+[2026-08-01T14:42:21Z] HG01912: attempt 195 curl exit=23 have=6382408344
+[2026-08-01T14:42:24Z] HG01912: download attempt 196, resuming from 6382408344/14133539017
+[2026-08-01T14:42:25Z] HG01912: attempt 196 curl exit=23 have=6382408344
+[2026-08-01T14:42:28Z] HG01912: download attempt 197, resuming from 6382408344/14133539017
+[2026-08-01T14:42:28Z] HG01912: attempt 197 curl exit=23 have=6382408344
+[2026-08-01T14:42:31Z] HG01912: download attempt 198, resuming from 6382408344/14133539017
+[2026-08-01T14:42:32Z] HG01912: attempt 198 curl exit=23 have=6382408344
+[2026-08-01T14:42:35Z] HG01912: download attempt 199, resuming from 6382408344/14133539017
+[2026-08-01T14:42:35Z] HG01912: attempt 199 curl exit=23 have=6382408344
+[2026-08-01T14:42:38Z] HG01912: download attempt 200, resuming from 6382408344/14133539017
+[2026-08-01T14:42:39Z] HG01912: attempt 200 curl exit=23 have=6382408344
+[2026-08-01T14:42:42Z] HG01912: download attempt 201, resuming from 6382408344/14133539017
+[2026-08-01T14:42:42Z] HG01912: attempt 201 curl exit=23 have=6382408344
+[2026-08-01T14:42:45Z] HG01912: download attempt 202, resuming from 6382408344/14133539017
+[2026-08-01T14:42:45Z] HG01912: attempt 202 curl exit=23 have=6382408344
+[2026-08-01T14:42:48Z] HG01912: download attempt 203, resuming from 6382408344/14133539017
+[2026-08-01T14:42:49Z] HG01912: attempt 203 curl exit=23 have=6382408344
+[2026-08-01T14:42:52Z] HG01912: download attempt 204, resuming from 6382408344/14133539017
+[2026-08-01T14:42:52Z] HG01912: attempt 204 curl exit=23 have=6382408344
+[2026-08-01T14:42:55Z] HG01912: download attempt 205, resuming from 6382408344/14133539017
+[2026-08-01T14:42:56Z] HG01912: attempt 205 curl exit=23 have=6382408344
+[2026-08-01T14:42:59Z] HG01912: download attempt 206, resuming from 6382408344/14133539017
+[2026-08-01T14:42:59Z] HG01912: attempt 206 curl exit=23 have=6382408344
+[2026-08-01T14:43:02Z] HG01912: download attempt 207, resuming from 6382408344/14133539017
+tee: stdout: No space left on device
+tee: : stdout: tee: : stdout: : [2026-08-01T14:50:18Z] HG01912: download attempt 333, resuming from 6382408344/14133539017
+[2026-08-01T14:50:20Z] HG01912: attempt 333 curl exit=23 have=6383465112
+[2026-08-01T14:50:23Z] HG01912: download attempt 334, resuming from 6383465112/14133539017
+[2026-08-01T14:50:24Z] HG01912: attempt 334 curl exit=23 have=6383465112
+[2026-08-01T14:50:27Z] HG01912: download attempt 335, resuming from 6383465112/14133539017
+[2026-08-01T14:50:28Z] HG01912: attempt 335 curl exit=23 have=6383465112
+[2026-08-01T14:50:31Z] HG01912: download attempt 336, resuming from 6383465112/14133539017
+[2026-08-01T14:50:31Z] HG01912: attempt 336 curl exit=23 have=6383465112
+[2026-08-01T14:50:34Z] HG01912: download attempt 337, resuming from 6383465112/14133539017
+[2026-08-01T14:50:35Z] HG01912: attempt 337 curl exit=23 have=6383465112
+[2026-08-01T14:50:38Z] HG01912: download attempt 338, resuming from 6383465112/14133539017
+[2026-08-01T14:50:38Z] HG01912: attempt 338 curl exit=23 have=6383465112
+[2026-08-01T14:50:41Z] HG01912: download attempt 339, resuming from 6383465112/14133539017
+[2026-08-01T14:50:41Z] HG01912: attempt 339 curl exit=23 have=6383465112
+[2026-08-01T14:50:44Z] HG01912: download attempt 340, resuming from 6383465112/14133539017
+[2026-08-01T14:50:45Z] HG01912: attempt 340 curl exit=23 have=6383465112
+[2026-08-01T14:50:48Z] HG01912: download attempt 341, resuming from 6383465112/14133539017
+[2026-08-01T14:50:48Z] HG01912: attempt 341 curl exit=23 have=6383465112
+[2026-08-01T14:50:51Z] HG01912: download attempt 342, resuming from 6383465112/14133539017
+[2026-08-01T14:50:52Z] HG01912: attempt 342 curl exit=23 have=6383465112
+[2026-08-01T14:50:55Z] HG01912: download attempt 343, resuming from 6383465112/14133539017
+[2026-08-01T14:50:55Z] HG01912: attempt 343 curl exit=23 have=6383465112
+[2026-08-01T14:50:58Z] HG01912: download attempt 344, resuming from 6383465112/14133539017
+[2026-08-01T14:50:58Z] HG01912: attempt 344 curl exit=23 have=6383465112
+[2026-08-01T14:51:01Z] HG01912: download attempt 345, resuming from 6383465112/14133539017
+[2026-08-01T14:51:02Z] HG01912: attempt 345 curl exit=23 have=6383465112
+[2026-08-01T14:51:05Z] HG01912: download attempt 346, resuming from 6383465112/14133539017
+[2026-08-01T14:51:05Z] HG01912: attempt 346 curl exit=23 have=6383465112
+[2026-08-01T14:51:08Z] HG01912: download attempt 347, resuming from 6383465112/14133539017
+[2026-08-01T14:51:08Z] HG01912: attempt 347 curl exit=23 have=6383465112
+[2026-08-01T14:51:12Z] HG01912: download attempt 348, resuming from 6383465112/14133539017
+[2026-08-01T14:51:12Z] HG01912: attempt 348 curl exit=23 have=6383465112
+[2026-08-01T14:51:15Z] HG01912: download attempt 349, resuming from 6383465112/14133539017
+[2026-08-01T14:51:16Z] HG01912: attempt 349 curl exit=23 have=6383465112
+[2026-08-01T14:51:19Z] HG01912: download attempt 350, resuming from 6383465112/14133539017
+[2026-08-01T14:51:19Z] HG01912: attempt 350 curl exit=23 have=6383465112
+[2026-08-01T14:51:22Z] HG01912: download attempt 351, resuming from 6383465112/14133539017
+[2026-08-01T14:51:22Z] HG01912: attempt 351 curl exit=23 have=6383465112
+[2026-08-01T14:51:25Z] HG01912: download attempt 352, resuming from 6383465112/14133539017
+[2026-08-01T14:51:26Z] HG01912: attempt 352 curl exit=23 have=6383465112
+[2026-08-01T14:51:29Z] HG01912: download attempt 353, resuming from 6383465112/14133539017
+[2026-08-01T14:51:29Z] HG01912: attempt 353 curl exit=23 have=6383465112
+[2026-08-01T14:51:32Z] HG01912: download attempt 354, resuming from 6383465112/14133539017
+[2026-08-01T14:51:33Z] HG01912: attempt 354 curl exit=23 have=6383465112
+[2026-08-01T14:51:36Z] HG01912: download attempt 355, resuming from 6383465112/14133539017
+[2026-08-01T14:51:37Z] HG01912: attempt 355 curl exit=23 have=6383465112
+[2026-08-01T14:51:40Z] HG01912: download attempt 356, resuming from 6383465112/14133539017
+[2026-08-01T14:51:41Z] HG01912: attempt 356 curl exit=23 have=6383465112
+[2026-08-01T14:51:44Z] HG01912: download attempt 357, resuming from 6383465112/14133539017
+tee: stdout: No space left on device
+tee: : stdout: tee: : stdout: : [2026-08-01T14:53:17Z] HG01912: download attempt 384, resuming from 6383465112/14133539017
+[2026-08-01T14:53:18Z] HG01912: attempt 384 curl exit=23 have=6383813272
+[2026-08-01T14:53:21Z] HG01912: download attempt 385, resuming from 6383813272/14133539017
+[2026-08-01T14:53:22Z] HG01912: attempt 385 curl exit=23 have=6383813272
+[2026-08-01T14:53:25Z] HG01912: download attempt 386, resuming from 6383813272/14133539017
+[2026-08-01T14:53:47Z] HG01912: attempt 386 curl exit=23 have=6393234072
+[2026-08-01T14:53:51Z] HG01912: download attempt 387, resuming from 6393234072/14133539017
+[2026-08-01T17:23:54Z] === RETRY START HG02601 ===
+[2026-08-01T17:23:54Z] HG02601: CRAM already present and complete (15275521140 bytes), skipping download
+[2026-08-01T17:23:54Z] HG02601: quickcheck PASSED
+[2026-08-01T17:23:55Z] HG02601: configManta exit=0
+[2026-08-02T00:47:12Z] HG02601: runWorkflow exit=0 elapsed=26597s peak_mem_mib=0.0
+[2026-08-02T00:48:08Z] HG02601: local CRAM sha256=bbdaf7894c2e1bd437f654f25c75c7a233407635d9ea4646eeaf51173ed0ecdb
+[2026-08-02T00:48:08Z] HG02601: CRAM removed after successful run (documented sha256=bbdaf7894c2e1bd437f654f25c75c7a233407635d9ea4646eeaf51173ed0ecdb, re-downloadable from https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242400/HG02601.final.cram)
+[2026-08-02T00:48:08Z] === RETRY END HG02601 ===
+[2026-08-02T00:48:08Z] === RETRY START HG01912 ===
+[2026-08-02T00:48:08Z] HG01912: download attempt 1, resuming from 6409327256/14133539017
+[2026-08-02T02:13:59Z] HG01912: attempt 1 curl exit=0 have=14133539017
+[2026-08-02T02:13:59Z] HG01912: download complete (14133539017 bytes)
+[2026-08-02T02:14:00Z] HG01912: quickcheck PASSED
+[2026-08-02T02:14:03Z] HG01912: configManta exit=0
+[2026-08-02T02:18:57Z] HG01912: runWorkflow exit=1 elapsed=294s peak_mem_mib=0.0
+[2026-08-02T02:19:47Z] HG01912: local CRAM sha256=9d38365dd8734014eef91f858d166b1359eda15c2597e66f6ea6c7a2d8805ade
+[2026-08-02T02:19:47Z] HG01912: WARNING runWorkflow did not exit 0 -- KEEPING CRAM for investigation
+[2026-08-02T02:19:47Z] === RETRY END HG01912 ===
+[2026-08-02T02:19:47Z] === RETRY START HG00736 ===
+[2026-08-02T02:19:47Z] HG00736: download attempt 1, resuming from 0/17648023901
+[2026-08-02T05:23:46Z] HG00736: attempt 1 curl exit=0 have=17648023901
+[2026-08-02T05:23:46Z] HG00736: download complete (17648023901 bytes)
+[2026-08-02T05:23:46Z] HG00736: quickcheck PASSED
+[2026-08-02T05:23:47Z] HG00736: configManta exit=1
+[2026-08-02T05:23:47Z] HG00736: CONFIG FAILED, skipping to next sample without deleting CRAM
+[2026-08-02T05:23:47Z] === RETRY START HG00436 ===
+[2026-08-02T05:23:47Z] HG00436: download attempt 1, resuming from 0/14273715124
+[2026-08-02T07:38:36Z] HG00436: attempt 1 curl exit=0 have=14273715124
+[2026-08-02T07:38:36Z] HG00436: download complete (14273715124 bytes)
+[2026-08-02T07:38:36Z] HG00436: quickcheck PASSED
+[2026-08-02T07:38:36Z] HG00436: configManta exit=1
+[2026-08-02T07:38:36Z] HG00436: CONFIG FAILED, skipping to next sample without deleting CRAM
+[2026-08-02T07:38:36Z] RETRY PASS COMPLETE FOR ALL 4 SAMPLES

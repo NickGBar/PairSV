@@ -1,0 +1,34 @@
+PAIR-SV Train15 article package -- targeted correction pass
+
+Main manuscript
+- PAIR_SV_Train15_article_draft.tex (SHA-256 c672212764f172f42bf0008a4ced69ca1b61c20f019456f07984b83eff9c1e49)
+- PAIR_SV_Train15_article_draft.pdf (6 pages; SHA-256 d35f0efe2ef68d7d329dee4dc09eb58e341b87f2474c4058c86c95a9a37ed453)
+- PAIR_SV_Train15_article_draft.md (companion text, figures, all four tables and 11 references)
+
+Supplement
+- PAIR_SV_Train15_supplementary.tex (SHA-256 f41da65fb2c44f15fdb411882ac03f82426044ea29e1f0f9568bde011f961603)
+- PAIR_SV_Train15_supplementary.pdf (3 pages; SHA-256 976436f19b61349cba4c46bad1730f4e4354b3592d590721091293e72ef9f288)
+- PAIR_SV_Train15_supplementary.md
+
+Companion material
+- PAIR_SV_plain_summary_ru.md (expanded Russian 1--2 page summary)
+- references.bib (SHA-256 552126e05e7fae58a37a63f9775a05b9ca57161d800e52593d1dfc6c57cc7421)
+- build.log
+- final_audit.md
+
+Original artifact-derived figures (each supplied as PDF, PNG and SVG)
+- figures/figure1_same_site_design.*
+- figures/figure2_pairsv_architecture.*
+- figures/figure3_representative_pileups.*
+- figures/figure4_metrics_bootstrap.*
+- figures/figure5_zero_ablations.*
+
+Page previews
+- rendered_pages/page-1.png through rendered_pages/page-6.png
+- rendered_supplementary_pages/page-1.png through rendered_supplementary_pages/page-3.png
+
+Authoritative numerical sources
+- ../reports/pairsv_train15_main_metrics.csv
+- ../reports/pairsv_train15_bootstrap.csv
+- ../reports/pairsv_train15_ablations.csv
+- ../reports/pairsv_train15_subgroup_metrics.csv

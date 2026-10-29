@@ -1,0 +1,70 @@
+# Operating-system and editor files
+.DS_Store
+**/.DS_Store
+*.swp
+*.swo
+
+# Python caches and local environments
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node (presentation builder)
+node_modules/
+
+# Credentials and local environment configuration
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+*.p12
+
+# Large upstream inputs and locally generated data
+/raw/
+/data/
+/models/
+*.bam
+*.bai
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+*.tbi
+*.fasta
+*.fa
+*.fai
+
+# Sample-level artifacts kept in private storage, reproducible from the
+# committed manifests/builders and public sources (see README, paper 1 §17)
+paper2_conformal/raw_cohort_predictions/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+sample_candidate_manifest.tsv
+candidate_catalog.tsv
+
+# Pipeline data regenerated on the cluster, not versioned
+manta_poc/local_slices/
+manta_poc/reference/
+manta_poc/results/
+manta_poc/truvari_gate2/
+
+# LaTeX and notebook intermediates (final PDFs and sources are kept)
+.ipynb_checkpoints/
+paper/build/
+build/
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz

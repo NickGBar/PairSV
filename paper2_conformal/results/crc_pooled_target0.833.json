@@ -1,0 +1,84 @@
+{
+  "poc": {
+    "source": "poc",
+    "source_file": "person_level_scores__poc.json",
+    "n_people": 5,
+    "target_recall": 0.833,
+    "by_model": {
+      "M0": {
+        "status": "OK",
+        "N": 5,
+        "target_recall": 0.833,
+        "alpha": 0.16700000000000004,
+        "max_guaranteed_recall": 0.8333333333333334,
+        "threshold": 0.10149955,
+        "achieved_risk_estimate": 0.16694637271147647,
+        "guarantee_statement": "E[1 - recall] <= 0.16700000000000004 in expectation over the randomness of the calibration set (N=5 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      },
+      "M2": {
+        "status": "OK",
+        "N": 5,
+        "target_recall": 0.833,
+        "alpha": 0.16700000000000004,
+        "max_guaranteed_recall": 0.8333333333333334,
+        "threshold": 0.1731143,
+        "achieved_risk_estimate": 0.16694654619167426,
+        "guarantee_statement": "E[1 - recall] <= 0.16700000000000004 in expectation over the randomness of the calibration set (N=5 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      },
+      "M4": {
+        "status": "OK",
+        "N": 5,
+        "target_recall": 0.833,
+        "alpha": 0.16700000000000004,
+        "max_guaranteed_recall": 0.8333333333333334,
+        "threshold": 0.15969946,
+        "achieved_risk_estimate": 0.16694641743221686,
+        "guarantee_statement": "E[1 - recall] <= 0.16700000000000004 in expectation over the randomness of the calibration set (N=5 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      }
+    }
+  },
+  "cohort": {
+    "source": "cohort",
+    "source_file": "person_level_scores__cohort.json",
+    "n_people": 30,
+    "target_recall": 0.833,
+    "by_model": {
+      "M0": {
+        "status": "OK",
+        "N": 30,
+        "target_recall": 0.833,
+        "alpha": 0.16700000000000004,
+        "max_guaranteed_recall": 0.967741935483871,
+        "threshold": 0.89538682,
+        "achieved_risk_estimate": 0.16698399949278,
+        "guarantee_statement": "E[1 - recall] <= 0.16700000000000004 in expectation over the randomness of the calibration set (N=30 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      },
+      "M2": {
+        "status": "OK",
+        "N": 30,
+        "target_recall": 0.833,
+        "alpha": 0.16700000000000004,
+        "max_guaranteed_recall": 0.967741935483871,
+        "threshold": 0.87404714,
+        "achieved_risk_estimate": 0.1669970161652471,
+        "guarantee_statement": "E[1 - recall] <= 0.16700000000000004 in expectation over the randomness of the calibration set (N=30 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      },
+      "M4": {
+        "status": "OK",
+        "N": 30,
+        "target_recall": 0.833,
+        "alpha": 0.16700000000000004,
+        "max_guaranteed_recall": 0.967741935483871,
+        "threshold": 0.89496078,
+        "achieved_risk_estimate": 0.16699802167431274,
+        "guarantee_statement": "E[1 - recall] <= 0.16700000000000004 in expectation over the randomness of the calibration set (N=30 people) and a fresh exchangeable person. This is an average-case guarantee over hypothetical new people, NOT a high-probability/PAC statement about recall on one specific new person (Angelopoulos et al. 2022/2024; Cohen et al. 2024 Theorem 1).",
+        "guarantee_type": "average risk, in expectation"
+      }
+    }
+  }
+}

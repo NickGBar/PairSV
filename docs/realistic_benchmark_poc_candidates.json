@@ -1,0 +1,42 @@
+{
+ "HG01912": {
+  "super_pop": "AFR",
+  "population": "ACB",
+  "cram": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242234/HG01912.final.cram",
+  "cram_reachable": true,
+  "crai_reachable": true,
+  "pangenie_truth_available": true
+ },
+ "HG00736": {
+  "super_pop": "AMR",
+  "population": "PUR",
+  "cram": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3241756/HG00736.final.cram",
+  "cram_reachable": true,
+  "crai_reachable": true,
+  "pangenie_truth_available": true
+ },
+ "HG00436": {
+  "super_pop": "EAS",
+  "population": "CHS",
+  "cram": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3241673/HG00436.final.cram",
+  "cram_reachable": true,
+  "crai_reachable": true,
+  "pangenie_truth_available": true
+ },
+ "HG00108": {
+  "super_pop": "EUR",
+  "population": "GBR",
+  "cram": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3240124/HG00108.final.cram",
+  "cram_reachable": true,
+  "crai_reachable": true,
+  "pangenie_truth_available": true
+ },
+ "HG02601": {
+  "super_pop": "SAS",
+  "population": "PJL",
+  "cram": "https://ftp.sra.ebi.ac.uk/vol1/run/ERR324/ERR3242400/HG02601.final.cram",
+  "cram_reachable": true,
+  "crai_reachable": true,
+  "pangenie_truth_available": true
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "sample": "HG002",
+  "truth_source": "NIST SV v0.6 GRCh37 Tier1 (SECONDARY/sensitivity, mature but incomplete)",
+  "reference_build": "GRCh37/hs37d5",
+  "pooled_with_v5.0q": false,
+  "total_manta_pass_del": 5385,
+  "class_counts": {
+    "excluded_outside_or_crossing_benchmark_bed": 2145,
+    "positive": 3008,
+    "known_negative": 232
+  },
+  "sanity_sum_check": true,
+  "truvari_params_used": "project-frozen params (refdist=500), NOT the v0.6 README's own suggested -r 2000 -- documented consistency choice"
+}

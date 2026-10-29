@@ -1,0 +1,618 @@
+{
+  "0.95": {
+    "target_recall": 0.95,
+    "by_model": {
+      "M0": {
+        "folds": [
+          {
+            "held_out_person": "HG00108",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.6999435,
+              "held_out_recall": 0.9465674670273926,
+              "held_out_specificity": 0.254601226993865,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00436",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.69106348,
+              "held_out_recall": 0.9587874659400545,
+              "held_out_specificity": 0.19596541786743515,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00736",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.69572184,
+              "held_out_recall": 0.9514431239388794,
+              "held_out_specificity": 0.24,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG01912",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.69850822,
+              "held_out_recall": 0.9488542012620392,
+              "held_out_specificity": 0.1971383147853736,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG02601",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.70116492,
+              "held_out_recall": 0.9444811632518176,
+              "held_out_specificity": 0.24188790560471976,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          }
+        ],
+        "summary": {
+          "old_heuristic_folds_meeting_target": "2/5",
+          "new_crc_folds_meeting_target": "5/5",
+          "new_crc_folds_feasible": "0/5",
+          "old_heuristic_mean_specificity": 0.2259185730502787,
+          "new_crc_mean_specificity": 0.0
+        }
+      },
+      "M2": {
+        "folds": [
+          {
+            "held_out_person": "HG00108",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.69800866,
+              "held_out_recall": 0.9458911058505242,
+              "held_out_specificity": 0.2607361963190184,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00436",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.68824784,
+              "held_out_recall": 0.9587874659400545,
+              "held_out_specificity": 0.2017291066282421,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00736",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.69731216,
+              "held_out_recall": 0.9480475382003396,
+              "held_out_specificity": 0.264,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG01912",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.69573432,
+              "held_out_recall": 0.9498505479907008,
+              "held_out_specificity": 0.1987281399046105,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG02601",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.69643325,
+              "held_out_recall": 0.9491077329808327,
+              "held_out_specificity": 0.2182890855457227,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          }
+        ],
+        "summary": {
+          "old_heuristic_folds_meeting_target": "1/5",
+          "new_crc_folds_meeting_target": "5/5",
+          "new_crc_folds_feasible": "0/5",
+          "old_heuristic_mean_specificity": 0.22869650567951877,
+          "new_crc_mean_specificity": 0.0
+        }
+      },
+      "M4": {
+        "folds": [
+          {
+            "held_out_person": "HG00108",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.73385408,
+              "held_out_recall": 0.944200202908353,
+              "held_out_specificity": 0.2668711656441718,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00436",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.72508287,
+              "held_out_recall": 0.9601498637602179,
+              "held_out_specificity": 0.1930835734870317,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00736",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.7327745,
+              "held_out_recall": 0.9456706281833617,
+              "held_out_specificity": 0.25333333333333335,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG01912",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.73082024,
+              "held_out_recall": 0.9485220856858186,
+              "held_out_specificity": 0.18441971383147854,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG02601",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.73064901,
+              "held_out_recall": 0.949438202247191,
+              "held_out_specificity": 0.24778761061946902,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": false,
+              "threshold": null,
+              "held_out_recall": 1.0,
+              "held_out_specificity": 0.0,
+              "met_target": true
+            }
+          }
+        ],
+        "summary": {
+          "old_heuristic_folds_meeting_target": "1/5",
+          "new_crc_folds_meeting_target": "5/5",
+          "new_crc_folds_feasible": "0/5",
+          "old_heuristic_mean_specificity": 0.22909907938309687,
+          "new_crc_mean_specificity": 0.0
+        }
+      }
+    }
+  },
+  "0.75": {
+    "target_recall": 0.75,
+    "by_model": {
+      "M0": {
+        "folds": [
+          {
+            "held_out_person": "HG00108",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96406831,
+              "held_out_recall": 0.747717281028069,
+              "held_out_specificity": 0.6411042944785276,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.74579104,
+              "held_out_recall": 0.9306729793709841,
+              "held_out_specificity": 0.3006134969325153,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00436",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96283545,
+              "held_out_recall": 0.771117166212534,
+              "held_out_specificity": 0.6512968299711815,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.73552758,
+              "held_out_recall": 0.9475476839237057,
+              "held_out_specificity": 0.23631123919308358,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00736",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96481101,
+              "held_out_recall": 0.733446519524618,
+              "held_out_specificity": 0.6453333333333333,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.74348674,
+              "held_out_recall": 0.9358234295415959,
+              "held_out_specificity": 0.30133333333333334,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG01912",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96363211,
+              "held_out_recall": 0.7562271670541348,
+              "held_out_specificity": 0.5325914149443561,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.7432129,
+              "held_out_recall": 0.9368980405181003,
+              "held_out_specificity": 0.2384737678855326,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG02601",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96453341,
+              "held_out_recall": 0.7389292795769994,
+              "held_out_specificity": 0.6194690265486725,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.74348674,
+              "held_out_recall": 0.9358889623265036,
+              "held_out_specificity": 0.26843657817109146,
+              "met_target": true
+            }
+          }
+        ],
+        "summary": {
+          "old_heuristic_folds_meeting_target": "2/5",
+          "new_crc_folds_meeting_target": "5/5",
+          "new_crc_folds_feasible": "5/5",
+          "old_heuristic_mean_specificity": 0.6179589798552143,
+          "new_crc_mean_specificity": 0.26903368310311127
+        }
+      },
+      "M2": {
+        "folds": [
+          {
+            "held_out_person": "HG00108",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.95308554,
+              "held_out_recall": 0.7497463645586744,
+              "held_out_specificity": 0.6165644171779141,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.73676141,
+              "held_out_recall": 0.9323638823131553,
+              "held_out_specificity": 0.29141104294478526,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00436",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.95217691,
+              "held_out_recall": 0.7683923705722071,
+              "held_out_specificity": 0.6282420749279539,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.73186233,
+              "held_out_recall": 0.9451634877384196,
+              "held_out_specificity": 0.2622478386167147,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00736",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.95443718,
+              "held_out_recall": 0.735144312393888,
+              "held_out_specificity": 0.6266666666666667,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.73524378,
+              "held_out_recall": 0.9358234295415959,
+              "held_out_specificity": 0.288,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG01912",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.95270004,
+              "held_out_recall": 0.7578877449352375,
+              "held_out_specificity": 0.5310015898251192,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.73402317,
+              "held_out_recall": 0.9392228495516439,
+              "held_out_specificity": 0.23370429252782193,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG02601",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.95424499,
+              "held_out_recall": 0.7382683410442828,
+              "held_out_specificity": 0.5958702064896755,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.7365732,
+              "held_out_recall": 0.9339061467283543,
+              "held_out_specificity": 0.26548672566371684,
+              "met_target": true
+            }
+          }
+        ],
+        "summary": {
+          "old_heuristic_folds_meeting_target": "2/5",
+          "new_crc_folds_meeting_target": "5/5",
+          "new_crc_folds_feasible": "5/5",
+          "old_heuristic_mean_specificity": 0.599668991017466,
+          "new_crc_mean_specificity": 0.26816997995060776
+        }
+      },
+      "M4": {
+        "folds": [
+          {
+            "held_out_person": "HG00108",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96017365,
+              "held_out_recall": 0.7473791004396347,
+              "held_out_specificity": 0.6809815950920245,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.76839429,
+              "held_out_recall": 0.9337166046668921,
+              "held_out_specificity": 0.29141104294478526,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00436",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.95904239,
+              "held_out_recall": 0.7680517711171662,
+              "held_out_specificity": 0.6685878962536023,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.75806705,
+              "held_out_recall": 0.9509536784741145,
+              "held_out_specificity": 0.2478386167146974,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG00736",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96016043,
+              "held_out_recall": 0.7480475382003395,
+              "held_out_specificity": 0.6746666666666666,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.76684994,
+              "held_out_recall": 0.9354838709677419,
+              "held_out_specificity": 0.2906666666666667,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG01912",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.95964565,
+              "held_out_recall": 0.757555629359017,
+              "held_out_specificity": 0.5437201907790143,
+              "met_target": true
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.76866289,
+              "held_out_recall": 0.9332447691796745,
+              "held_out_specificity": 0.21144674085850557,
+              "met_target": true
+            }
+          },
+          {
+            "held_out_person": "HG02601",
+            "n_calibration_people": 4,
+            "max_guaranteed_recall_at_this_N": 0.8,
+            "old_heuristic": {
+              "threshold": 0.96128768,
+              "held_out_recall": 0.7293456708526107,
+              "held_out_specificity": 0.6460176991150443,
+              "met_target": false
+            },
+            "new_crc": {
+              "feasible": true,
+              "threshold": 0.76711496,
+              "held_out_recall": 0.934897554527429,
+              "held_out_specificity": 0.2861356932153392,
+              "met_target": true
+            }
+          }
+        ],
+        "summary": {
+          "old_heuristic_folds_meeting_target": "2/5",
+          "new_crc_folds_meeting_target": "5/5",
+          "new_crc_folds_feasible": "5/5",
+          "old_heuristic_mean_specificity": 0.6427948095812703,
+          "new_crc_mean_specificity": 0.26549975207999876
+        }
+      }
+    }
+  }
+}

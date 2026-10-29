@@ -1,0 +1,2 @@
+strict_manifest_rows,planned_people,controlled_people,train_successful,validation_successful,validation_failure_rate,label_design,refalt_embedding_dim,read_embedding_dim,scalar_features,internal_test_accessed
+100000,40 train / 5 val / 5 internal test,15 train / 5 val,29924,9981,0.0019,same-site GT 0/0 negatives,1280,768,17,False

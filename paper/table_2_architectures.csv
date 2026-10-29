@@ -1,0 +1,4 @@
+model,pileup_images,refalt,read_embeddings,scalars,parameters
+M0,yes,no,no,no,287618
+M2,yes,no,no,yes,323110
+M4,yes,yes,yes,yes,622374

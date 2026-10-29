@@ -1,0 +1,6 @@
+claim,evidence,artifact
+Controlled cohort size,"29,924 train and 9,981 validation successful rows",kaggle/deepsv-ms-train15-controlled/output-v1/pairsv_train15_controlled_predictions.csv
+M0/M2/M4 metrics,controlled selected metrics,reports/pairsv_train15_main_metrics.csv
+Bootstrap intervals,"1,000 paired row resamples",reports/pairsv_train15_bootstrap.csv
+M4 branch interventions,zero/shuffle results,reports/pairsv_train15_ablations.csv
+No internal test,kernel inputs and tracker,multisample_progress.md

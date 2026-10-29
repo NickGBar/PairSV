@@ -1,0 +1,1381 @@
+{
+  "manifest_version": "COHORT_30_PRE_EVALUATION_FROZEN_v1",
+  "purpose": "Frozen state of the untouched 30-person external cohort immediately BEFORE its single one-shot evaluation. Every input to that evaluation is checksummed here so that no label, threshold, metric definition, subgroup definition or sample-inclusion decision can be altered after any result is seen.",
+  "evaluation_status": "NOT_YET_RUN -- no cohort metric has been computed or inspected",
+  "final_sample_inclusion": {
+    "n_included": 30,
+    "included_samples": [
+      "HG00109",
+      "HG00110",
+      "HG00111",
+      "HG00112",
+      "HG00113",
+      "HG00114",
+      "HG00442",
+      "HG00445",
+      "HG00448",
+      "HG00451",
+      "HG00457",
+      "HG00463",
+      "HG00739",
+      "HG00742",
+      "HG01048",
+      "HG01051",
+      "HG01054",
+      "HG01058",
+      "HG01914",
+      "HG01958",
+      "HG01985",
+      "HG01988",
+      "HG01990",
+      "HG02009",
+      "HG02603",
+      "HG02648",
+      "HG02651",
+      "HG02654",
+      "HG02657",
+      "HG02660"
+    ],
+    "n_excluded": 0,
+    "excluded_samples": [],
+    "exclusion_note": "All 30 originally selected people completed the full technical pipeline. No person was dropped and no overflow-pool replacement was triggered.",
+    "per_superpopulation": {
+      "AFR": [
+        "HG01914",
+        "HG01958",
+        "HG01985",
+        "HG01988",
+        "HG01990",
+        "HG02009"
+      ],
+      "AMR": [
+        "HG00739",
+        "HG00742",
+        "HG01048",
+        "HG01051",
+        "HG01054",
+        "HG01058"
+      ],
+      "EAS": [
+        "HG00442",
+        "HG00445",
+        "HG00448",
+        "HG00451",
+        "HG00457",
+        "HG00463"
+      ],
+      "EUR": [
+        "HG00109",
+        "HG00110",
+        "HG00111",
+        "HG00112",
+        "HG00113",
+        "HG00114"
+      ],
+      "SAS": [
+        "HG02603",
+        "HG02648",
+        "HG02651",
+        "HG02654",
+        "HG02657",
+        "HG02660"
+      ]
+    }
+  },
+  "cohort_totals": {
+    "total_confidently_labelled_candidates": 103481,
+    "total_unknown_candidates_never_used_as_negatives": 30740,
+    "total_extraction_failures": 128
+  },
+  "frozen_evaluation_script": {
+    "path": "manta_poc/cohort_evaluate.py",
+    "sha256": "6c9afb37c0822ab31fd0bf2964e5d0eb878fe2eea042347f122cb3d49b1edac9",
+    "note": "Checksummed before first execution; run exactly once."
+  },
+  "frozen_selection_manifest": {
+    "path": "manta_poc/multicohort_30_selection_manifest.json",
+    "sha256": "0eae0cb0931b9c2c278ea04d41653169eee9b7db1a53629f2c7d4121d9a77a52"
+  },
+  "frozen_deployment_thresholds": {
+    "path": "manta_poc/truvari_gate2/phase_f/phaseF_deployment_thresholds_FROZEN.json",
+    "sha256": "5fc0b343b3f439ed51ee5645b86fc2a35e3302003bfae22268be2ff0c1c435e5",
+    "values": {
+      "M0": 0.697741,
+      "M2": 0.695706,
+      "M4": 0.73054
+    },
+    "note": "Calibrated once on the 5-person POC in Week 1; applied here unmodified."
+  },
+  "frozen_metric_definitions": {
+    "primary_aggregation": "per-person metrics macro-averaged over the 30 independent people; candidate rows are never treated as independent samples",
+    "primary_metrics": [
+      "recall at frozen deployment threshold",
+      "specificity",
+      "fraction of Known-negative candidates removed",
+      "transfer of the intended ~95% recall operating point"
+    ],
+    "secondary_metrics": [
+      "precision",
+      "f1",
+      "balanced_accuracy",
+      "mcc",
+      "roc_auc",
+      "pr_auc",
+      "filtered_candidate_rate",
+      "extraction_failure_rate",
+      "unknown_fraction",
+      "accept_all_manta_baseline"
+    ],
+    "models_reported": [
+      "M0",
+      "M2",
+      "M4"
+    ],
+    "model_selection_rule": "No post-hoc model selection. M4 remains the predefined primary model and M0/M2 the mandatory baselines regardless of outcome.",
+    "unknown_handling": "Unknown candidates are never converted into negatives and never enter any supervised metric; they are counted and reported separately."
+  },
+  "frozen_subgroup_definitions": {
+    "length_buckets": [
+      [
+        "50-200bp_primary",
+        50,
+        200
+      ],
+      [
+        "200-1000bp_secondary",
+        200,
+        1000
+      ],
+      [
+        "1000-10000bp_exploratory",
+        1000,
+        10000
+      ]
+    ],
+    "breakpoint_error_buckets": [
+      [
+        "exact_0bp",
+        0,
+        0
+      ],
+      [
+        "1-10bp",
+        1,
+        10
+      ],
+      [
+        "11-50bp",
+        11,
+        50
+      ],
+      [
+        "51-100bp",
+        51,
+        100
+      ],
+      [
+        ">100bp",
+        101,
+        "inf"
+      ]
+    ],
+    "superpopulations": [
+      "AFR",
+      "AMR",
+      "EAS",
+      "EUR",
+      "SAS"
+    ]
+  },
+  "frozen_pipeline_scripts": {
+    "run_manta_cohort_parallel.sbatch_v5": "95a287dbe9503af66718500ef87f23480c50984b64d12dcd8aa21cb15c3d91dd",
+    "run_manta_cohort_parallel.sbatch_v4_PRESERVED": "f076373377287ac5987fa592dcb556cd2a2fcb5725a7ff478867f7c56dfbca7a",
+    "gate2_pipeline.py": "9270c415bec4583f744ec1ed98621b0772c19786c9984a018336b55d2f6919c0",
+    "gate3_manifest_and_extract.py": "72aa9788111737538aaffddd01c805a80ff58e99b9cbe820c21c66cb73b4b606",
+    "embed_pairsv_refalt.py": "18569e68ade3b132b5820ba222bb51dc5104cc9e569fcc03cc5b8f852dd7aec1",
+    "embed_pairsv_reads.py": "413d6cdb911305c00c6f2e5a77c0a78b131c15053a643123ed126c02ef517aa4",
+    "cohort_score_ensemble.py": "6cd316b1f3b51653f91d38b71938018ce7a91d5a49a8822bb4107ee322a9ab0a"
+  },
+  "environment": {
+    "torch": "2.5.1+cu121",
+    "transformers": "5.4.0",
+    "pysam": "0.23.3",
+    "h5py": "3.16.0",
+    "sklearn": "1.7.2",
+    "truvari": "5.4.0",
+    "samtools": "1.9",
+    "manta_container_digest": "sha256:48d0c2464fa0129935438c5cddec5f67c4b3d65e8f7a647f95164ee51662cc70"
+  },
+  "per_sample": {
+    "HG00109": {
+      "superpopulation": "EUR",
+      "gate2_class_counts": {
+        "positive": 2990,
+        "unknown": 942,
+        "known_negative": 335,
+        "excluded_size_gt50kb": 65
+      },
+      "total_manta_pass_del": 4332,
+      "labeled_for_M0_M2_M4": 3325,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4267,
+      "n_eligible_for_extraction": 4189,
+      "n_extraction_failures": 6,
+      "n_candidates_scored_per_model": 4183,
+      "gate2_classification_report_sha256": "57e0854ca6abbc14973435b9b22f9227f5ce0019a54e212ab93f59513a0f78ec",
+      "gate3_candidate_manifest_sha256": "a9024ce47e0ed57caa1b5ead7fb56e75656eb3c4dd9787404b8b85a5f6aa507f",
+      "shard_sha256": "a609d251e610ff156bacc7aeb369219262cff879e56b83fbefdf32ef862dc3e4",
+      "predictions_ensembled_sha256": "47caf5404fd419fec3421baeb1675c0ce3de65409c2d986778c797b3dec30437",
+      "predictions_per_seed_sha256": "57fc7c48dbf00572fb5f2d31eb9ddd0e404ad540bbf60339244eb2ccb0a0d7bb",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "8de48abade81c831bb998ccebfb57c60d7d35705ba5eb6c2285209dc323f3691",
+          "fp.vcf.gz": "b46fa67d171d3dc6dcadda6a02f559306d0cc336e7d69b073938eb0b0f5bbe71",
+          "params.json": "c61f43627ae4053573dc45e638b01ab84ef6fd7e8ea7da2da80210362202ca62",
+          "summary.json": "9775f68da25f02547b742299159fbf82a055b50f09aa4db840bcdb1e36e93898",
+          "tp-base.vcf.gz": "5be2b6d33946d7836c268597aa565f8403ab0bc5219b1f08bdb5a533c654917c",
+          "tp-comp.vcf.gz": "d70d56ab1b1fe68ebc420b7d493251d546f2feae97bcfc999bbe3b7e82695f79"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "3c20ec0ec6baac58fffb93dccacd4307e80bdc06dab96f619203e718ed3cf054",
+          "fp.vcf.gz": "c6c46d4260bebfe6afea8b8f57ee25b19a2ea7af92d1e740fcb0a24ed3125f8c",
+          "params.json": "5a5e9583988d4421f5764a3feb0149cecc34ba877418fe798b20950198118f9c",
+          "summary.json": "056f7df1f3eb432562e5c74eaf0c2c2f6542b8a245faa02e96b1b5a1bfeab029",
+          "tp-base.vcf.gz": "ae6db238db9c9da0e9a8154bd2aa93a047f238a67a2813c592213d8cbcd572f7",
+          "tp-comp.vcf.gz": "e011b15a67144c3c5354dff8c536f1addc2afc89d824a1e5b2ffa218c47b1593"
+        }
+      }
+    },
+    "HG00110": {
+      "superpopulation": "EUR",
+      "gate2_class_counts": {
+        "positive": 2969,
+        "unknown": 918,
+        "known_negative": 332,
+        "excluded_size_gt50kb": 57
+      },
+      "total_manta_pass_del": 4276,
+      "labeled_for_M0_M2_M4": 3301,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4219,
+      "n_eligible_for_extraction": 4152,
+      "n_extraction_failures": 6,
+      "n_candidates_scored_per_model": 4146,
+      "gate2_classification_report_sha256": "76d013b6c56a1518a5d6e9d15d01f06e937f59f9d62c62d484e316ca2b5ad899",
+      "gate3_candidate_manifest_sha256": "2363a187a393dfab2af51741930f8d9ec01e11455cccf6fca5f3eb94fe1bae56",
+      "shard_sha256": "79450e401dc26c0e2c961efe17eaa436bcdab4b103d5415f05bf0127b26b0897",
+      "predictions_ensembled_sha256": "c01c16729cdc4375bf5a3d6479896be05f2d530f5c33e7df993c782ac0146aff",
+      "predictions_per_seed_sha256": "b4ec0ec1f16d2f14697d856420a31092d32660ef8fefc193ceb48c25560b29c7",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "8a7ffafc683ae56ef7520280c850d92467c6b5de5f4afd97c72c278ad5161a75",
+          "fp.vcf.gz": "bd5f091cb6571e8a0c0bf20d5ad6ab6b3e4ac0fbabd53358e04a65061355c5e7",
+          "params.json": "7e24c46ed7f9e279c5c11c5d4f3026dcc10886921708a85f3609ea92fee73c37",
+          "summary.json": "411ff34fb3e1797a6fd4a69edb3ef7aab80454740d2726dda03cd97d14cbfbcd",
+          "tp-base.vcf.gz": "a2da58c60d5942a7c220cb69078cc941a4536e7080898382d76cd3b5cdd29d5d",
+          "tp-comp.vcf.gz": "083385973b86939f0d3004d07ffb27948d5c61b6f8e2340eceadc98b745a65e7"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "56221b440dfa7d1f4f482bc00604945384014b3c9f15293495480fb151c573ce",
+          "fp.vcf.gz": "6f1a5e8f2cc1bee680d33f7b5d643be7f70ed5b4eaf97d53cab86e13a26219d5",
+          "params.json": "7b5e8652e5032beaf4ad7f6dfa443cb80f0f26cd32544ed15be9262497fe43e5",
+          "summary.json": "367ba7c8c3454904da9e1b76b2f5ebccbe3e50b3308ecbb7eab8ccb83329790b",
+          "tp-base.vcf.gz": "8ae20654892b2e242a4446807b055971ba0c4b72e64258a11d11cd7bdae6c95e",
+          "tp-comp.vcf.gz": "05c2aa1fd77df83a62882d84a4e472c80f690466fdbac0f0e9d611d0cc3f2fe9"
+        }
+      }
+    },
+    "HG00111": {
+      "superpopulation": "EUR",
+      "gate2_class_counts": {
+        "positive": 3008,
+        "unknown": 869,
+        "known_negative": 324,
+        "excluded_size_gt50kb": 68
+      },
+      "total_manta_pass_del": 4269,
+      "labeled_for_M0_M2_M4": 3332,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4201,
+      "n_eligible_for_extraction": 4137,
+      "n_extraction_failures": 4,
+      "n_candidates_scored_per_model": 4133,
+      "gate2_classification_report_sha256": "20650fe858006cb95eedd1665f27634d44cdf24b161bf2cfd515acd2dbc36ceb",
+      "gate3_candidate_manifest_sha256": "8d44673405114c0f827ec6c433e75c2d1c0b5cf315f26c395f9d5641ffd30056",
+      "shard_sha256": "7890db8819c7c42b7c423950542f0f4e387fefc954106be7fae7aecb9f75a25b",
+      "predictions_ensembled_sha256": "594fc88201eaa6ff4beb6e4e1dd91fbd9704ff5adde1a263f792be1d7ff8b476",
+      "predictions_per_seed_sha256": "735b3c18e8e994d4ddc0f873f8da5ec9e97ed7b7e299ddaa505cc5c1c2efa1e1",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "68abd6372e9c1a2ec8851002e08194e8ba73370e5fc0eb3216db9bc53eb37bbf",
+          "fp.vcf.gz": "20d9543b5121eeb19e29fd670233b651bd950aceae90430532c6f5079f9d2866",
+          "params.json": "92b60564ee8b5524aa047a8fbce0413c09303e7a5741d4f09115cf964d3c7c43",
+          "summary.json": "84364104474d66fc475079bea4f858ba5c9a92186cb4795cf80f92d6f0737e0d",
+          "tp-base.vcf.gz": "4f6e5c7f2ce5f8a521a50b7c4a780f65d4509fe636d17a94bfcc6a065c2c6f75",
+          "tp-comp.vcf.gz": "15bc05b45f0a948a6573da3789b7f9659b662543fe8ceaa8c75a6e027f11706f"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "206c0a32b710644ed7e4bb219f5d8c2cc3c8eefb721f901bee2bffb7480f8453",
+          "fp.vcf.gz": "bca9da1d8fccd9e4181d87a137139f76c5d65298e126b16e7f1488753806f44b",
+          "params.json": "925a76a6d6f073f413319f06a0c576fdeec938f9fd1350b426447b98b70fded0",
+          "summary.json": "4c00ee83fe4b425834cb02c1d6e8a328a0b6c3a2aff8a38a98745c5bdd18eba7",
+          "tp-base.vcf.gz": "40becc8a66679d3e83a67e078e7568bf513ebe63581ad06abfd0fc9291472a78",
+          "tp-comp.vcf.gz": "13c3260e0fc863bb7cc9d4cea695a931ee96bec9ae3cdaf2dcd82d0bac3cbc84"
+        }
+      }
+    },
+    "HG00112": {
+      "superpopulation": "EUR",
+      "gate2_class_counts": {
+        "positive": 3018,
+        "unknown": 871,
+        "known_negative": 362,
+        "excluded_size_gt50kb": 68
+      },
+      "total_manta_pass_del": 4319,
+      "labeled_for_M0_M2_M4": 3380,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4251,
+      "n_eligible_for_extraction": 4174,
+      "n_extraction_failures": 7,
+      "n_candidates_scored_per_model": 4167,
+      "gate2_classification_report_sha256": "7756877dc6dc617afddf5e93865940073d5a1c10888f53a29dc456bc6d3bb8d9",
+      "gate3_candidate_manifest_sha256": "e9012c1a0500c983e551db86481e586f6486dc90a548d24d499c8007b7235ee1",
+      "shard_sha256": "012e42af87a72e34fdc724ac955954221f9692f6c1640771ce3615f1f60c7e13",
+      "predictions_ensembled_sha256": "97ac65c1a98e9e469a043bd3469d195f25a98a51b854ff1a6fb0da9c1242cea0",
+      "predictions_per_seed_sha256": "387963fdcd134a6c9892c79c2fffe0b54f2f35a444e69c3752e80bc04761b85d",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "45772c17bcc5a2f6772542a77ace5ed8fbb0a7df6cbdcd6ab67a773eeee63a76",
+          "fp.vcf.gz": "0f75031d2a4a26e55129a3c0a39b18b1cd8f28d5443f6636374cd5a49a45b3c8",
+          "params.json": "a05a24d22385d2abfc76bf8117b63c90ef6080f7291b1e26781c79deb868205b",
+          "summary.json": "5d1840dc53674ba9c67e582a6c5ad94f7c24aee2334f0f6ccbf058432e2939e6",
+          "tp-base.vcf.gz": "d9d29d5ad3d6b2c07f67852a9547c1d3c7a6723a18721f768b04f46eab290ec5",
+          "tp-comp.vcf.gz": "e76cac4d4ebd1b1e7e4d33d04b2d12cad50f1dd080e5f508971e3c9aacd9ae54"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "50c70eb2ee8f4c8f0959a87a680de79b5930c9537f87e03ce9cf5ebe0d30ee35",
+          "fp.vcf.gz": "b1b8bef88b091d02eeef93ed99b873c0a9ed0e27799bef98623700b692da91cc",
+          "params.json": "dd5a04e9531f950b268315741f2c5d960497bb73893b82640615cb151f93b72d",
+          "summary.json": "34017f9ad9e00f11e8c65cff0be858594d9ef92d23acb863e8646be690a55640",
+          "tp-base.vcf.gz": "906988524b56a2b4dd5132e93e469962ddda7f43e25111a6386f0a1603c4e401",
+          "tp-comp.vcf.gz": "a1979c11844be0ab5e46c799bc0d184473aa2163353aa097272b02fa33abd696"
+        }
+      }
+    },
+    "HG00113": {
+      "superpopulation": "EUR",
+      "gate2_class_counts": {
+        "positive": 2928,
+        "unknown": 898,
+        "known_negative": 346,
+        "excluded_size_gt50kb": 55
+      },
+      "total_manta_pass_del": 4227,
+      "labeled_for_M0_M2_M4": 3274,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4172,
+      "n_eligible_for_extraction": 4112,
+      "n_extraction_failures": 1,
+      "n_candidates_scored_per_model": 4111,
+      "gate2_classification_report_sha256": "af803a052064dfe14f12f68835a14439c6b0ae52642efb91f568dd048627ff24",
+      "gate3_candidate_manifest_sha256": "db8a078bde02f20081fbeab6343b8293955de0bf3cae8232306da6a56f99fcda",
+      "shard_sha256": "40d5e589b9661f11577a4bafc6b214554bf79847ca4fba1e3adf29cf3dc4a5ef",
+      "predictions_ensembled_sha256": "a770b356e28e2327ed6ad398c66761a832307d5af558d608936161dcda76d01a",
+      "predictions_per_seed_sha256": "80447102fa04be0fa99bc5ec5113cbe4cbcf12fc34b48369886b2f05feadaa5c",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "f21e6e2006f7c4651c87f06dd017416d717682ef5b2c31212268383b59dfdfce",
+          "fp.vcf.gz": "e9edc99d189e4ffe56f1a38d921102700b88586283000b1ac1a5f9ae87d6c6ae",
+          "params.json": "67fd9b168127112ea062298870b3dde15140d4d30e23eddf9b03374f18506bf3",
+          "summary.json": "3282b7e6aa71fcc55934d4e717e1e0a7fcf0d960a9427beee03e5ad18e7cfb1f",
+          "tp-base.vcf.gz": "a60eab7e327d9b6c2af9c22eadede964d144d23126b56dae8c58578d3778c17f",
+          "tp-comp.vcf.gz": "77a0dc4a37d8a96995295446a679e730bfa92c185d006391f42abd84835c4505"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "afa720633d972b901e7ae38f7b0378f24b5a772372a7fc19e7dd5ba98bda7cfa",
+          "fp.vcf.gz": "b2fbfefe81c84c1a47f16007f302eb6711a890c868cc90119a9bf150c24274f6",
+          "params.json": "5ab211b0a0fb94acd5941fbbcf6d6568c45cd437d5921334217353fdd198d419",
+          "summary.json": "e7ebcd653f3d8f8fa571756500f21360299a05da93035a4e55b9a45608afeb09",
+          "tp-base.vcf.gz": "5e429f3c7777f3e8e19c458210998b1f22bd5d075b435886cd0dc77c16a00ce3",
+          "tp-comp.vcf.gz": "5841f39c091ce873c8aac24c1b61ee97b28c896ce266f8a265e738b1f5d5a80a"
+        }
+      }
+    },
+    "HG00114": {
+      "superpopulation": "EUR",
+      "gate2_class_counts": {
+        "positive": 2987,
+        "unknown": 936,
+        "known_negative": 379,
+        "excluded_size_gt50kb": 56
+      },
+      "total_manta_pass_del": 4358,
+      "labeled_for_M0_M2_M4": 3366,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4302,
+      "n_eligible_for_extraction": 4227,
+      "n_extraction_failures": 2,
+      "n_candidates_scored_per_model": 4225,
+      "gate2_classification_report_sha256": "0f004ec81dd1ef738068b6634401351308d027a016c59409c7ba60b6840cb1b1",
+      "gate3_candidate_manifest_sha256": "b38cfa471c54bf058b325ea6a27559adbeffb69c08017ac5003d6a76e001f347",
+      "shard_sha256": "2e276cc0cc9f585dac4d57d4edb4c6dddafe98926e31fb92317ea20cc79ad8f7",
+      "predictions_ensembled_sha256": "cab35e4da2a4086adcfd11a021840cb691ab17de14179ecc3a21d2b363173f0b",
+      "predictions_per_seed_sha256": "db4015ab41750a6d19b6b01e034d84625d7bf23f35591f1c9a21115365face1e",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "0d9a458b120dbcdc1f283ab54806fdc597a2c5385e92cd43f165c378267147bc",
+          "fp.vcf.gz": "ce68fe8fdd6bdb1a32bac740524032e8c7bfc731aad3f646b168814ddb836c28",
+          "params.json": "37d0ed0af52620eb5e63b0a47c7b6d53480fb671a10eaebe8011590533fe9ab5",
+          "summary.json": "30f906aaf85acdd58f2b0718a8021ea05d15ad1d0c7fc9eb0dd6432f3dfda431",
+          "tp-base.vcf.gz": "953ae5c35798a95a326d9b5d0725b730c2eb3d74093d37163d7ac4cafcffe3ed",
+          "tp-comp.vcf.gz": "257a8b026b9d6fde03008abdd9caf0342252bc5e24ea3545390ccbf8a6bc2889"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "e16d8ab38befb1ae2bad31c59f6793fa1000fb67f26f91c84511b059340c6bfd",
+          "fp.vcf.gz": "47f946a31704512038b2f4c286c59cf3b35c52a2d31aa0fae744814fafe93996",
+          "params.json": "440abb8a1a490edd2a46fe4e766f7e3637a4fa9d1311250d6cbdc37447b1fbf8",
+          "summary.json": "89dbd376a08dd3ef79cd595735057f42f1eb9b2db0b34e0dcea4604280afb925",
+          "tp-base.vcf.gz": "fec1be6bb920cef894ac44a90dad45df960155b8008db9ab5047892432206dc2",
+          "tp-comp.vcf.gz": "ece9f1d693974d94b7a44e29aa8dc8523569fff493d8eb9004a7847dfa53604b"
+        }
+      }
+    },
+    "HG00442": {
+      "superpopulation": "EAS",
+      "gate2_class_counts": {
+        "positive": 3059,
+        "unknown": 924,
+        "known_negative": 352,
+        "excluded_size_gt50kb": 61
+      },
+      "total_manta_pass_del": 4396,
+      "labeled_for_M0_M2_M4": 3411,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4335,
+      "n_eligible_for_extraction": 4270,
+      "n_extraction_failures": 4,
+      "n_candidates_scored_per_model": 4266,
+      "gate2_classification_report_sha256": "18e913505eed8099add526a9f07b2ec7d26cab9ea4dce1a0a604055c977b6b2f",
+      "gate3_candidate_manifest_sha256": "96f063bc7b72cd22499870673fc53bcce7e992ea1f886c2e538bd066799aa86e",
+      "shard_sha256": "ec5753b43b4c4a75cb6e014fcc5661d8d3e278b58a763c5ea7f8d67765b303db",
+      "predictions_ensembled_sha256": "eb0c083ee34e2dbe6c2ee428585ccbfac8e428eff86eae002fb621c63ecc2943",
+      "predictions_per_seed_sha256": "992051ba9435d854cc0294a1a240356789a594a35abf9a0667118fad500dc788",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "976f7e56eaaf7cebdb3318536bb39ec337a1b472e432b49c6342ba4298e84d4b",
+          "fp.vcf.gz": "bb5094a7e86efd44ebe2902e3394309253532b36d0877819219d9b16d18ccd5c",
+          "params.json": "de6561e6e1a82ecadc5647b35ac855f311a20f5fe1cf0f6423e9d19cdb9facc8",
+          "summary.json": "eda8fc0e8570f7ada083bbd5b2de73d834dd5ba74d0dc42abeb2d7d74ae71ecb",
+          "tp-base.vcf.gz": "539a904826f0ff0cc805db2e82b3409e8343abdf9152ca6fd1014f5993bc2bd8",
+          "tp-comp.vcf.gz": "b54310066698f07e5d31fd66d096083fb17bb5bac162f11be37bc5fbc00f8806"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "a3e9a4bf1cbfcf2c5f091eaff48f2ae7bdf283aca793780991235837c972a124",
+          "fp.vcf.gz": "3fb6372e9c8554c778f8d266fe7f7061783f90f6fb53b3c2e34dcf73c64edb67",
+          "params.json": "e608925d6c0b89672b7990b62938d303a117c9f293e63be6653ae2374191aa67",
+          "summary.json": "80047a2ee12a4efa4c01bf24861a2563e92faef9e7c7f4725cf001a30ca8e64e",
+          "tp-base.vcf.gz": "0011f23a386e9aa95a549c89cf09957cc79667fd007800cb4ea21e9e7cdef497",
+          "tp-comp.vcf.gz": "5290910e7939853fc82445129f4c2bf58593ed59d49c1c0d81d5cd3084175f7a"
+        }
+      }
+    },
+    "HG00445": {
+      "superpopulation": "EAS",
+      "gate2_class_counts": {
+        "positive": 3037,
+        "known_negative": 365,
+        "unknown": 994,
+        "excluded_size_gt50kb": 66
+      },
+      "total_manta_pass_del": 4462,
+      "labeled_for_M0_M2_M4": 3402,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4396,
+      "n_eligible_for_extraction": 4324,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4319,
+      "gate2_classification_report_sha256": "6594ccc1d2159faf3b6bc26893522791e02b2c3e08e5c9b92c313f331c27721c",
+      "gate3_candidate_manifest_sha256": "2d94bfe21059686e087713c21b1cf5aec8c31ad0aa1acf09c596dfb4b6710b0c",
+      "shard_sha256": "4df8aa1dafe1e019b212d8d26073a56931088c0b4d3314b86ee033b5a41ea2bf",
+      "predictions_ensembled_sha256": "769c87f372b7f3cb6ffef91572b1095d2f45da4ad3048ec60b2d1410db786343",
+      "predictions_per_seed_sha256": "e15ce444a1832ef6a864e48080eddcf5a1812b1d088c2fe78f0f679f37eff8a6",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "b6c22969644d101dd6856f935741ba6f3ca48e0b9119ba2f365ee1eb40a09b3f",
+          "fp.vcf.gz": "ccaf3df35f8a80e070fd171d4a1490d0cdfeca81ae0f92869c8582001bc3e990",
+          "params.json": "5fb2aa27e9c653dc8daf22cd2645b713ffad6e1066d88352b221eaf08a226c89",
+          "summary.json": "9faeffc9dde95f13948c658459283b0102f8e6f6c11c880dc316ec610db362b7",
+          "tp-base.vcf.gz": "1f7d1aa003e9774a376ecdb874213233150dffb6164e325d024c9c7213f78b0f",
+          "tp-comp.vcf.gz": "fcbd8b54304279166a62e6347372431376d8f14a489530b6a8c70051225ae303"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "b47dc2b00309bca309a449a7227df5ec5e5f26d671d2572c2b5050b1ab872176",
+          "fp.vcf.gz": "8d807e3770fdb9112fec5aa194d27baad7ea787b54abaef42337a06c5a2b7cfe",
+          "params.json": "9a8f7e29c44cced1dc87f63c07f1aa12ba666fedc00333912cb6f408b76907e8",
+          "summary.json": "b32315cf057519b96560656d57984cd3f7707cc2ffab8abc144624c1b82082ac",
+          "tp-base.vcf.gz": "ef68b60f0d9f10fca2cefe031a7fa5468ab8ca7d57b88b2eb9f24b9f976c01be",
+          "tp-comp.vcf.gz": "b819b008751aba3c5d65fcc61d10b7df526fc080bf607d6662550e5a733aa6b8"
+        }
+      }
+    },
+    "HG00448": {
+      "superpopulation": "EAS",
+      "gate2_class_counts": {
+        "positive": 3035,
+        "unknown": 1017,
+        "known_negative": 358,
+        "excluded_size_gt50kb": 64
+      },
+      "total_manta_pass_del": 4474,
+      "labeled_for_M0_M2_M4": 3393,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4410,
+      "n_eligible_for_extraction": 4340,
+      "n_extraction_failures": 4,
+      "n_candidates_scored_per_model": 4336,
+      "gate2_classification_report_sha256": "66c0f5bfc0c5b5a8c206eb5f2087a4f46063e0d8b185e45a997d37621756a643",
+      "gate3_candidate_manifest_sha256": "9a9a499d8b293d7bd887c5fdaa4d14ed5e6f84e0e2d1af02874097ee14ba318e",
+      "shard_sha256": "30d27841d86ab01fbf5dadbda35be4e44e057ef3ab5854483e8399281efac2a8",
+      "predictions_ensembled_sha256": "51a3b36767bf95fa3778db859f0a711c6c92db74d5d629009f76bbb7fdc58be2",
+      "predictions_per_seed_sha256": "c8caa91c65969b19202deefe3b2f6b4c10adc2df39166a350a03efdddced4cf7",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "c3ff96e4942b0e9055dc6e05c92e86d6917a7836e6984330d42c6f252c151a2e",
+          "fp.vcf.gz": "c62a793d59e112dcaca72738784c33ef663a87d027249dabac8065167361f7d0",
+          "params.json": "0dad0dd1975080af644ca839501141b065a341a6b8756254f412708bc7fdf519",
+          "summary.json": "a67fea4fde06aba50c934bc2d8883bd1e13a8c6a1cb064b68ff5daef371297de",
+          "tp-base.vcf.gz": "be34b4e346c185c183d06d209b1404b381b10744d5d3a31bdc89778fcd4aa030",
+          "tp-comp.vcf.gz": "c1d497fa4f9de04bb632432aa79f67e4d5d79fbf5178cbe06f150835b8f99b90"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "ea464bb3c88801c35b4f5d2d93481a9244a4dafee28c976ac080fcbaf1786501",
+          "fp.vcf.gz": "0bce3bff5d01d421da7093955664241be7eb7b6174c8cd913c75a7723e519ad3",
+          "params.json": "dff01749817511af9fd5bd876362ed255eeb77672f25da8803003213109b74f3",
+          "summary.json": "df5019375094426d81ef620f738d8d9ce7656fde03fcdf90e51f7b3e38719f26",
+          "tp-base.vcf.gz": "ed2897a3646c824d918a6e6a638ce25e2cafbc972fa3c668f7428c37a81fc9c2",
+          "tp-comp.vcf.gz": "d57d6932db93221dcd4a30f38d9ab218529320d4193a50424405680da38ac85d"
+        }
+      }
+    },
+    "HG00451": {
+      "superpopulation": "EAS",
+      "gate2_class_counts": {
+        "positive": 3074,
+        "known_negative": 334,
+        "unknown": 902,
+        "excluded_size_gt50kb": 52
+      },
+      "total_manta_pass_del": 4362,
+      "labeled_for_M0_M2_M4": 3408,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4310,
+      "n_eligible_for_extraction": 4258,
+      "n_extraction_failures": 7,
+      "n_candidates_scored_per_model": 4251,
+      "gate2_classification_report_sha256": "deb5f835a1ff1936bb9930f97ddf95303eeb623a70221a4d0fc662d17db0183a",
+      "gate3_candidate_manifest_sha256": "3914406d8ff35ac910c36b3c67ce12ca59b3c87298514eca2874a91ccb53b881",
+      "shard_sha256": "cf82ec4e42fc77b601b632bfd6cc81f5bfa834ee338e84e0a066b8aeea389cd8",
+      "predictions_ensembled_sha256": "f37877ed87b010f8cd4e17719e33894391eb06a390178defd4ccdf9ee34802c8",
+      "predictions_per_seed_sha256": "28960a09d6eba888111e965f4f69d38c2292869bc5bd6a22b08441b7201af779",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "9feb2efbb8e8e9e2fccc830cc30ddb586559fc2cf8ae8d6d1ba6624cccd37ef7",
+          "fp.vcf.gz": "f8448cbb6c31c609aec273b912b8c12855ffed0243e5c697fbea5844169e895a",
+          "params.json": "d4c666ab6f99c9a6213e813e9b7912e1ac70f01e6a589bf8ef3132ba6467a89f",
+          "summary.json": "011be8b20e113d1437b52d7436b3188edda85f3a3019d695d4c93ae7b358d227",
+          "tp-base.vcf.gz": "62c416a11e00e1d15c76a6cdf953cb5ffdb5c02171aa8d665ff4d4b041c010ab",
+          "tp-comp.vcf.gz": "de56f3bfd009e0587b513ae35a0a607b8b78eb02a8de6c72cd07a4655a090206"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "a4608c439d5d56cd37a859a1b89be8cc56331491c14a9e95fd1520e5a0483650",
+          "fp.vcf.gz": "d4831ce4737ac2fd0b2cc121ee0e1ca293c4a02e637022645bf792ab08856075",
+          "params.json": "d8278288751edf038b7dc90fc9d2363873e1a8a96eb3853e8e0d1d31b5220c06",
+          "summary.json": "82f5b96b96fe0dece6a2a70db08228ba02c307fa594b65da0b0d80533b9191c1",
+          "tp-base.vcf.gz": "26439f1a891ab6a6b90aa9da5501b06f7d694490c64e75cd73fb2d3c7a6aac95",
+          "tp-comp.vcf.gz": "0a841d501b050145b3eb6699ce644ea32cb6ba397208a13beb556d932b9c4fa7"
+        }
+      }
+    },
+    "HG00457": {
+      "superpopulation": "EAS",
+      "gate2_class_counts": {
+        "positive": 3013,
+        "unknown": 983,
+        "known_negative": 340,
+        "excluded_size_gt50kb": 53
+      },
+      "total_manta_pass_del": 4389,
+      "labeled_for_M0_M2_M4": 3353,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4336,
+      "n_eligible_for_extraction": 4273,
+      "n_extraction_failures": 7,
+      "n_candidates_scored_per_model": 4266,
+      "gate2_classification_report_sha256": "2d2092c23305a77eb0c1e5abd0c0d4e8ad362073e7ae0ace31b894426b12c064",
+      "gate3_candidate_manifest_sha256": "4215b5f3cab0aa2b60f35e6aa231e6f4374a1ac3f28296f31b3ddd550d492f9e",
+      "shard_sha256": "627056bf5a75cc55b0ece019efebe99452eaa6bb4961c3676c345bffd4c2e2ce",
+      "predictions_ensembled_sha256": "477dec771ada3b975886d12d3a18c05cb7a3d06144a8a57457b1880afba582fd",
+      "predictions_per_seed_sha256": "e1da4598d1ea4f031b074908016efb59043e6109cda68f6eb256fdc44ee4e6e4",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "2c0937f39e81dadbcdaa8098550c4d4beb8d96a913d002dca9da01c644bf4154",
+          "fp.vcf.gz": "ba0bf602984284ee920cd2d21a6fa9ec96dc24563e47ff886528d92d6af578ce",
+          "params.json": "c0d4aa40b876aaabbc1b628c78858806b8a627574d56ce02245fae3983354574",
+          "summary.json": "52f88230b64b66228d6cb54a949c2b96028ef9b732db580278a24b0194a68be1",
+          "tp-base.vcf.gz": "a82fc66e39870ebc2aae6ce94ebbc8582d86a95708b4157fefefa604acd2c921",
+          "tp-comp.vcf.gz": "f3f8fb20915303843c98ce96503efa9e8bf1699c7a9d65b3f3b1a9a5effac548"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "7ffac7b6b49ec86d50b4b618b7fc36155426e12cc379d8ac62f1fc861d724921",
+          "fp.vcf.gz": "fdd356bd7522e002ba90c53e0e205249c7c9655b8b7512887903e1f9014c5fdc",
+          "params.json": "c4687c5540454520917effe8a2f7d655c4fbee9fe1cc0428d4b7a762153fdbc3",
+          "summary.json": "1f7c121aa209cde94bb4e8d2753f6dd90fcf0ea8c1fb5d06b17613a845c8101b",
+          "tp-base.vcf.gz": "8b9b793779d624ddf257d2b533ca896ef9c2ff8d12ef2bc4645199197784becf",
+          "tp-comp.vcf.gz": "37f3f8c72eda33de1008b9e2cbd7afbdac7e31e1052acf7de6c284f528e2ddaa"
+        }
+      }
+    },
+    "HG00463": {
+      "superpopulation": "EAS",
+      "gate2_class_counts": {
+        "positive": 3015,
+        "unknown": 952,
+        "known_negative": 351,
+        "excluded_size_gt50kb": 59
+      },
+      "total_manta_pass_del": 4377,
+      "labeled_for_M0_M2_M4": 3366,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4318,
+      "n_eligible_for_extraction": 4260,
+      "n_extraction_failures": 1,
+      "n_candidates_scored_per_model": 4259,
+      "gate2_classification_report_sha256": "514f121b7aa7086a7cf388447fca5083893966ded3d8a3d8665899ba3ca7c86d",
+      "gate3_candidate_manifest_sha256": "8c603588b53e4ec9cea988e7580eee5b1823f25cd7903ca733a5582023bbade9",
+      "shard_sha256": "e30de44cd1278a264f15cdbd4f2e80bd222aa1ee845c56650dac76eba3480727",
+      "predictions_ensembled_sha256": "a13632d8a6639ab82f4faa8ba33ee38f5556b983660d61b3c1d9130f25cde4c3",
+      "predictions_per_seed_sha256": "67c5d312301fc110f83c40feeab09dfca85e487bbc52fe34481bbbeab5956e5c",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "1e81f02b9c4d99f09594b6d83a80d158160646c7c8f31e3e080a3a8e7ba59086",
+          "fp.vcf.gz": "486e0317d45bfb1045c974b464d6f77add2c6453c7b7e1571c0830f9a9a703c3",
+          "params.json": "01ab27481d2a816df86d6e89425a6468a30de3501974d3b0d0788841167a9ae3",
+          "summary.json": "069c419c2d4acbc66201cb9bcc77d53d08e537307c39b04bc3e8c201f556f083",
+          "tp-base.vcf.gz": "16dfa00f51c09187507e84c5e67b5d1fc38b8f37ded0eb4dc6e8bc66df9389ee",
+          "tp-comp.vcf.gz": "5059a7157fe77db96e5a090a4559bc62a1e04104acb723c3d39d8a79a75cb086"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "4675ccb25f9a61b4fe09c987909127fe9504ed8564ca01a20bcdc72e733dd173",
+          "fp.vcf.gz": "7918105d8c57a465db42a2fd86f4874e8aac41bedaa6eef7e82dabd44cc5d057",
+          "params.json": "764dc041f350090d8540db407674e7657f13e3121bc33471095416961fe44f56",
+          "summary.json": "31d4ceeb3d614114b9de2e351a77d01e2ac9a143097fa29aeb50dd1cc336d7a2",
+          "tp-base.vcf.gz": "3e26f5fad578a62989557b08ebc35725850029ee46ceede0163725468eeed4d7",
+          "tp-comp.vcf.gz": "1214a39944f84bafc0cee68d66c16e640f3afab1d145ccc2a52be39daf295c63"
+        }
+      }
+    },
+    "HG00739": {
+      "superpopulation": "AMR",
+      "gate2_class_counts": {
+        "positive": 3067,
+        "unknown": 898,
+        "known_negative": 346,
+        "excluded_size_gt50kb": 63
+      },
+      "total_manta_pass_del": 4374,
+      "labeled_for_M0_M2_M4": 3413,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4311,
+      "n_eligible_for_extraction": 4244,
+      "n_extraction_failures": 3,
+      "n_candidates_scored_per_model": 4241,
+      "gate2_classification_report_sha256": "e3ca3687a66fc8dabcef04ad035cbbe926397e1079842025a770be3de0a1a0ec",
+      "gate3_candidate_manifest_sha256": "394f3cf6af76da15cf86973f4d467f3a77e15eedd298907d6fdef08fbf30b2c5",
+      "shard_sha256": "34c7378283da4e860d11f9e46629c74b6211acc966b7e16ef59c956621c30163",
+      "predictions_ensembled_sha256": "2ad7380c66bf4e510faf78095c6c0293e29bd713313fa3fa730f634c3bd04439",
+      "predictions_per_seed_sha256": "4b0f6ad609d628512a5838d14b10e05e9d6cf56a37aac642a6e80cdd0e85f9c1",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "b9d187e0beddfea680e280ee59b4ad443f268e21423885b1fbd7f3caebbfe735",
+          "fp.vcf.gz": "f3fc9bd4d0ef6d123d127d9f6074dfc2287453b1880193e9447d721a7a37d0bd",
+          "params.json": "297e36925f45c1c6d733a84876a3a1859d30c349d511655ee53b9986ad8ff0b1",
+          "summary.json": "ab79f1c6cf8b3df3d5672b74e491620b7f682c78b1ee37e09505296eeb6da33d",
+          "tp-base.vcf.gz": "fc6dfe3407326226722cad63282a76ecc236f5c254ce35574e9113e4921ca88f",
+          "tp-comp.vcf.gz": "f81fb72ffdfe4428f130c848f541778e51555c97c7217fbcb27bfb15a5af2b41"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "33a6c7fc29c1021a655d1cb38b478acb3f791bac575bcc69e500998fc4797246",
+          "fp.vcf.gz": "d190ecaf709193c76cf5bf32406fffaa8ac53569f35283227fc98cf9b991e91b",
+          "params.json": "0e56cc186474a74813dea7cedd19639839066f7ec374955689d25a999dae7137",
+          "summary.json": "89adfaedd4eb1b871348d2ed5c1b53150e8a1827d943375d5e9ce68ff0ee8e6e",
+          "tp-base.vcf.gz": "d92a3daafa358781ff2c75cbbbf8c3f2a857cc7083ae0d07e5dc313689361c1b",
+          "tp-comp.vcf.gz": "1bd512df6da8079a532fc97a0f31fd658c4d5b4459e913f9430bed9fa6003429"
+        }
+      }
+    },
+    "HG00742": {
+      "superpopulation": "AMR",
+      "gate2_class_counts": {
+        "positive": 3079,
+        "unknown": 960,
+        "known_negative": 362,
+        "excluded_size_gt50kb": 61
+      },
+      "total_manta_pass_del": 4462,
+      "labeled_for_M0_M2_M4": 3441,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4401,
+      "n_eligible_for_extraction": 4331,
+      "n_extraction_failures": 3,
+      "n_candidates_scored_per_model": 4328,
+      "gate2_classification_report_sha256": "367fa74f480304dc17fb531a7926dd2e41a42b6cf38f8aa8bb2a329ea3bbd1fd",
+      "gate3_candidate_manifest_sha256": "38ccab63d8a4c6c8d21d55a9c2c495390a85c70ee0ed4cba8e027d773d68d36e",
+      "shard_sha256": "2bec21a4bd40624feadd0945acbb881b0a059227c7d9a5c029f40987ad17cde2",
+      "predictions_ensembled_sha256": "1340e6c5da291cd8b95932af8305655f56bb1e5d570ff44c8fef10187a54e640",
+      "predictions_per_seed_sha256": "1eaa519d299ac6fdf5dfba8b20cbf6450908e788aeabd8e2830239e6fee6210a",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "f4c6abd35460257b6661d5b59d00cbbcdba8092cb4f10013027839a9b63ad90a",
+          "fp.vcf.gz": "18c747bc1422fb84dc8c383eb8f8cea253c0aa0852d0e9bafcbd6ab50530f2d9",
+          "params.json": "110716cd961ae061fea4668a761131bac7f7f5fc7254954c42f8806e0b4ec6bc",
+          "summary.json": "c80f300c69a1e323702bca89811f1c427e53aded2cd8d83033792231d9646082",
+          "tp-base.vcf.gz": "3037c0918c6309522331be342ebd4f9ad8f5bd5512d94cf7253314c420d504fd",
+          "tp-comp.vcf.gz": "cab53813e42e3cfd4078c6d0d4c21da59f13630b55daa603792a45ab512ae5b7"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "571b44a9471db3ca6885ca4e5c45e94805e10a962d4688d7c0d592b06b629dfb",
+          "fp.vcf.gz": "172cf94db77965c273eb119279616f9f115adb86db1b471f12e454baa8220cd9",
+          "params.json": "5e845ea26703077c63778a95038069e6593d46cf79f479aeee8379e537410286",
+          "summary.json": "e95b384fcf47ea5db1243781de1810f02034a31134d3cf13f9ec0c8245714686",
+          "tp-base.vcf.gz": "c8d892d3e84b0a58f3faceee6bfa6ab5dc405c767c3271523648036f97bcb9e3",
+          "tp-comp.vcf.gz": "bca2eba8555405547ebaaf20301ef3dccabd55208a907b5c002c3675f810b00f"
+        }
+      }
+    },
+    "HG01048": {
+      "superpopulation": "AMR",
+      "gate2_class_counts": {
+        "positive": 3188,
+        "unknown": 1117,
+        "known_negative": 418,
+        "excluded_size_gt50kb": 76
+      },
+      "total_manta_pass_del": 4799,
+      "labeled_for_M0_M2_M4": 3606,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4723,
+      "n_eligible_for_extraction": 4651,
+      "n_extraction_failures": 4,
+      "n_candidates_scored_per_model": 4647,
+      "gate2_classification_report_sha256": "3cc0d2ec18205bc4963581bfdeb7184a20abb7497ff83c45b827d83cdc111090",
+      "gate3_candidate_manifest_sha256": "d48f6a8543e5e3f74ae586ec0d3cd0a4b40c8b3018189d4f7339f3c274b4ac85",
+      "shard_sha256": "be4b4b910cb5856998c17f8035463b4bc94dbe309aedda8bb66aa35ec28ed09d",
+      "predictions_ensembled_sha256": "f5bef8efce091ae14040794c118bd5638ae7f038a5a6c4c90ff7322c715b6b39",
+      "predictions_per_seed_sha256": "74b168e305541f8ac82e32ba032698ae3e85bf5592ec0d0a17ed0f8695b49a00",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "e48af17da1d13c188b94e7f995ccd22fcc7d76514025f80a3c6f31869db44077",
+          "fp.vcf.gz": "7315d0fa98a9d59f97e5029f4570ebd1441e9a368a2c56dff7bb9b81e2cca591",
+          "params.json": "a86240e1c70fda3da8d2db6ef4cc0278e6bfe9576a273b4ffbef594ec8a1106e",
+          "summary.json": "ba3f70ed9df0ae41809e0a6c995c9ff45dfee8c3c65b361635b61a46c5c4d28e",
+          "tp-base.vcf.gz": "58639aa16e2f08cfe4766637874f46922c0d9aed8600409c9d2e9503b7d533bd",
+          "tp-comp.vcf.gz": "59f382d3cb92a107b7816361f40ca4c005a83a5e4fe478cafbecf288805b4096"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "e8114adf18ce8616929067abe23e87ec15ac650ec9b24b83a01159eb283c6d9c",
+          "fp.vcf.gz": "8a23d3fc36236c316a7841481160006cf80198f2a970dc64b99d53628b5cba74",
+          "params.json": "97dcfbaeceb7809d6dc56e5c286bf6faeee11560290a489a8fc355f9c6f1175b",
+          "summary.json": "f1ff081fffba1b64543bcb1e32de9492ac4e1fadb2a1611b0189409e3329e793",
+          "tp-base.vcf.gz": "c8fe63484dbbdecd8c1609cdad960d1e25f76bac630eafeefaed29b66d0af865",
+          "tp-comp.vcf.gz": "0d91730309f154b04a152346b8a6a1f67ef7b8d7d429c6a4403e3bc44df4edb3"
+        }
+      }
+    },
+    "HG01051": {
+      "superpopulation": "AMR",
+      "gate2_class_counts": {
+        "positive": 2995,
+        "unknown": 1039,
+        "known_negative": 422,
+        "excluded_size_gt50kb": 61
+      },
+      "total_manta_pass_del": 4517,
+      "labeled_for_M0_M2_M4": 3417,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4457,
+      "n_eligible_for_extraction": 4383,
+      "n_extraction_failures": 3,
+      "n_candidates_scored_per_model": 4380,
+      "gate2_classification_report_sha256": "b88188b96e189e581df5d992c66f3477da3925cd9bcdda221d87232273709da8",
+      "gate3_candidate_manifest_sha256": "bd95f1f695a771483faa4c106050f3afd91891b3f22190f2630a287998789420",
+      "shard_sha256": "52cef735fcaba2f543318d85bec1f4c207e5ca877e09f3dc6813dbff377339e3",
+      "predictions_ensembled_sha256": "fa8d14d98c0172ac0975145c43ef1ced8d08dac81d30bb4e01a15f4a9f5ac7ab",
+      "predictions_per_seed_sha256": "b0d9fe45db23f2e0793dbdcd38a94bdd4e1d12d4485b315261164df947916faa",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "60b20898feb08ed98686ea3191b6ba41035bbfc8616973a9a3ba3d9db9583e8a",
+          "fp.vcf.gz": "9c1bd3a4e028a2a1d6e20b79a069ea85812b9da6299d5470357ca7905e5291a7",
+          "params.json": "1e6bcbbe5597de6b91c0e048d3d072a363c5e00fbee8f50f9e547421f9828176",
+          "summary.json": "8c3913834dcbdd3072949d03c9673505e1dd43287b7a8f9de41b11e009f2ed5b",
+          "tp-base.vcf.gz": "f0c992a4c59e1e6fecc1a8e1ad7a107440753fb5092098cf198e797568356a73",
+          "tp-comp.vcf.gz": "6c131350ad2b6c27f337ce2db072cc65b49eb7d41e585aa1d00ed8004b20a3c4"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "5e3b3e4385d060908661dfd949ba54a5cb67505a18848fbc6fb5682d47a5ff29",
+          "fp.vcf.gz": "2409afe54e55a3a7d9766127daa98aeb3983d024ee38fccf1cdacb3c24753796",
+          "params.json": "8e40a55e8a03b9800305f341aa08a90b5d8886e6cec6955b12cd2ac8ed8c161c",
+          "summary.json": "058d1798406d46240dd4b1f5a28ee22c07542e7a98bed89f6b2a8ac030448d3e",
+          "tp-base.vcf.gz": "fbfb59dddb0927324be339d87537204e006d55dd622ddc9e385da7562f19a1af",
+          "tp-comp.vcf.gz": "ea1c299448a1c41cce9970d4b13e5f1c22812d548a5c0b6fe757a76984217ebb"
+        }
+      }
+    },
+    "HG01054": {
+      "superpopulation": "AMR",
+      "gate2_class_counts": {
+        "positive": 3031,
+        "unknown": 965,
+        "known_negative": 363,
+        "excluded_size_gt50kb": 54
+      },
+      "total_manta_pass_del": 4413,
+      "labeled_for_M0_M2_M4": 3394,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4359,
+      "n_eligible_for_extraction": 4297,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4292,
+      "gate2_classification_report_sha256": "4be96dada534cc7bc98f513e9dc0f86a893e4ff39ba92a1f689d527f3e763ef2",
+      "gate3_candidate_manifest_sha256": "a5723e4fb37784f659bf7f3c1938e86632204a16443b755fc1ae88c5d85dd595",
+      "shard_sha256": "bbc7a59b6a69feb41953e6ddd457eb7f7cc6c216de786879295d00ce949b3669",
+      "predictions_ensembled_sha256": "9f85f287238c113ca113c1cdeaf594310f8b4bc49b99c3e84af1d56155035a6c",
+      "predictions_per_seed_sha256": "eccdf01c9057276c7f7321d63c2ee4cdd6d55beeca15d837246deafa830c68ba",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "82226c141a78038cdda6674e9609497ad003de8623073ead0ee8543afe84b0ad",
+          "fp.vcf.gz": "92c307bc9aae050f9c308645ae328065b31b6a562fe5face19e759c26a893392",
+          "params.json": "068a509b90d1b483a30e87e09d13f4d4c57c91b6c9906d9491f7b33704b5d3a3",
+          "summary.json": "24914e4fc98e2949608a8ecfde52b1361ed3f00c97551b9af30c397c4436ff67",
+          "tp-base.vcf.gz": "91c6ce96195fef62984c7dd7c65bb0283ebb6bd154232a0a7c9d4d334a86f280",
+          "tp-comp.vcf.gz": "e6aac544a1961b3377426413e8b14168a3d80b814d6c037e3ac1ba46b149dd42"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "c8971be90a8c638f080d7519d3e7bc9041b4a06bd6d3ac93c73866ec3d522ecf",
+          "fp.vcf.gz": "38539d121a0751f0ee71da14222678c427706e7e77c9b76efae63f118576088c",
+          "params.json": "b197883fed8e4fe9044a0c963e77dbda874289e821fa904a5b9bb8f409303f40",
+          "summary.json": "75f27cebf8bcb9c0ad02c29a48e1c59eac7e9eec7cc5f267b33f830cdb70305f",
+          "tp-base.vcf.gz": "d51ea3bad014d00caea00a105cf6a21efabd256630f0d318c87c5e9baf86a6cb",
+          "tp-comp.vcf.gz": "d2e976a125a073a3266392ca9a20045f0041c1b1e89abf9528c2bd3de98b89b8"
+        }
+      }
+    },
+    "HG01058": {
+      "superpopulation": "AMR",
+      "gate2_class_counts": {
+        "positive": 3095,
+        "unknown": 1041,
+        "known_negative": 423,
+        "excluded_size_gt50kb": 62
+      },
+      "total_manta_pass_del": 4621,
+      "labeled_for_M0_M2_M4": 3518,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4559,
+      "n_eligible_for_extraction": 4485,
+      "n_extraction_failures": 3,
+      "n_candidates_scored_per_model": 4482,
+      "gate2_classification_report_sha256": "dc436a0f540ff1fbecd2a6314b969c9f913d8da493d2b04d44913ab475c74e92",
+      "gate3_candidate_manifest_sha256": "b04b6f7fd00cf69f6a638416113689da45a75c3d0e3d919e72909d476d76a341",
+      "shard_sha256": "0a6c870d462666de0575e163b5fe30c8088b405b75fe2b7dd9bd0505b22a0ad4",
+      "predictions_ensembled_sha256": "c3be0c86d0ee3a8958fb932bf3a83867a892e9213c19c6db846ab40cc46169ee",
+      "predictions_per_seed_sha256": "cb036c80b0831f23447f1fbfd7a77061308d513b9c89c2fd04224e1098069d59",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "1cb78d056f316fc3fd785c4ab8c11cf44180b66f48db1825edbb95cb1c0725e8",
+          "fp.vcf.gz": "8524ded2e6ae78535bd8e4c99b01f0e746dbdf59e767488da7e67b77fbf29ecd",
+          "params.json": "28bd487e4f01474418cb11bb29cf8d65e4d72950e66f64670479310b66167cf4",
+          "summary.json": "e9a43a89af8ae02e9538491c636e4d84b113af3e426459d7ff0d5ea52199a2ee",
+          "tp-base.vcf.gz": "71a451c5ba40961ac68971a1a7795f6f1e6962ebc15d0a05047ae5ccf8bfe12d",
+          "tp-comp.vcf.gz": "9eca9091aef758c7f449cd7950fb3209644d5948b71ffbb97eea16b55c3c67b4"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "a4fe9226e5aa76621e7ac4f4131d549b498f8c7ce0186b6c2d86070c5f6a9877",
+          "fp.vcf.gz": "8d407fd70886f4d0e0a646f99cd4a91d63fa40e97eabfec1953a86e50920fa06",
+          "params.json": "96883bd50e87d8ad30e454a4e356682de0dc5cdc34e0b6014c1b833ac6203405",
+          "summary.json": "98555f589b008afb48f24a11ea231a2bfb333bc4220ffbedd119b5200b019baf",
+          "tp-base.vcf.gz": "5882611fa9632e8c0b14ac1250650866505f9177628c073c20843ddeb516600c",
+          "tp-comp.vcf.gz": "caa6e1dc51ffd497b6ffe0938fd2ca34001daf8e6dc23e9fc5c99f2d656db52c"
+        }
+      }
+    },
+    "HG01914": {
+      "superpopulation": "AFR",
+      "gate2_class_counts": {
+        "positive": 3046,
+        "unknown": 1297,
+        "known_negative": 552,
+        "excluded_size_gt50kb": 54
+      },
+      "total_manta_pass_del": 4949,
+      "labeled_for_M0_M2_M4": 3598,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4895,
+      "n_eligible_for_extraction": 4819,
+      "n_extraction_failures": 2,
+      "n_candidates_scored_per_model": 4817,
+      "gate2_classification_report_sha256": "d5938a6b20dd5d79fba9bb19ff31d6dd64340e57083836c6269cd6b3599d2aae",
+      "gate3_candidate_manifest_sha256": "3a776529b9dcb232ad4b4e2207167e82f1247e5d88a6829fa260cfb4c6368d0b",
+      "shard_sha256": "16e243277d9c43426d4425f9e0e6d48859a74a59c2736aabcfbd6fdcfd3270c9",
+      "predictions_ensembled_sha256": "2e410808b68eb0859d9c0453f3a4d09a227cb43678f437e07f4c64bd3c76eb26",
+      "predictions_per_seed_sha256": "5cc84e77be2508107173377315eb54836c1d4c908813a7f085413dc61358a5e2",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "ec4310d258e0e572326fe09bbdda8b737a3d38d96126040ad38d095b73ea9c75",
+          "fp.vcf.gz": "72fd0b4ef9cbe2e2e60d7234b74c048fc9813efbb700afdd7e4245a624eddc22",
+          "params.json": "1de93090ba2557eade59aea28a14e8cb089033ab0083f760ee1ce3647586d9a3",
+          "summary.json": "f67e70291315f27f556ef3f737e6896d68b895e6f1ffb17b868d554c5f54f8e5",
+          "tp-base.vcf.gz": "97e5a7ba414da83aa8c5db5848a519073c03a4669f9f75a8c709db15d7e6084e",
+          "tp-comp.vcf.gz": "a65c0f0b280714642fae61dacc6827b1d822a44be940382bb49c3854be6a90a0"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "bb780950a58bac73ef273161e6f74bb548e6e4fee5f7e2587121c21d6f94854c",
+          "fp.vcf.gz": "549fac2401f019c22da5c5e3b724ac1db00c51246611d407160ef13af407d029",
+          "params.json": "aa33ecdf1d6b9063ac75b6103666a99895a62dc672d17621760c6cf0df5765ad",
+          "summary.json": "c6604e5fd81fefef5ff0618b96a06f904fedab4a65ddb739a61754e0b398305c",
+          "tp-base.vcf.gz": "21e204ff73a298e89ac56ba7866523ad75710d6a0cf184f13162f15d28c5192a",
+          "tp-comp.vcf.gz": "e4290d4be60f436d974f88de33ee53c4d09bb2f67dca5ead58dad52de63e1b67"
+        }
+      }
+    },
+    "HG01958": {
+      "superpopulation": "AFR",
+      "gate2_class_counts": {
+        "positive": 3251,
+        "known_negative": 612,
+        "unknown": 1396,
+        "excluded_size_gt50kb": 62
+      },
+      "total_manta_pass_del": 5321,
+      "labeled_for_M0_M2_M4": 3863,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 5259,
+      "n_eligible_for_extraction": 5197,
+      "n_extraction_failures": 2,
+      "n_candidates_scored_per_model": 5195,
+      "gate2_classification_report_sha256": "b14100a5090f8fcb9e3fa6e4f85c4d00a9fec20702feabf32432305bf52fc19c",
+      "gate3_candidate_manifest_sha256": "0f5d61cb2885a5c208b2d6673228d20e004c16a075ba61401b77cb18e353d83f",
+      "shard_sha256": "bea4aa15af7d6f9dc1c24a6e809f3dedc6619ee9144a37784d8bcc07f36f2d53",
+      "predictions_ensembled_sha256": "a0cda009dcebe87d3cacf57afa0dc8130d6fffe1f10bf142d28a224c29aad1b6",
+      "predictions_per_seed_sha256": "a5ad62a999fd27f933d75a44267166a8e222b3d015a26242c98b9db7edd1616e",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "54cd3a740435eef30cbe31ef1492de05c15222c0e0f68ab7b386eea31f649822",
+          "fp.vcf.gz": "c39ae4d0f649bd64a48044d4f9c34c6534d0a450645c578b0aec46823bc4b19d",
+          "params.json": "a74ae86b1b4b22604a74e1a05c43611c377106547be1780f9a5ccf5527bb3c3c",
+          "summary.json": "77de0ab4583000cebbfa763b66c86dcd07b21e2183423caab795c97e116aecd4",
+          "tp-base.vcf.gz": "ca839dcad7991730e1e509b0a05f1c739e266f25582b1dde199075328f013098",
+          "tp-comp.vcf.gz": "bb77411b7765f2f48d6206f51bc4fab624ddf138994cbbd94afb534c2d2efc8b"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "9c5c608519f182845fac72cd584751ce30dbd515199661e3a77517062b7a19e7",
+          "fp.vcf.gz": "87282d3796fdfb03d3493fbb061428f3080ecbabe0ec9714d6a8cd8854391fac",
+          "params.json": "46ad43320e461335f10365d4fab68ce99e8f63f56ea524ef644435a8b2d9168e",
+          "summary.json": "405d21106d3c5965f2e0c47ffd064f2f92252ec078fd779b486327f0f9907358",
+          "tp-base.vcf.gz": "079115ba6831f8bc3a6dcc6ebd5d62f9ba458b5355355b12b875f5d8f7241188",
+          "tp-comp.vcf.gz": "c859831a7b20866b3c47360818a14e6585e1fda42216447c8b4f10c07cb24d98"
+        }
+      }
+    },
+    "HG01985": {
+      "superpopulation": "AFR",
+      "gate2_class_counts": {
+        "positive": 3045,
+        "unknown": 1376,
+        "excluded_size_gt50kb": 62,
+        "known_negative": 624
+      },
+      "total_manta_pass_del": 5107,
+      "labeled_for_M0_M2_M4": 3669,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 5046,
+      "n_eligible_for_extraction": 4981,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4976,
+      "gate2_classification_report_sha256": "7c358efa531cc260d44f1ae2dd1c655f2cb5d611b42ce8343f1a6c8bdebce083",
+      "gate3_candidate_manifest_sha256": "9d4c3f0d12964e05e773405abb7444b2947e643ad410000a4a9f7ca9d11e9788",
+      "shard_sha256": "9500a5914a0a9b5f6427c9fb6863e6e1dea07b4d6786e4333a3bcf17a239c511",
+      "predictions_ensembled_sha256": "21e872dbed6363ac77602ad34f47b6ef51c7ea91b3e195edee894f47b8faeadc",
+      "predictions_per_seed_sha256": "c023f35a85f8610d32307182820c134d468f660e69c0ae26be437bbd51925a9a",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "d2bddcabf58ca0e78fe97b547f2a08a59358f0563bc62656df99ec4a7fa03e25",
+          "fp.vcf.gz": "f26fc1673d68e39f9a8fe76899b82bfddea73c0185779477556e9ff6bf68e03a",
+          "params.json": "1e7359c7a3547f074f3cde1797472d82ffdfd35e704b0aa1d998538ae6e88d2c",
+          "summary.json": "6edcac7d315af80a9dd30bc530704dcc2e598a5fb5a715c42f7b91a20e607a06",
+          "tp-base.vcf.gz": "9537a2013121daf162eeab3897883796aa0d9a138ac4fcd5501d0e47149aeb4d",
+          "tp-comp.vcf.gz": "b2347f75f1bff0563c6dbcbe284f20a26c94b328bb99937ce3f22b0e62a67149"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "63c55da7e877fb8ce19b07a925cee8e14defeb32ceefc371856b73672378a6e3",
+          "fp.vcf.gz": "458f0d92d42d3c873ab8582b8d85b97e35bd9b087a6bbc4781abb81523bd3f7e",
+          "params.json": "fb803c39ee8808d64e5dfd9c852a2d93134b14f68438ca1b03a0e52d0d334bd4",
+          "summary.json": "391993b9f4a88bfb2f05c42130017fed0137214dc0b2f8f400085a473f1a3f41",
+          "tp-base.vcf.gz": "c791c5b214c57df07e7aec93faf299b2f760fbb107bb651d9d4968eeb8ee4163",
+          "tp-comp.vcf.gz": "e2397286a2784f0b961859b9e4265c5fb573fa07108f7441b8d7fa9b448746cb"
+        }
+      }
+    },
+    "HG01988": {
+      "superpopulation": "AFR",
+      "gate2_class_counts": {
+        "known_negative": 532,
+        "unknown": 1277,
+        "positive": 3102,
+        "excluded_size_gt50kb": 50
+      },
+      "total_manta_pass_del": 4961,
+      "labeled_for_M0_M2_M4": 3634,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4911,
+      "n_eligible_for_extraction": 4843,
+      "n_extraction_failures": 6,
+      "n_candidates_scored_per_model": 4837,
+      "gate2_classification_report_sha256": "212c1b3ac4d00ea2c85a91375055f8f2baf108328cc52a7853b1ea911b642750",
+      "gate3_candidate_manifest_sha256": "46a50259aa4516e5a1cdf0617833ca70b9788fddbe8def1b69187e01a4cda9ce",
+      "shard_sha256": "a3c12ef98dc2327baf10a9bed86d9cec7d9a21e95f507995a1ac1cb81a97cc1e",
+      "predictions_ensembled_sha256": "01ba2d16c322f0ec4ebb73160327819f1617bacec87e01192e4b1cf8135afc0a",
+      "predictions_per_seed_sha256": "78444c741f6c51f457f9f7fb13e9db49b56f0cac08b4c2c63c553e02d58b5acb",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "7eb2852847ab31e5af6704a94c9f3f97c11cd40529549f3c846a03477a39b8fe",
+          "fp.vcf.gz": "505005c97f7e782d2907856c371d905221314306cb8700dd94e7040b85b61168",
+          "params.json": "9d036f0b4e894e27f2a67fa87a5ab9b7ac4ff67075f4ed3a26dc6bfacbf2849b",
+          "summary.json": "a7f3843b3fcb1b38bcc07569c993f492147fe4de80bbac5b3e952edbff5b8758",
+          "tp-base.vcf.gz": "8e6e5ae437c596e1739f98af2f6b93ff0fd60b30bca0a4789f070704d120b43e",
+          "tp-comp.vcf.gz": "fe40f5d716f67d97ab84ea5f4ebb1c33d2edaa20e4e89a818a112aa9d1dc922c"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "c719207de5d265414190463b5dcb64d5758cb7705d32369e319b8fa325af1b9f",
+          "fp.vcf.gz": "a6437164fc9ab2de42bb78759c09fbe9eba6de3f0dd50ffb7aebb4eead6cb473",
+          "params.json": "e5b441a93e4d14cfb0fbbfc0b6fbb5f46fc2cebbccfd78816cd81a265d4c7eb9",
+          "summary.json": "3c9692871325c4c3a07b3a65da8be8cfec88be8301fa30a08cb0e0281cd685dc",
+          "tp-base.vcf.gz": "8dbbff0c17a3b3e15bf3db1bd38c3ef3bcc150048c86924d9c62159d8a9d9040",
+          "tp-comp.vcf.gz": "3ebdf9c434335f165300efa6e9c4485c63d12e39b73d51cdc14fdbe2e0ff6731"
+        }
+      }
+    },
+    "HG01990": {
+      "superpopulation": "AFR",
+      "gate2_class_counts": {
+        "positive": 3068,
+        "known_negative": 616,
+        "excluded_size_gt50kb": 51,
+        "unknown": 1281
+      },
+      "total_manta_pass_del": 5016,
+      "labeled_for_M0_M2_M4": 3684,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4965,
+      "n_eligible_for_extraction": 4896,
+      "n_extraction_failures": 3,
+      "n_candidates_scored_per_model": 4893,
+      "gate2_classification_report_sha256": "bb038e4cad75d76fd195847322e1d6a878a870e6fb013283d8733b3f8b64317d",
+      "gate3_candidate_manifest_sha256": "719b221574a79d541f2f7ef495b37951c35f96bdd81b802d24187e3cf952e68e",
+      "shard_sha256": "12e5a982e1d8761f4a6cc339778756a1457abb9421b578fbcd6a9985d9e94500",
+      "predictions_ensembled_sha256": "13f7cfe9e7e0b953edb5710f5a7e552933683f59e6c5efb1b60ec95844114471",
+      "predictions_per_seed_sha256": "9b31cd9a0f49844fe1cf9e4dc69fb0e76ece2dd5cc532a57da3ceb81822b4575",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "8554550dbaa2801ade86cd277da8e0e654eeebeb0811709432cc80d77052307a",
+          "fp.vcf.gz": "f760f2130e21ed0350b5c12742b5c7a3491a97d56858d8745118a15ddf62e377",
+          "params.json": "05433e7ee4dcf531ec98ecda905ec0933ac5cba9a7454122f2ab4fa353c6ae26",
+          "summary.json": "2cde75163087357b0e76c95eab1dd04662864cc79d92ef23f0755b7e78bf1bf6",
+          "tp-base.vcf.gz": "b5ba70d96ee514b7897f0f3529b07b9e3e6492c49cf7a80236db598f71e6bc7d",
+          "tp-comp.vcf.gz": "559bb9af44db66122d00ebb958cad0ba6c7d87f61032fc8b21c7b7972b17ec4c"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "f6e111a1212fb3deceefce67d49d7369204a2d6753e510711e555f86a2f346a0",
+          "fp.vcf.gz": "1b062131c2ea9328f054c923d3fbf18a45d9ef3a7bdb67708a208057e5cbf882",
+          "params.json": "69610c6a8c6db1c66165d8c656c701d6943c030c8af5c337e8f5b225018d659a",
+          "summary.json": "dc56e257f9efecf3a6c7ba5147f4eb53cb08019866198207c0e9dc50ccde5503",
+          "tp-base.vcf.gz": "b41e86664fa2031a145a30953823dcd5682f86c634dfc289ebd72e53313281d2",
+          "tp-comp.vcf.gz": "f20e77092e2a9807e1374656a8da57c2b9c0df1807333f0b07b46362d4fea988"
+        }
+      }
+    },
+    "HG02009": {
+      "superpopulation": "AFR",
+      "gate2_class_counts": {
+        "positive": 3147,
+        "unknown": 1169,
+        "known_negative": 654,
+        "excluded_size_gt50kb": 44
+      },
+      "total_manta_pass_del": 5014,
+      "labeled_for_M0_M2_M4": 3801,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4970,
+      "n_eligible_for_extraction": 4898,
+      "n_extraction_failures": 4,
+      "n_candidates_scored_per_model": 4894,
+      "gate2_classification_report_sha256": "6dd0a8f7a25d52d47a1eb6a2a7c35fa56f03907f7c29633c086d61549eef6eff",
+      "gate3_candidate_manifest_sha256": "4ee493cc855811f6bdacf1ef364d45cdcaa57fd9f9d4e05222ddd3f7b0e5ae03",
+      "shard_sha256": "58351ab5e1306937bf656e38e14fcd4bd3d81314cbf6f6eb4b16e28ae9403b22",
+      "predictions_ensembled_sha256": "f30e3f5aa81413b6fb8dd76e76aa7675b6fa6aa0a6a2536e5dd6686f2542230e",
+      "predictions_per_seed_sha256": "ace3aae9668e3bfafe626229e368492e0695a376b5d43902ccb380f3b0b9c880",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "c73f485bc8c9d916c422eaf1e9dddb6a3f1b78a4e6ac78069e028173c220261e",
+          "fp.vcf.gz": "eefe6ff1e48911a50b2a5df0128f3754913abec9c2d1781c68050ac806ea5af1",
+          "params.json": "06ba6161613cfe3629a1ec2a13ba33da83924ab53f8017cacbe1ed0183bd688c",
+          "summary.json": "2b79a0c24bd796c967d2eee847511d646849c0e69a34f791cd48a6441d5012e7",
+          "tp-base.vcf.gz": "69677e8d667a8532540d540df7b8f8c51c800a038ee92b4f5aecf68730979bef",
+          "tp-comp.vcf.gz": "a16b3d85d3152d7bdca9c3207e9d5515ee7c7174b5579d9b87aaa3e3a74fe2e8"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "3d9809d6b1e7983a016b3796a307f20cb26b500c46d065a79c030cf7510b6f3d",
+          "fp.vcf.gz": "76b4dd2871c5bb2b2652c7cdee4a6bb74b554e15d7835a6f3375a417ef1e3293",
+          "params.json": "7e1534ed6df0f9d636cf905338a89042c01889018d1c5546285ed9e6cda729a9",
+          "summary.json": "1e77655fe64459ba2e0c34270085e63fa2fe8f58e9fe051c98ba6ff8f48492bd",
+          "tp-base.vcf.gz": "5bf8d74db9e8482f004188a2bd18b6aa3642ecae73232c2816b962278b823694",
+          "tp-comp.vcf.gz": "c9934e5f0449faf2308ef3cc9aafba19b5caddb070337ff75fc05f8a83ff650b"
+        }
+      }
+    },
+    "HG02603": {
+      "superpopulation": "SAS",
+      "gate2_class_counts": {
+        "positive": 3019,
+        "unknown": 957,
+        "known_negative": 354,
+        "excluded_size_gt50kb": 55
+      },
+      "total_manta_pass_del": 4385,
+      "labeled_for_M0_M2_M4": 3373,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4330,
+      "n_eligible_for_extraction": 4262,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4257,
+      "gate2_classification_report_sha256": "38f1113e3e057d3c587e07fec33caa473fc0bf79c01623cbc9dbfb018483d7ff",
+      "gate3_candidate_manifest_sha256": "be1f890811a091f585a5f5f05fde466a97151acbca18b3513a5b86388e378e86",
+      "shard_sha256": "3bb607a77bab8de16e3d1535da42e44526380e3fcb76288edc64802b0b138a17",
+      "predictions_ensembled_sha256": "5dd7f0811b65b04a7d7a997f23a04d3b4b9df6d8040ed8e0a73cac242b78855e",
+      "predictions_per_seed_sha256": "c150ec28ec9e1902ec310bf9702713191d61b103fd28617266fc88d074a21032",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "623ce5e15f146988e2178d48940b86463047013d3151cb514647bc1578534ef5",
+          "fp.vcf.gz": "26a99c406099640a9f6bf2d75a86c7df27d01b94fc86dae7449102cee2fc77d8",
+          "params.json": "3be387e409e144e5034ea68944fcae8faa92614f59ef7fa5098f79eea080a8b1",
+          "summary.json": "891076167ffd5072b7cf7ab6af171309c309d8088020b3849ec98aef27897690",
+          "tp-base.vcf.gz": "8c6d51d814e4c4d123450ba7fe488d64c7794efeff093580050e71683dec2a9f",
+          "tp-comp.vcf.gz": "efddf622b054bd0dbec41461b5b1a7c2edd5d184c0a1a1aba18e4c67b411b963"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "ae6637ba2a7fba3aef3eb30942f83be6b221d01b84511966d5ddcc33fe8f4ffa",
+          "fp.vcf.gz": "fb5a014dd695fbccd19ee4aa06cf03d93077ada5c3dd0345c513b9aeb17bc61d",
+          "params.json": "05254eeb48df70185c3823e1cc799175d0187d0ec668a97ec1426667be595f57",
+          "summary.json": "cb3946effb49c5805da87999a2440216448d4437cc3d10f583ade0d132a22f6f",
+          "tp-base.vcf.gz": "ad73bfbd8a797cd2bd8e067c30e8664397cf47c824aadedea72d632d525fa3ca",
+          "tp-comp.vcf.gz": "c9ec84cf7a8088bc3c8cb81ecb1b71217f01955be2bf545a216ba9a3b0d787b5"
+        }
+      }
+    },
+    "HG02648": {
+      "superpopulation": "SAS",
+      "gate2_class_counts": {
+        "unknown": 912,
+        "positive": 2989,
+        "known_negative": 364,
+        "excluded_size_gt50kb": 56
+      },
+      "total_manta_pass_del": 4321,
+      "labeled_for_M0_M2_M4": 3353,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4265,
+      "n_eligible_for_extraction": 4205,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4200,
+      "gate2_classification_report_sha256": "fb6bf7639144cab0714b94fe8227dab67620cb33e38398906d54c1424edbce8a",
+      "gate3_candidate_manifest_sha256": "0509eba96a370bfe55a2a2bac4c3eeae977ccdb5ca75526c6346a7c8f34766b7",
+      "shard_sha256": "75237cfffe48e40680bc9814fad962854e4078fbb32e255046b25a622a70707f",
+      "predictions_ensembled_sha256": "0914dc8e03a7b143a2082ca15d04f1f458e1c09df99230b7800e4a66eef179c1",
+      "predictions_per_seed_sha256": "3634ba605c9ab922c4cad99dbd2f992c5e4023e9f53669b92258d920b7f3610d",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "739b5879fb21ca6c95d250925e0fa6142676cf11aac390d89f5c1d59a5144ce8",
+          "fp.vcf.gz": "7b0cba5a2a8f12b8746ac696546e9c54b33ad4d79a09483d2dd55256a24e0c8e",
+          "params.json": "1cac3ddead03362fe493302a01c7870bdd2ca1a3a121cf020b6d7be227f1ac10",
+          "summary.json": "2f75a75d3dbd55c02f197017fc4241cb9a52bf91d83276ffe9b6a9cc442c0159",
+          "tp-base.vcf.gz": "ea9f27b68082d67d4cb0f39e7b7f782ee5cc3b50501bd2c6568282fb805155a3",
+          "tp-comp.vcf.gz": "aca6594ea2b43416346c79b967014af4c1d4c6e0b757db78b25d1f2ab7225e42"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "1c5fa0bc46b5446dbb33e92e0437b8c0a82dfa9eb498597fc5108626c20d1e58",
+          "fp.vcf.gz": "c5584c17f3d096fa13c2d8f4fb54a40cf66230e33bc708b143c8cb9a431c2f10",
+          "params.json": "ef1f3d2cb46ccc510ae751e0a7ea1dd578103f12f984675f750e840f73dd0a73",
+          "summary.json": "94894d920d4383d130655e7e8ac7f424d99d7c43f3759846bbc89a0315607a2f",
+          "tp-base.vcf.gz": "150513cf9fee93f6fca5eafb7b12f89d8214ca921fa661869333af0f6aab9064",
+          "tp-comp.vcf.gz": "ba1a67de2bfc50e88b25b4f54b0af29595393bbe862d592be78d69f5fea5227e"
+        }
+      }
+    },
+    "HG02651": {
+      "superpopulation": "SAS",
+      "gate2_class_counts": {
+        "positive": 3009,
+        "unknown": 929,
+        "known_negative": 344,
+        "excluded_size_gt50kb": 60
+      },
+      "total_manta_pass_del": 4342,
+      "labeled_for_M0_M2_M4": 3353,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4282,
+      "n_eligible_for_extraction": 4208,
+      "n_extraction_failures": 6,
+      "n_candidates_scored_per_model": 4202,
+      "gate2_classification_report_sha256": "e78be7d56de2d479698c8b02a2037f92a504f6030cbae6db35a749660db5b8b7",
+      "gate3_candidate_manifest_sha256": "452fe7eb797edb36bbb6097a336ec392f2b3a1ada5262816a5bdfd620d0ccf60",
+      "shard_sha256": "0046a50bf861fabf8433e4c8809ecad085b0c99c83a2b588ee46dc18924fb892",
+      "predictions_ensembled_sha256": "20c5682f06b88f1c7b6d57ba91ce3bf70fa1b14b5a364039787d64d458ae5bb2",
+      "predictions_per_seed_sha256": "244a6db52c6dbf94bf3b41b7ae21c6c0311bffb17aa9a125ecdab8bafb1f2c72",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "4a2d5ba280ac6ad7165718b69435474e2e9195b72318c4889e8242565a3b56ba",
+          "fp.vcf.gz": "76f53db92d14058a4f93a8bd0c72105f8c2b3fb2617183101dd2c23ed50c9d0c",
+          "params.json": "4f3317def802f2d4e7f9d76a555da0835cca4ee71854782503bb853d93fa3919",
+          "summary.json": "eb7a25b9708d302e267ceefd0daad556d9d575a81b768fc89967734f60f6bf7e",
+          "tp-base.vcf.gz": "66546abc1d614e39f0be388cf9e9dc713f2d3dbf764d26d6f9f379d9f2979284",
+          "tp-comp.vcf.gz": "f5feadbf29a3c48d3a7cbbda228043c0cb672d3664ee06731e39d88c9fe2684f"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "87379ddb813c60f130636e374fec748ceb53c6094c9c6b79613e8afc0e3c2cc8",
+          "fp.vcf.gz": "5a9bbdb25deeaede72ad353af02fe9f0550b1a0debd954e6887596aceb96e6b3",
+          "params.json": "32f8790d1e3269a9e8bf0263a5109d5eac478c3a1c9c31aaa4952b7e590c4182",
+          "summary.json": "a0332933c58f802a91018bc9a71125777780e5a6593948f9d1ca0c623e8eccd8",
+          "tp-base.vcf.gz": "fdfeb319f2b0a9f3cde8353ed54133382eb95ffd200a67ab631781ed782e6068",
+          "tp-comp.vcf.gz": "5ab171278771ca769fb724eb12c9590399eef2798cea1e5df0a075faf810aac4"
+        }
+      }
+    },
+    "HG02654": {
+      "superpopulation": "SAS",
+      "gate2_class_counts": {
+        "positive": 3029,
+        "unknown": 1008,
+        "known_negative": 332,
+        "excluded_size_gt50kb": 60
+      },
+      "total_manta_pass_del": 4429,
+      "labeled_for_M0_M2_M4": 3361,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4369,
+      "n_eligible_for_extraction": 4301,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4296,
+      "gate2_classification_report_sha256": "ff8bfcd8ac0faf8f58b8aad04f5e6428bc7a81dcd11d8c626c760ef7778399ce",
+      "gate3_candidate_manifest_sha256": "b97a80ad9ae9a656f128b62dd8064176f410e6e1911f01730c53c0b524f0341e",
+      "shard_sha256": "c6a7fe384cc41dec0bae5faabadc02d77638ad361bb84317fe27fa424dcd7d8f",
+      "predictions_ensembled_sha256": "45a135c4444393aca98d09d99d765a5e7421decabb0abd7c1a399fdb636c21c9",
+      "predictions_per_seed_sha256": "a0a3a37af92dd6d65fee11e27744e2baa556d7b6c104e654d7f8e7084b3be18c",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "432b2a47a1f4246dd931899aee7c624c00e1b916a05d331cdb0f2854ca34d113",
+          "fp.vcf.gz": "b5af2c868d59b86f6e790b47fdd44cdc97ebbe805ad77451c7a9c8812dabf7f9",
+          "params.json": "b8cfe78e15b0a55590e67f9ccced7e30b20d5f071229ff71f9724f278f9266f6",
+          "summary.json": "5b51cc0dc03bc8cfca7976d81f906b19632d7b1641d8614b5f9ef269690f0a1f",
+          "tp-base.vcf.gz": "f529bdbd85955f1291587e152efd8b9d9ea7ba0681f527bcba9ebcd9b0c5a5e4",
+          "tp-comp.vcf.gz": "a4247e1b6d61e001b6dee451c7243def9bef7ae5990205b831cf7c262830896c"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "2ead40d4032ff520cbe83401255fcf9139f3c2a5d53cb44357d54967947e2e7f",
+          "fp.vcf.gz": "6e319075ad7434e5b5cfd48a182f35cb4f3287908f95d3895dfc6f72f7685192",
+          "params.json": "ff37500e167654f3b908fd55bb8872edde62cf214046a7cd267d9e5ccd1255c8",
+          "summary.json": "6b0e10f50a9863de1b8feb4057e34aa5db513371fe0b43d8062109a305584acb",
+          "tp-base.vcf.gz": "a88a4d5c46d5fa044ba1a59bdc67bb82128c62fe749fcac0177b3758cd9710aa",
+          "tp-comp.vcf.gz": "6be46f270eb6806cfb8c461d6ce986e8b534e34ae611905c966077f990d9b011"
+        }
+      }
+    },
+    "HG02657": {
+      "superpopulation": "SAS",
+      "gate2_class_counts": {
+        "positive": 2960,
+        "unknown": 936,
+        "known_negative": 354,
+        "excluded_size_gt50kb": 54
+      },
+      "total_manta_pass_del": 4304,
+      "labeled_for_M0_M2_M4": 3314,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4250,
+      "n_eligible_for_extraction": 4191,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4186,
+      "gate2_classification_report_sha256": "19140fbfc5bc717da12e66882ad25961ec971b85de0de370334640de23126094",
+      "gate3_candidate_manifest_sha256": "813680c5f97a8e52414330431dc302de1ca54990269753276f217e731f13617c",
+      "shard_sha256": "701997558824f61377b233d8de1b7ebb0b55c7fc0a45e4d1dffbc075ddddca75",
+      "predictions_ensembled_sha256": "a5da8ffe6404f9d8b224fec90bd6437e4a8b07877e8dab819466164d7bf4a150",
+      "predictions_per_seed_sha256": "db7705d2721934041b71ad0714d13c1e215c6b10e750d0f4ee5100c1881008f2",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "07c508c457ee38f7c5d8e3c883f51d0b7cfe43c82af7725ac0b37a9e05138da6",
+          "fp.vcf.gz": "2c35162ba5e12bfcaccbfe0deb7bbdd24df26aa9095b1d054af5f833c61750db",
+          "params.json": "3a09ca47e5d29cb1b07930a6678c40b04fcca49aeb818fe6d5c5fe7576b40916",
+          "summary.json": "84f5ddf2d177b96d1b97b66ad9789b4058350352ef65716fcb66433e6f17e1fb",
+          "tp-base.vcf.gz": "05d1c628e15ded5232835eef392a905b70bcffa3297486745595b0eaa39a826c",
+          "tp-comp.vcf.gz": "f453761fc644147b832d593b72aa9df11ccc37950768ce03390359e6478602da"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "3dc20a5ff743a88e736b11871812d8f3ff7fe6564866aef3d8ca3ba718a331d8",
+          "fp.vcf.gz": "289169963f32d7796a2d1b5179aef6db4b9ee64e1963d37f88a61ac47c7a8a64",
+          "params.json": "7a4d4b76970b00ec86067d36dccfc260b4df40c691687c0826c670071bac979b",
+          "summary.json": "b29ad2f28f796a6b8b526e9374613d2446d29b00a08fe0552d41e03668d5fb4a",
+          "tp-base.vcf.gz": "59e1175244a93bab07e577b827cfc33122dac5162dfd0c03175dbee05fb7cc3d",
+          "tp-comp.vcf.gz": "2ce1c96c521b936c0ceff7d2c8783189f674c0db529b33fde3ebddd86a818b5f"
+        }
+      }
+    },
+    "HG02660": {
+      "superpopulation": "SAS",
+      "gate2_class_counts": {
+        "positive": 3029,
+        "unknown": 976,
+        "known_negative": 349,
+        "excluded_size_gt50kb": 63
+      },
+      "total_manta_pass_del": 4417,
+      "labeled_for_M0_M2_M4": 3378,
+      "sanity_sum_check": true,
+      "n_manifest_rows": 4354,
+      "n_eligible_for_extraction": 4288,
+      "n_extraction_failures": 5,
+      "n_candidates_scored_per_model": 4283,
+      "gate2_classification_report_sha256": "afbb072034b47a56530fb237f5bf8c480b42ada6b070e4355a3605e279555081",
+      "gate3_candidate_manifest_sha256": "56bb12b5700aee3fa6da219a1c690662110adaaec54900fc258135035cf40506",
+      "shard_sha256": "af626e6200760fa3782e199422ae7e97f273521d7a200ff1e1ceeadb5ba39daa",
+      "predictions_ensembled_sha256": "edf0c09874a5cb63e140f50305ff64c91a8c7c6099698e3a06c344f3b570eb96",
+      "predictions_per_seed_sha256": "1280b99396635f39e0e3d50b5857dcdfb1c81bf2dd4b32b726776c55a3202796",
+      "truvari_output_sha256": {
+        "truvari_carrier_primary": {
+          "fn.vcf.gz": "5043dae66eb75ce7b0fc1fc5598f3f5af5e559c42b9d97b038c0c62fa5165f38",
+          "fp.vcf.gz": "7a60fc56a33b1e13a06b467370ebd565b9feb76d90ef03ea96c1f6a191f24f9e",
+          "params.json": "8a79a468072eac0b619e42f5b0c912b54e7828f9d5491f8b48b4a45a9e33d898",
+          "summary.json": "2059e2de5b72ef08ad511390e38d484f436e870a3cb4699c1d62ae83d8be753a",
+          "tp-base.vcf.gz": "dac602e6670ba387e9a370f6a8320b5fd38a832ed2bd4b081dbe89d18e636fa4",
+          "tp-comp.vcf.gz": "a810cfea8f64f7a821722167c3ee84e662c906cbdf17501576790d3fabd77374"
+        },
+        "truvari_reference_check": {
+          "fn.vcf.gz": "5d3682a06f605bf0d302d102ec7214913c6a85d8f65888a7db63c0196b127a23",
+          "fp.vcf.gz": "a9b3cfeca117d4d89cdf22369baaacb297a813d90f12009d6e8fe6139837264d",
+          "params.json": "e77c4169be45ce9cb620840a8bef60c071efc87ea68e4c16cdb2fdf2ac2e4128",
+          "summary.json": "0106791e81dc91455ca41273af21183b8cbd3cb65d069cba9f25b8871d07c7ae",
+          "tp-base.vcf.gz": "c25b350e849e82ccd296727b52af2f15cd82be480e4401a78d850cf994160ee5",
+          "tp-comp.vcf.gz": "8d8bfea3b1bf586382ef8cceba7699d28dff8f19f233164cb362b4cb77cf7bce"
+        }
+      }
+    }
+  }
+}

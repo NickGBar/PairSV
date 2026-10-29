@@ -1,0 +1,1682 @@
+{
+  "target_recall": 0.75,
+  "by_model": {
+    "M0": {
+      "rows": [
+        {
+          "held_out_person": "HG00109",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.83398076,
+            "recall": 0.8904617458712504,
+            "specificity": 0.3644578313253012,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95493044,
+            "recall": 0.7684529828109201,
+            "specificity": 0.5783132530120482,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21385542168674698
+        },
+        {
+          "held_out_person": "HG00110",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.82779235,
+            "recall": 0.9061016949152543,
+            "specificity": 0.35276073619631904,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95470124,
+            "recall": 0.7864406779661017,
+            "specificity": 0.6319018404907976,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2791411042944785
+        },
+        {
+          "held_out_person": "HG00111",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.83075958,
+            "recall": 0.8978566644340255,
+            "specificity": 0.3824451410658307,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95501467,
+            "recall": 0.7632283991962492,
+            "specificity": 0.6332288401253918,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2507836990595611
+        },
+        {
+          "held_out_person": "HG00112",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.83148414,
+            "recall": 0.8973587428953528,
+            "specificity": 0.33613445378151263,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95481163,
+            "recall": 0.7776663323303243,
+            "specificity": 0.5574229691876751,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.22128851540616246
+        },
+        {
+          "held_out_person": "HG00113",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.82788457,
+            "recall": 0.9055307454482996,
+            "specificity": 0.313953488372093,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95503213,
+            "recall": 0.7622810030917211,
+            "specificity": 0.5872093023255814,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2732558139534884
+        },
+        {
+          "held_out_person": "HG00114",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.82793687,
+            "recall": 0.9048903878583474,
+            "specificity": 0.3333333333333333,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95483575,
+            "recall": 0.7760539629005059,
+            "specificity": 0.592,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.25866666666666666
+        },
+        {
+          "held_out_person": "HG00442",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.83116204,
+            "recall": 0.9036501150937192,
+            "specificity": 0.3739130434782609,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95465483,
+            "recall": 0.789542913515291,
+            "specificity": 0.5681159420289855,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.19420289855072465
+        },
+        {
+          "held_out_person": "HG00445",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.83206286,
+            "recall": 0.9006974427100631,
+            "specificity": 0.3884297520661157,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95454337,
+            "recall": 0.798073729657921,
+            "specificity": 0.6033057851239669,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21487603305785125
+        },
+        {
+          "held_out_person": "HG00448",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.8359171,
+            "recall": 0.8893687707641196,
+            "specificity": 0.38309859154929576,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95490193,
+            "recall": 0.770764119601329,
+            "specificity": 0.5915492957746479,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2084507042253521
+        },
+        {
+          "held_out_person": "HG00451",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.83116204,
+            "recall": 0.9037012774320341,
+            "specificity": 0.37650602409638556,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95471589,
+            "recall": 0.785784474287586,
+            "specificity": 0.608433734939759,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2319277108433735
+        },
+        {
+          "held_out_person": "HG00457",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.83217986,
+            "recall": 0.9000668449197861,
+            "specificity": 0.3520710059171598,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95462708,
+            "recall": 0.7917780748663101,
+            "specificity": 0.5798816568047337,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2278106508875739
+        },
+        {
+          "held_out_person": "HG00463",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.83167742,
+            "recall": 0.9019673224408136,
+            "specificity": 0.35428571428571426,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95477597,
+            "recall": 0.7809269756585528,
+            "specificity": 0.6,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.24571428571428572
+        },
+        {
+          "held_out_person": "HG00739",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.82807559,
+            "recall": 0.8954098360655738,
+            "specificity": 0.4,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95490036,
+            "recall": 0.7711475409836066,
+            "specificity": 0.6376811594202898,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23768115942028978
+        },
+        {
+          "held_out_person": "HG00742",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.82378127,
+            "recall": 0.9043109079033311,
+            "specificity": 0.33707865168539325,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95488157,
+            "recall": 0.7723709993468322,
+            "specificity": 0.5674157303370787,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23033707865168546
+        },
+        {
+          "held_out_person": "HG01048",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.83751369,
+            "recall": 0.8694690265486725,
+            "specificity": 0.4495192307692308,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95520933,
+            "recall": 0.745575221238938,
+            "specificity": 0.6274038461538461,
+            "met_target": false
+          },
+          "specificity_delta_group_minus_pooled": -0.17788461538461536
+        },
+        {
+          "held_out_person": "HG01051",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.81485558,
+            "recall": 0.929724277067922,
+            "specificity": 0.3444976076555024,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95465281,
+            "recall": 0.7901815736381977,
+            "specificity": 0.5980861244019139,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2535885167464115
+        },
+        {
+          "held_out_person": "HG01054",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.82256444,
+            "recall": 0.9067374709591769,
+            "specificity": 0.3185595567867036,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95500888,
+            "recall": 0.7633587786259542,
+            "specificity": 0.5872576177285319,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2686980609418283
+        },
+        {
+          "held_out_person": "HG01058",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.82910752,
+            "recall": 0.8929036458333334,
+            "specificity": 0.360381861575179,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95493472,
+            "recall": 0.7682291666666666,
+            "specificity": 0.594272076372315,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23389021479713606
+        },
+        {
+          "held_out_person": "HG01914",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.83651549,
+            "recall": 0.9128137384412153,
+            "specificity": 0.2857142857142857,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95473673,
+            "recall": 0.7830250990752973,
+            "specificity": 0.521978021978022,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2362637362637363
+        },
+        {
+          "held_out_person": "HG01958",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.84147948,
+            "recall": 0.893353941267388,
+            "specificity": 0.3185550082101806,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95487416,
+            "recall": 0.7731066460587326,
+            "specificity": 0.5221674876847291,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20361247947454847
+        },
+        {
+          "held_out_person": "HG01985",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.8397575,
+            "recall": 0.9010554089709762,
+            "specificity": 0.2859450726978998,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95485115,
+            "recall": 0.775065963060686,
+            "specificity": 0.5169628432956381,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23101777059773831
+        },
+        {
+          "held_out_person": "HG01988",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.84107671,
+            "recall": 0.8950617283950617,
+            "specificity": 0.2943396226415094,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95493472,
+            "recall": 0.7680311890838206,
+            "specificity": 0.5169811320754717,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.22264150943396227
+        },
+        {
+          "held_out_person": "HG01990",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.84103543,
+            "recall": 0.895478374836173,
+            "specificity": 0.319672131147541,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95485115,
+            "recall": 0.7749017038007864,
+            "specificity": 0.5295081967213114,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20983606557377044
+        },
+        {
+          "held_out_person": "HG02009",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.83946838,
+            "recall": 0.90153452685422,
+            "specificity": 0.2714723926380368,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95488914,
+            "recall": 0.7720588235294118,
+            "specificity": 0.5,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2285276073619632
+        },
+        {
+          "held_out_person": "HG02603",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.83672074,
+            "recall": 0.8978638184245661,
+            "specificity": 0.382183908045977,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95472076,
+            "recall": 0.784712950600801,
+            "specificity": 0.5833333333333334,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20114942528735635
+        },
+        {
+          "held_out_person": "HG02648",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.83893514,
+            "recall": 0.8898247978436657,
+            "specificity": 0.3972222222222222,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95510244,
+            "recall": 0.7564016172506739,
+            "specificity": 0.6333333333333333,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2361111111111111
+        },
+        {
+          "held_out_person": "HG02651",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.83824561,
+            "recall": 0.892426273458445,
+            "specificity": 0.38235294117647056,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95472076,
+            "recall": 0.7845174262734584,
+            "specificity": 0.6176470588235294,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23529411764705888
+        },
+        {
+          "held_out_person": "HG02654",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.83432847,
+            "recall": 0.9058862653807782,
+            "specificity": 0.338368580060423,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95482018,
+            "recall": 0.7765214499501164,
+            "specificity": 0.5468277945619335,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20845921450151056
+        },
+        {
+          "held_out_person": "HG02657",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.83272676,
+            "recall": 0.9087504256043581,
+            "specificity": 0.3559322033898305,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95480635,
+            "recall": 0.7783452502553626,
+            "specificity": 0.5310734463276836,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.1751412429378531
+        },
+        {
+          "held_out_person": "HG02660",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.8349457,
+            "recall": 0.9041597337770383,
+            "specificity": 0.3804034582132565,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95470115,
+            "recall": 0.7866888519134775,
+            "specificity": 0.6167146974063401,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2363112391930836
+        }
+      ],
+      "by_superpopulation": {
+        "AFR": {
+          "n": 6,
+          "group_mean_specificity": 0.2959497521749089,
+          "pooled_mean_specificity": 0.5179329469591955,
+          "mean_specificity_delta": -0.22198319478428644,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "AMR": {
+          "n": 6,
+          "group_mean_specificity": 0.3683394847453349,
+          "pooled_mean_specificity": 0.6020194257356626,
+          "mean_specificity_delta": -0.23367994099032774,
+          "group_met_target": 6,
+          "pooled_met_target": 5
+        },
+        "EAS": {
+          "n": 6,
+          "group_mean_specificity": 0.37138402189882197,
+          "pooled_mean_specificity": 0.5918810691120155,
+          "mean_specificity_delta": -0.22049704721319352,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "EUR": {
+          "n": 6,
+          "group_mean_specificity": 0.3471808306790651,
+          "pooled_mean_specificity": 0.5966793675235823,
+          "mean_specificity_delta": -0.24949853684451737,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "SAS": {
+          "n": 6,
+          "group_mean_specificity": 0.37274388551803,
+          "pooled_mean_specificity": 0.5881549439643589,
+          "mean_specificity_delta": -0.2154110584463289,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        }
+      },
+      "overall_mean_specificity_delta": -0.22821395565573077,
+      "overall_group_met_target": 30,
+      "overall_pooled_met_target": 29
+    },
+    "M2": {
+      "rows": [
+        {
+          "held_out_person": "HG00109",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.81380063,
+            "recall": 0.8897876643073812,
+            "specificity": 0.37349397590361444,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94166549,
+            "recall": 0.7664307381193124,
+            "specificity": 0.572289156626506,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.1987951807228916
+        },
+        {
+          "held_out_person": "HG00110",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.80684648,
+            "recall": 0.915593220338983,
+            "specificity": 0.36809815950920244,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94146544,
+            "recall": 0.7803389830508475,
+            "specificity": 0.6073619631901841,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23926380368098166
+        },
+        {
+          "held_out_person": "HG00111",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.8127348,
+            "recall": 0.8921634293369055,
+            "specificity": 0.36990595611285265,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94173747,
+            "recall": 0.7595445411922304,
+            "specificity": 0.6206896551724138,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.25078369905956116
+        },
+        {
+          "held_out_person": "HG00112",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.81127407,
+            "recall": 0.8990304246071548,
+            "specificity": 0.37254901960784315,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94148566,
+            "recall": 0.779003677699766,
+            "specificity": 0.5574229691876751,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.18487394957983194
+        },
+        {
+          "held_out_person": "HG00113",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.8112582,
+            "recall": 0.8993473033321883,
+            "specificity": 0.29651162790697677,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94171141,
+            "recall": 0.7626245276537272,
+            "specificity": 0.5726744186046512,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2761627906976744
+        },
+        {
+          "held_out_person": "HG00114",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.81060511,
+            "recall": 0.9018549747048904,
+            "specificity": 0.36533333333333334,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94151082,
+            "recall": 0.7780775716694772,
+            "specificity": 0.5733333333333334,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20800000000000002
+        },
+        {
+          "held_out_person": "HG00442",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.81383538,
+            "recall": 0.906280828674778,
+            "specificity": 0.3681159420289855,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94137981,
+            "recall": 0.7855968431437027,
+            "specificity": 0.5710144927536231,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20289855072463764
+        },
+        {
+          "held_out_person": "HG00445",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.81511352,
+            "recall": 0.9013616738625041,
+            "specificity": 0.38292011019283745,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94120028,
+            "recall": 0.7964131517768184,
+            "specificity": 0.5950413223140496,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21212121212121215
+        },
+        {
+          "held_out_person": "HG00448",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.81748195,
+            "recall": 0.8920265780730897,
+            "specificity": 0.37183098591549296,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94158006,
+            "recall": 0.7714285714285715,
+            "specificity": 0.5802816901408451,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2084507042253521
+        },
+        {
+          "held_out_person": "HG00451",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.81602087,
+            "recall": 0.8978054372748117,
+            "specificity": 0.39156626506024095,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94137849,
+            "recall": 0.785784474287586,
+            "specificity": 0.5993975903614458,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20783132530120485
+        },
+        {
+          "held_out_person": "HG00457",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.81515696,
+            "recall": 0.9010695187165776,
+            "specificity": 0.34615384615384615,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94133826,
+            "recall": 0.7877673796791443,
+            "specificity": 0.5710059171597633,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2248520710059172
+        },
+        {
+          "held_out_person": "HG00463",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.81470942,
+            "recall": 0.9029676558852952,
+            "specificity": 0.35714285714285715,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.9415107,
+            "recall": 0.778592864288096,
+            "specificity": 0.5942857142857143,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23714285714285716
+        },
+        {
+          "held_out_person": "HG00739",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.80950054,
+            "recall": 0.9,
+            "specificity": 0.39710144927536234,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94165275,
+            "recall": 0.7675409836065574,
+            "specificity": 0.6260869565217392,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.22898550724637684
+        },
+        {
+          "held_out_person": "HG00742",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.80776503,
+            "recall": 0.9039843239712606,
+            "specificity": 0.34831460674157305,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94153637,
+            "recall": 0.7749836708033965,
+            "specificity": 0.5533707865168539,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20505617977528084
+        },
+        {
+          "held_out_person": "HG01048",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.81821738,
+            "recall": 0.8688369152970923,
+            "specificity": 0.4423076923076923,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94193514,
+            "recall": 0.7462073324905183,
+            "specificity": 0.6033653846153846,
+            "met_target": false
+          },
+          "specificity_delta_group_minus_pooled": -0.1610576923076923
+        },
+        {
+          "held_out_person": "HG01051",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.79807872,
+            "recall": 0.9314055144586416,
+            "specificity": 0.3277511961722488,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94131444,
+            "recall": 0.7895090786819099,
+            "specificity": 0.5741626794258373,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.24641148325358853
+        },
+        {
+          "held_out_person": "HG01054",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.80776503,
+            "recall": 0.9040823099900431,
+            "specificity": 0.32132963988919666,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94156335,
+            "recall": 0.7723199468967806,
+            "specificity": 0.5789473684210527,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.257617728531856
+        },
+        {
+          "held_out_person": "HG01058",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.81139966,
+            "recall": 0.8938802083333334,
+            "specificity": 0.34844868735083534,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94157608,
+            "recall": 0.7718098958333334,
+            "specificity": 0.5871121718377088,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23866348448687347
+        },
+        {
+          "held_out_person": "HG01914",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.81631078,
+            "recall": 0.9138044914134742,
+            "specificity": 0.27289377289377287,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94142888,
+            "recall": 0.7826948480845443,
+            "specificity": 0.489010989010989,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21611721611721613
+        },
+        {
+          "held_out_person": "HG01958",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.82052549,
+            "recall": 0.8973724884080371,
+            "specificity": 0.30870279146141216,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94153637,
+            "recall": 0.7749613601236476,
+            "specificity": 0.5106732348111659,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20197044334975373
+        },
+        {
+          "held_out_person": "HG01985",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.82079438,
+            "recall": 0.896108179419525,
+            "specificity": 0.27463651050080773,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94148566,
+            "recall": 0.7790237467018469,
+            "specificity": 0.4878836833602585,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21324717285945077
+        },
+        {
+          "held_out_person": "HG01988",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.81991194,
+            "recall": 0.8989603638726446,
+            "specificity": 0.3018867924528302,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94159341,
+            "recall": 0.7712800519818064,
+            "specificity": 0.5169811320754717,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21509433962264152
+        },
+        {
+          "held_out_person": "HG01990",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.82043819,
+            "recall": 0.8977719528178244,
+            "specificity": 0.30983606557377047,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94150362,
+            "recall": 0.7788335517693316,
+            "specificity": 0.5114754098360655,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20163934426229507
+        },
+        {
+          "held_out_person": "HG02009",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.82060307,
+            "recall": 0.8964194373401535,
+            "specificity": 0.26993865030674846,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94154519,
+            "recall": 0.774616368286445,
+            "specificity": 0.48006134969325154,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21012269938650308
+        },
+        {
+          "held_out_person": "HG02603",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.82195514,
+            "recall": 0.8991989319092123,
+            "specificity": 0.3793103448275862,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94151082,
+            "recall": 0.7780373831775701,
+            "specificity": 0.5689655172413793,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.18965517241379315
+        },
+        {
+          "held_out_person": "HG02648",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.82654154,
+            "recall": 0.8800539083557951,
+            "specificity": 0.4083333333333333,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94181776,
+            "recall": 0.7540431266846361,
+            "specificity": 0.6111111111111112,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20277777777777783
+        },
+        {
+          "held_out_person": "HG02651",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.82188338,
+            "recall": 0.8994638069705094,
+            "specificity": 0.36176470588235293,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94142888,
+            "recall": 0.7828418230563002,
+            "specificity": 0.6029411764705882,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.24117647058823527
+        },
+        {
+          "held_out_person": "HG02654",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.82063899,
+            "recall": 0.9052211506484868,
+            "specificity": 0.3474320241691843,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.9415219,
+            "recall": 0.775856335217825,
+            "specificity": 0.5558912386706949,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20845921450151061
+        },
+        {
+          "held_out_person": "HG02657",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.81910056,
+            "recall": 0.90943139257746,
+            "specificity": 0.3531073446327684,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94136401,
+            "recall": 0.7868573374191352,
+            "specificity": 0.519774011299435,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.16666666666666663
+        },
+        {
+          "held_out_person": "HG02660",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.82010816,
+            "recall": 0.9074875207986689,
+            "specificity": 0.39481268011527376,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.94142002,
+            "recall": 0.7833610648918469,
+            "specificity": 0.5965417867435159,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20172910662824212
+        }
+      ],
+      "by_superpopulation": {
+        "AFR": {
+          "n": 6,
+          "group_mean_specificity": 0.2896490971982236,
+          "pooled_mean_specificity": 0.4993476331312003,
+          "mean_specificity_delta": -0.20969853593297672,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "AMR": {
+          "n": 6,
+          "group_mean_specificity": 0.3642088786228181,
+          "pooled_mean_specificity": 0.5871742245564294,
+          "mean_specificity_delta": -0.2229653459336113,
+          "group_met_target": 6,
+          "pooled_met_target": 5
+        },
+        "EAS": {
+          "n": 6,
+          "group_mean_specificity": 0.36962166774904337,
+          "pooled_mean_specificity": 0.5851711211692402,
+          "mean_specificity_delta": -0.21554945342019685,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "EUR": {
+          "n": 6,
+          "group_mean_specificity": 0.3576486787289705,
+          "pooled_mean_specificity": 0.5839619160191273,
+          "mean_specificity_delta": -0.22631323729015682,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "SAS": {
+          "n": 6,
+          "group_mean_specificity": 0.3741267388267498,
+          "pooled_mean_specificity": 0.5758708069227875,
+          "mean_specificity_delta": -0.2017440680960376,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        }
+      },
+      "overall_mean_specificity_delta": -0.2152541281345959,
+      "overall_group_met_target": 30,
+      "overall_pooled_met_target": 29
+    },
+    "M4": {
+      "rows": [
+        {
+          "held_out_person": "HG00109",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.84403074,
+            "recall": 0.8897876643073812,
+            "specificity": 0.3795180722891566,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95151085,
+            "recall": 0.7762049207954163,
+            "specificity": 0.5783132530120482,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.19879518072289154
+        },
+        {
+          "held_out_person": "HG00110",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.83746837,
+            "recall": 0.9122033898305085,
+            "specificity": 0.39570552147239263,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95151395,
+            "recall": 0.775593220338983,
+            "specificity": 0.6288343558282209,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23312883435582826
+        },
+        {
+          "held_out_person": "HG00111",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.84287198,
+            "recall": 0.8945077026121903,
+            "specificity": 0.40752351097178685,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95171547,
+            "recall": 0.7595445411922304,
+            "specificity": 0.6426332288401254,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23510971786833856
+        },
+        {
+          "held_out_person": "HG00112",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.84091345,
+            "recall": 0.9013707790036777,
+            "specificity": 0.3473389355742297,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95151051,
+            "recall": 0.7766633233032431,
+            "specificity": 0.5994397759103641,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.25210084033613445
+        },
+        {
+          "held_out_person": "HG00113",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.83996425,
+            "recall": 0.9041566472002748,
+            "specificity": 0.3488372093023256,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95177986,
+            "recall": 0.7560975609756098,
+            "specificity": 0.6162790697674418,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.26744186046511625
+        },
+        {
+          "held_out_person": "HG00114",
+          "superpopulation": "EUR",
+          "group_conditional": {
+            "threshold": 0.84101522,
+            "recall": 0.9008431703204047,
+            "specificity": 0.37333333333333335,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.9515143,
+            "recall": 0.7750421585160202,
+            "specificity": 0.584,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2106666666666666
+        },
+        {
+          "held_out_person": "HG00442",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.84294363,
+            "recall": 0.9033212758960868,
+            "specificity": 0.36231884057971014,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95142641,
+            "recall": 0.7832949687602763,
+            "specificity": 0.6086956521739131,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.24637681159420294
+        },
+        {
+          "held_out_person": "HG00445",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.84333241,
+            "recall": 0.9016937894387247,
+            "specificity": 0.39118457300275483,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95124636,
+            "recall": 0.798737960810362,
+            "specificity": 0.6391184573002755,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.24793388429752067
+        },
+        {
+          "held_out_person": "HG00448",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.84678245,
+            "recall": 0.8906976744186047,
+            "specificity": 0.38591549295774646,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95153471,
+            "recall": 0.773421926910299,
+            "specificity": 0.6028169014084507,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21690140845070421
+        },
+        {
+          "held_out_person": "HG00451",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.84279056,
+            "recall": 0.9040288241074353,
+            "specificity": 0.43373493975903615,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95125808,
+            "recall": 0.7962659679004258,
+            "specificity": 0.6295180722891566,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.19578313253012042
+        },
+        {
+          "held_out_person": "HG00457",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.84319961,
+            "recall": 0.9024064171122995,
+            "specificity": 0.3905325443786982,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95132705,
+            "recall": 0.7894385026737968,
+            "specificity": 0.606508875739645,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21597633136094674
+        },
+        {
+          "held_out_person": "HG00463",
+          "superpopulation": "EAS",
+          "group_conditional": {
+            "threshold": 0.84447616,
+            "recall": 0.8976325441813938,
+            "specificity": 0.3742857142857143,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.9515143,
+            "recall": 0.7752584194731578,
+            "specificity": 0.6228571428571429,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2485714285714286
+        },
+        {
+          "held_out_person": "HG00739",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.83585509,
+            "recall": 0.9016393442622951,
+            "specificity": 0.41739130434782606,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95149012,
+            "recall": 0.7793442622950819,
+            "specificity": 0.6202898550724638,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.20289855072463775
+        },
+        {
+          "held_out_person": "HG00742",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.83498857,
+            "recall": 0.9056172436316133,
+            "specificity": 0.36235955056179775,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95139823,
+            "recall": 0.7854343566296538,
+            "specificity": 0.5898876404494382,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.22752808988764045
+        },
+        {
+          "held_out_person": "HG01048",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.84388467,
+            "recall": 0.8757901390644753,
+            "specificity": 0.4423076923076923,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95162896,
+            "recall": 0.765802781289507,
+            "specificity": 0.6081730769230769,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.16586538461538458
+        },
+        {
+          "held_out_person": "HG01051",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.83074814,
+            "recall": 0.9223268325487559,
+            "specificity": 0.3588516746411483,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95151051,
+            "recall": 0.7763954270342972,
+            "specificity": 0.6028708133971292,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2440191387559809
+        },
+        {
+          "held_out_person": "HG01054",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.83553455,
+            "recall": 0.9037504148689014,
+            "specificity": 0.3545706371191136,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95165394,
+            "recall": 0.7633587786259542,
+            "specificity": 0.6149584487534626,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.26038781163434904
+        },
+        {
+          "held_out_person": "HG01058",
+          "superpopulation": "AMR",
+          "group_conditional": {
+            "threshold": 0.83821005,
+            "recall": 0.8916015625,
+            "specificity": 0.38424821002386633,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.9515115,
+            "recall": 0.7757161458333334,
+            "specificity": 0.5966587112171837,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2124105011933174
+        },
+        {
+          "held_out_person": "HG01914",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.83792158,
+            "recall": 0.916116248348745,
+            "specificity": 0.2967032967032967,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95151085,
+            "recall": 0.7760898282694848,
+            "specificity": 0.5201465201465202,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.22344322344322348
+        },
+        {
+          "held_out_person": "HG01958",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.84375225,
+            "recall": 0.895208655332303,
+            "specificity": 0.31527093596059114,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95148597,
+            "recall": 0.7799072642967543,
+            "specificity": 0.5385878489326765,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2233169129720854
+        },
+        {
+          "held_out_person": "HG01985",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.84429099,
+            "recall": 0.8928100263852242,
+            "specificity": 0.27140549273021003,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95158903,
+            "recall": 0.7694591029023746,
+            "specificity": 0.5234248788368336,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2520193861066236
+        },
+        {
+          "held_out_person": "HG01988",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.84203215,
+            "recall": 0.9022092267706303,
+            "specificity": 0.30754716981132074,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95164233,
+            "recall": 0.7644574398960364,
+            "specificity": 0.5415094339622641,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2339622641509434
+        },
+        {
+          "held_out_person": "HG01990",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.8436141,
+            "recall": 0.8958060288335518,
+            "specificity": 0.30983606557377047,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95159992,
+            "recall": 0.7680209698558322,
+            "specificity": 0.5377049180327869,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2278688524590164
+        },
+        {
+          "held_out_person": "HG02009",
+          "superpopulation": "AFR",
+          "group_conditional": {
+            "threshold": 0.84308378,
+            "recall": 0.8973785166240409,
+            "specificity": 0.2960122699386503,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95168698,
+            "recall": 0.762468030690537,
+            "specificity": 0.5322085889570553,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23619631901840493
+        },
+        {
+          "held_out_person": "HG02603",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.84850558,
+            "recall": 0.8931909212283045,
+            "specificity": 0.4166666666666667,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95151395,
+            "recall": 0.7753671562082777,
+            "specificity": 0.6005747126436781,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.18390804597701144
+        },
+        {
+          "held_out_person": "HG02648",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.84850558,
+            "recall": 0.8931940700808625,
+            "specificity": 0.4222222222222222,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95168024,
+            "recall": 0.7628032345013477,
+            "specificity": 0.6111111111111112,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.18888888888888894
+        },
+        {
+          "held_out_person": "HG02651",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.84591246,
+            "recall": 0.9024798927613941,
+            "specificity": 0.38823529411764707,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95149293,
+            "recall": 0.7788203753351206,
+            "specificity": 0.6323529411764706,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.2441176470588235
+        },
+        {
+          "held_out_person": "HG02654",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.84756319,
+            "recall": 0.896242101762554,
+            "specificity": 0.3323262839879154,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95141991,
+            "recall": 0.7841702693714666,
+            "specificity": 0.5649546827794562,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.23262839879154074
+        },
+        {
+          "held_out_person": "HG02657",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.84439445,
+            "recall": 0.9084099421178072,
+            "specificity": 0.3502824858757062,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95139823,
+            "recall": 0.7854954034729316,
+            "specificity": 0.5649717514124294,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.21468926553672318
+        },
+        {
+          "held_out_person": "HG02660",
+          "superpopulation": "SAS",
+          "group_conditional": {
+            "threshold": 0.84480751,
+            "recall": 0.9068219633943427,
+            "specificity": 0.43804034582132567,
+            "met_target": true
+          },
+          "pooled": {
+            "threshold": 0.95138357,
+            "recall": 0.7860232945091514,
+            "specificity": 0.6311239193083573,
+            "met_target": true
+          },
+          "specificity_delta_group_minus_pooled": -0.19308357348703165
+        }
+      ],
+      "by_superpopulation": {
+        "AFR": {
+          "n": 6,
+          "group_mean_specificity": 0.2994625384529732,
+          "pooled_mean_specificity": 0.5322636981446894,
+          "mean_specificity_delta": -0.2328011596917162,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "AMR": {
+          "n": 6,
+          "group_mean_specificity": 0.3866215115002407,
+          "pooled_mean_specificity": 0.6054730909687924,
+          "mean_specificity_delta": -0.21885157946855172,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "EAS": {
+          "n": 6,
+          "group_mean_specificity": 0.38966201749394336,
+          "pooled_mean_specificity": 0.6182525169614306,
+          "mean_specificity_delta": -0.2285904994674873,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "EUR": {
+          "n": 6,
+          "group_mean_specificity": 0.37537609715720416,
+          "pooled_mean_specificity": 0.6082499472263667,
+          "mean_specificity_delta": -0.2328738500691626,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        },
+        "SAS": {
+          "n": 6,
+          "group_mean_specificity": 0.39129554978191394,
+          "pooled_mean_specificity": 0.6008481864052505,
+          "mean_specificity_delta": -0.2095526366233366,
+          "group_met_target": 6,
+          "pooled_met_target": 6
+        }
+      },
+      "overall_mean_specificity_delta": -0.22453394506405086,
+      "overall_group_met_target": 30,
+      "overall_pooled_met_target": 30
+    }
+  }
+}

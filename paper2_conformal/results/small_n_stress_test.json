@@ -1,0 +1,301 @@
+{
+  "analytical_curve": [
+    {
+      "N": 1,
+      "max_guaranteed_recall": 0.5
+    },
+    {
+      "N": 2,
+      "max_guaranteed_recall": 0.6666666666666666
+    },
+    {
+      "N": 3,
+      "max_guaranteed_recall": 0.75
+    },
+    {
+      "N": 4,
+      "max_guaranteed_recall": 0.8
+    },
+    {
+      "N": 5,
+      "max_guaranteed_recall": 0.8333333333333334
+    },
+    {
+      "N": 6,
+      "max_guaranteed_recall": 0.8571428571428571
+    },
+    {
+      "N": 7,
+      "max_guaranteed_recall": 0.875
+    },
+    {
+      "N": 8,
+      "max_guaranteed_recall": 0.8888888888888888
+    },
+    {
+      "N": 9,
+      "max_guaranteed_recall": 0.9
+    },
+    {
+      "N": 10,
+      "max_guaranteed_recall": 0.9090909090909091
+    },
+    {
+      "N": 11,
+      "max_guaranteed_recall": 0.9166666666666666
+    },
+    {
+      "N": 12,
+      "max_guaranteed_recall": 0.9230769230769231
+    },
+    {
+      "N": 13,
+      "max_guaranteed_recall": 0.9285714285714286
+    },
+    {
+      "N": 14,
+      "max_guaranteed_recall": 0.9333333333333333
+    },
+    {
+      "N": 15,
+      "max_guaranteed_recall": 0.9375
+    },
+    {
+      "N": 16,
+      "max_guaranteed_recall": 0.9411764705882353
+    },
+    {
+      "N": 17,
+      "max_guaranteed_recall": 0.9444444444444444
+    },
+    {
+      "N": 18,
+      "max_guaranteed_recall": 0.9473684210526315
+    },
+    {
+      "N": 19,
+      "max_guaranteed_recall": 0.95
+    },
+    {
+      "N": 20,
+      "max_guaranteed_recall": 0.9523809523809523
+    },
+    {
+      "N": 21,
+      "max_guaranteed_recall": 0.9545454545454546
+    },
+    {
+      "N": 22,
+      "max_guaranteed_recall": 0.9565217391304348
+    },
+    {
+      "N": 23,
+      "max_guaranteed_recall": 0.9583333333333334
+    },
+    {
+      "N": 24,
+      "max_guaranteed_recall": 0.96
+    },
+    {
+      "N": 25,
+      "max_guaranteed_recall": 0.9615384615384616
+    },
+    {
+      "N": 26,
+      "max_guaranteed_recall": 0.9629629629629629
+    },
+    {
+      "N": 27,
+      "max_guaranteed_recall": 0.9642857142857143
+    },
+    {
+      "N": 28,
+      "max_guaranteed_recall": 0.9655172413793104
+    },
+    {
+      "N": 29,
+      "max_guaranteed_recall": 0.9666666666666667
+    },
+    {
+      "N": 30,
+      "max_guaranteed_recall": 0.967741935483871
+    },
+    {
+      "N": 31,
+      "max_guaranteed_recall": 0.96875
+    },
+    {
+      "N": 32,
+      "max_guaranteed_recall": 0.9696969696969697
+    },
+    {
+      "N": 33,
+      "max_guaranteed_recall": 0.9705882352941176
+    },
+    {
+      "N": 34,
+      "max_guaranteed_recall": 0.9714285714285714
+    },
+    {
+      "N": 35,
+      "max_guaranteed_recall": 0.9722222222222222
+    },
+    {
+      "N": 36,
+      "max_guaranteed_recall": 0.972972972972973
+    },
+    {
+      "N": 37,
+      "max_guaranteed_recall": 0.9736842105263158
+    },
+    {
+      "N": 38,
+      "max_guaranteed_recall": 0.9743589743589743
+    },
+    {
+      "N": 39,
+      "max_guaranteed_recall": 0.975
+    },
+    {
+      "N": 40,
+      "max_guaranteed_recall": 0.975609756097561
+    }
+  ],
+  "empirical_poc_curve": {
+    "target_recall": 0.65,
+    "by_model": {
+      "M0": {
+        "2": {
+          "n_subsets": 10,
+          "n_feasible": 10,
+          "max_guaranteed_recall": 0.6666666666666666,
+          "mean_in_sample_specificity": 0.12309418416853901,
+          "min_in_sample_specificity": 0.1145418326693227,
+          "max_in_sample_specificity": 0.13834586466165413
+        },
+        "3": {
+          "n_subsets": 10,
+          "n_feasible": 10,
+          "max_guaranteed_recall": 0.75,
+          "mean_in_sample_specificity": 0.43644083305662623,
+          "min_in_sample_specificity": 0.4072642967542504,
+          "max_in_sample_specificity": 0.470311027332705
+        },
+        "4": {
+          "n_subsets": 5,
+          "n_feasible": 5,
+          "max_guaranteed_recall": 0.8,
+          "mean_in_sample_specificity": 0.5197647630196435,
+          "min_in_sample_specificity": 0.5014979029358898,
+          "max_in_sample_specificity": 0.5565969718817592
+        },
+        "5": {
+          "n_subsets": 1,
+          "n_feasible": 1,
+          "max_guaranteed_recall": 0.8333333333333334,
+          "mean_in_sample_specificity": 0.564484126984127,
+          "min_in_sample_specificity": 0.564484126984127,
+          "max_in_sample_specificity": 0.564484126984127
+        }
+      },
+      "M2": {
+        "2": {
+          "n_subsets": 10,
+          "n_feasible": 10,
+          "max_guaranteed_recall": 0.6666666666666666,
+          "mean_in_sample_specificity": 0.12172187790671815,
+          "min_in_sample_specificity": 0.10471204188481675,
+          "max_in_sample_specificity": 0.15406162464985995
+        },
+        "3": {
+          "n_subsets": 10,
+          "n_feasible": 10,
+          "max_guaranteed_recall": 0.75,
+          "mean_in_sample_specificity": 0.42886676122554057,
+          "min_in_sample_specificity": 0.4041731066460587,
+          "max_in_sample_specificity": 0.4575098814229249
+        },
+        "4": {
+          "n_subsets": 5,
+          "n_feasible": 5,
+          "max_guaranteed_recall": 0.8,
+          "mean_in_sample_specificity": 0.5161738857862583,
+          "min_in_sample_specificity": 0.4979029358897543,
+          "max_in_sample_specificity": 0.5465032444124008
+        },
+        "5": {
+          "n_subsets": 1,
+          "n_feasible": 1,
+          "max_guaranteed_recall": 0.8333333333333334,
+          "mean_in_sample_specificity": 0.5565476190476191,
+          "min_in_sample_specificity": 0.5565476190476191,
+          "max_in_sample_specificity": 0.5565476190476191
+        }
+      },
+      "M4": {
+        "2": {
+          "n_subsets": 10,
+          "n_feasible": 10,
+          "max_guaranteed_recall": 0.6666666666666666,
+          "mean_in_sample_specificity": 0.12920166932402816,
+          "min_in_sample_specificity": 0.11260330578512397,
+          "max_in_sample_specificity": 0.1485884101040119
+        },
+        "3": {
+          "n_subsets": 10,
+          "n_feasible": 10,
+          "max_guaranteed_recall": 0.75,
+          "mean_in_sample_specificity": 0.45542293314011406,
+          "min_in_sample_specificity": 0.4327666151468315,
+          "max_in_sample_specificity": 0.48759541984732824
+        },
+        "4": {
+          "n_subsets": 5,
+          "n_feasible": 5,
+          "max_guaranteed_recall": 0.8,
+          "mean_in_sample_specificity": 0.5502884186221709,
+          "min_in_sample_specificity": 0.5362583790371724,
+          "max_in_sample_specificity": 0.5847152126892574
+        },
+        "5": {
+          "n_subsets": 1,
+          "n_feasible": 1,
+          "max_guaranteed_recall": 0.8333333333333334,
+          "mean_in_sample_specificity": 0.5942460317460317,
+          "min_in_sample_specificity": 0.5942460317460317,
+          "max_in_sample_specificity": 0.5942460317460317
+        }
+      }
+    }
+  },
+  "cohort_reference_points": {
+    "cohort_pooled": {
+      "N": 30,
+      "max_guaranteed_recall": 0.967741935483871,
+      "source": "already computed by 02_crc_pooled.py, reused not recomputed"
+    },
+    "cohort_by_superpopulation": {
+      "AFR": {
+        "N": 6,
+        "max_guaranteed_recall": 0.8571428571428571
+      },
+      "AMR": {
+        "N": 6,
+        "max_guaranteed_recall": 0.8571428571428571
+      },
+      "EAS": {
+        "N": 6,
+        "max_guaranteed_recall": 0.8571428571428571
+      },
+      "EUR": {
+        "N": 6,
+        "max_guaranteed_recall": 0.8571428571428571
+      },
+      "SAS": {
+        "N": 6,
+        "max_guaranteed_recall": 0.8571428571428571
+      }
+    },
+    "_note": "reused from 03_crc_group_conditional.py output, no new cohort computation performed here"
+  }
+}

@@ -1,0 +1,24 @@
+PAIR-SV Train15 publication build record (targeted correction pass)
+
+Tectonic version: Tectonic 0.16.9
+
+Main manuscript command:
+tectonic paper/PAIR_SV_Train15_article_draft.tex --outdir paper/build --keep-logs --keep-intermediates
+Exit code: 0
+Output: paper/build/PAIR_SV_Train15_article_draft.pdf
+
+Supplement command:
+tectonic paper/PAIR_SV_Train15_supplementary.tex --outdir paper/build --keep-logs --keep-intermediates
+Exit code: 0
+Output: paper/build/PAIR_SV_Train15_supplementary.pdf
+
+Final main rendering command:
+pdftoppm -png -r 170 paper/PAIR_SV_Train15_article_draft.pdf paper/rendered_pages/page
+
+Supplement rendering command:
+pdftoppm -png -r 160 paper/PAIR_SV_Train15_supplementary.pdf paper/rendered_supplementary_pages/page
+
+Main PDF: 6 pages, SHA-256 d35f0efe2ef68d7d329dee4dc09eb58e341b87f2474c4058c86c95a9a37ed453
+Supplement PDF: 3 pages, SHA-256 976436f19b61349cba4c46bad1730f4e4354b3592d590721091293e72ef9f288
+
+Engine logs and intermediates are retained in paper/build/. Final visual and numerical audit: paper/final_audit.md.

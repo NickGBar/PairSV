@@ -1,0 +1,12 @@
+{
+ "kaggle/deepsv-ms-test-inference/output-v1/pairsv_test_predictions_LABEL_BLIND.csv": "bf185a21dc00b096b6949359a8595fa81f5971f92466e9a07e10d9fcd1f6213c",
+ "reports/test_evaluation/frozen_prediction_hashes.json": "486cc383f9e06ccd6ea4230d882e4b893643c8e22c7d24dfbc87b313f552592f",
+ "reports/test_evaluation/per_seed_metrics.csv": "f09bbd1eae376cbda10ec1e9da1d4f9df59e43ba4ffaa1313eb78031b9793304",
+ "reports/test_evaluation/three_seed_aggregate.csv": "d7313e4c0b7c714b30cd58fcc2a384a0aec0b9274c4d73e711cab5dd2375777c",
+ "reports/test_evaluation/subgroup_metrics.csv": "6387b28bb03607dc334f070ea67a9e8fdbe29ec5ad3c3cfd60ba315b30fb2d16",
+ "reports/test_evaluation/candidate_cluster_bootstrap.csv": "b7fa76df1636d6cc7eacee10c45310fdd748cbc46f75c7acf9ab20e2780c199b",
+ "reports/test_evaluation/candidate_cluster_bootstrap_50_200bp.csv": "2821970f2f1d99ce30e1522dfb942c99f56aee2b191f9f809e132455dd923bcb",
+ "reports/test_evaluation/confusion_matrices.csv": "e13e7f3de4c44c4e35ccacbd938895520a03532127c497dd4fc1e056ead803d7",
+ "reports/test_evaluation/leave_one_person_out.csv": "015c3b024cf30d7907aa675f3113095296c6b5d92ec6b947765d7687c231b156",
+ "kaggle/deepsv-ms-extract-test-shard9/output-v2/pairsv_shard_09.h5": "e8fca22cc442f5cd924ce5abc16bbcdae3aa1fb91ed9b0acb7b0f65a78149003"
+}

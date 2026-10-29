@@ -1,0 +1,129 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.72in]{geometry}
+\usepackage{booktabs,longtable,array,graphicx,enumitem}
+\setlength{\LTpre}{5pt}\setlength{\LTpost}{5pt}
+\title{PAIR-SV Train15 Interim Study\\Supplementary material}
+\author{Author placeholder}
+\date{}
+\begin{document}\maketitle
+
+\section*{Scope and reproducibility boundary}
+This supplement documents the frozen Train15 / validation comparison. It contains 29,924 successful training rows from 15 people and 9,981 successful validation rows from five distinct people. The strict 50-person manifest contained 100,000 rows and a planned 40/5/5 person split. No internal-test person, input, prediction or metric was accessed. The controlled artifacts used seed 20260720 and the same row-aligned validation order for M0, M2 and M4.
+
+\section*{S1. Strict manifest and label rules}
+Positive labels required a sequence-resolved GRCh38 deletion of 50--10,000 bp, valid REF/ALT representation and coordinates, non-missing 0/1 or 1/1 genotype, GQ $\geq20$, and the selected PanGenie/HGSVC2 site-quality policy. The selected manifest retained GQ for QC only. Same-site negatives required a non-missing 0/0 genotype, GQ $\geq20$, callability, no overlapping conflicting carried deletion, and later adequate local read coverage. Positive sampling was deterministic and stratified by chromosome, deletion-length and allele-frequency bucket; matching used same candidate locus where possible, then continuous allele-frequency matching with length, chromosome and GQ as deterministic secondary criteria. Sample ID, population, split, GQ, allele frequency, negative type, source filename and read-name hash were excluded from model tensors.
+
+\begin{longtable}{p{0.30\textwidth}p{0.63\textwidth}}
+\caption{Table S1. Seventeen scalar read-support features.}\label{tab:s1features}\\
+\toprule Feature & Definition\\\midrule\endfirsthead
+\toprule Feature & Definition\\\midrule\endhead
+\bottomrule\endfoot
+\texttt{left\_soft\_clip\_count} & Reads with at least 10 soft-clipped bases at the left breakpoint.\\
+\texttt{right\_soft\_clip\_count} & Reads with at least 10 soft-clipped bases at the right breakpoint.\\
+\texttt{split\_read\_count} & Selected reads carrying split or deletion-CIGAR evidence.\\
+\texttt{supplementary\_alignment\_count} & Selected reads flagged supplementary.\\
+\texttt{discordant\_pair\_count} & Selected reads with anomalous mate orientation or separation.\\
+\texttt{reference\_spanning\_read\_count} & Ordinary selected reads spanning the local reference interval.\\
+\texttt{candidate\_alt\_support\_count} & Selected reads prioritized as candidate-supporting.\\
+\texttt{inside\_depth} & Local depth over the deletion interior.\\
+\texttt{left\_flank\_depth} & Depth in the left flanking window.\\
+\texttt{right\_flank\_depth} & Depth in the right flanking window.\\
+\texttt{inside\_flank\_depth\_ratio} & Interior depth divided by mean flank depth with numerical guard.\\
+\texttt{mean\_mapq} & Mean mapping quality of selected reads.\\
+\texttt{mean\_base\_quality} & Mean selected-read base quality.\\
+\texttt{mean\_abs\_insert\_size} & Mean absolute inferred insert size.\\
+\texttt{insert\_size\_anomaly\_fraction} & Fraction of selected reads with anomalous insert size.\\
+\texttt{left\_right\_evidence\_balance} & Normalized balance between left and right breakpoint evidence.\\
+\texttt{log1p\_deletion\_length} & Natural log of one plus deletion length.\\
+\end{longtable}
+
+\section*{S2. Extraction container and QC}
+\begin{table}[h]\centering\small
+\caption{Table S2. Training-ready shard schema.}\label{tab:s2schema}
+\begin{tabular}{lll}\toprule
+Item & Shape / type & Purpose\\\midrule
+Pileup images & $(2,6,64,128)$ uint8 & Left/right breakpoint images\\
+Read tokens & $(2,48,128)$ uint8 & Sample-specific selected sequences\\
+Read mask & $(2,48)$ uint8 & Padding-aware pooling\\
+Scalars & $(17)$ float32 & Read-support summary vector\\
+Candidate REF/ALT & $(2,1024)$ uint8, deduplicated & Candidate-level GRCh38 context\\
+Row metadata & IDs, label, coordinates, success/failure & QC and alignment only\\
+Read metadata & CIGAR, strand, MAPQ, BQ, flags, reason & QC only; read-name hash excluded\\\bottomrule
+\end{tabular}
+\end{table}
+
+Validation extraction attempted 10,000 rows and completed 9,981 (0.19\% failure). The explicit failure categories were 15 empty-read cases and four inadequate-flank-coverage cases; no failed row was silently zero-filled. Successful rows had finite scalars and non-empty image/read tensors. The validator checked all five validation people, GQ minimum 20, balanced planned classes, 3,412 same-candidate positive/negative pairs with identical coordinates and sample-specific evidence differences, plus the model-tensor whitelist. The HDF5 schema was \texttt{pairsv-shard-v1}; the validation HDF5 SHA-256 was \texttt{af409617a3959ed8eaadb66039081d9ef80cfda84d089920fe306e5df774362a}.
+
+\section*{S3. Controlled training protocol}
+\begin{table}[h]\centering\small
+\caption{Table S3. Fixed Train15 training configuration.}\label{tab:s3training}
+\begin{tabular}{ll}\toprule Item & Fixed value\\\midrule
+Seed & 20260720\\
+Train / validation people & 15 / 5\\
+Successful rows & 29,924 / 9,981\\
+Epochs & 5 maximum; selected checkpoint by validation F1\\
+Optimizer & AdamW\\
+Learning rate / weight decay & $2\times10^{-4}$ / $10^{-4}$\\
+Batch size & 16\\
+Loss / precision & Cross-entropy / mixed precision\\
+Normalization & Fit only on training people\\
+Decision threshold & Maximize validation F1 per model\\
+M0 / M2 / M4 parameters & 287,618 / 323,110 / 622,374\\\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{S4. Validation subgroups and per-person results}
+\begin{longtable}{llrrrr}
+\caption{Table S4. Validation subgroups from frozen row-aligned predictions.}\label{tab:s4subgroups}\\
+\toprule Model & Subgroup & $n$ & Recall & F1 & ROC-AUC\\\midrule\endfirsthead
+\toprule Model & Subgroup & $n$ & Recall & F1 & ROC-AUC\\\midrule\endhead
+\bottomrule\endfoot
+M0 & 50--200 bp & 6,781 & .8211 & .7740 & .8623\\
+M2 & 50--200 bp & 6,781 & .8193 & .7733 & .8632\\
+M4 & 50--200 bp & 6,781 & .8344 & .7832 & .8716\\
+M0 & 200--1,000 bp & 2,367 & .8963 & .8430 & .9185\\
+M2 & 200--1,000 bp & 2,367 & .8931 & .8419 & .9184\\
+M4 & 200--1,000 bp & 2,367 & .8882 & .8477 & .9226\\
+M0 & 1,000--10,000 bp & 833 & .8404 & .8718 & .9228\\
+M2 & 1,000--10,000 bp & 833 & .8607 & .8646 & .9250\\
+M4 & 1,000--10,000 bp & 833 & .8584 & .8692 & .9331\\
+M0 & GT 0/1 & 3,818 & .8143 & .8976 & --\\
+M2 & GT 0/1 & 3,818 & .8169 & .8992 & --\\
+M4 & GT 0/1 & 3,818 & .8214 & .9019 & --\\
+M0 & GT 1/1 & 996 & .9378 & .9679 & --\\
+M2 & GT 1/1 & 996 & .9247 & .9609 & --\\
+M4 & GT 1/1 & 996 & .9518 & .9753 & --\\
+\end{longtable}
+Same-site negatives are a negative-only stratum, so positive-class recall/F1 are not defined there. Their classification error is represented in the main-paper confusion matrices; for M4, TN/FP is 3,708/1,288 at its validation-selected threshold.
+
+\begin{table*}[t]\centering\small
+\caption{Table S5. Per-person validation F1. Counts are successful rows.}\label{tab:s5people}
+\begin{tabular}{lrrrr}\toprule Person & $n$ & M0 F1 & M2 F1 & M4 F1\\\midrule
+HG00106 & 1,999 & .8080 & .8025 & .8057\\
+HG00422 & 1,992 & .7786 & .7806 & .7843\\
+HG00732 & 1,995 & .8085 & .8083 & .8235\\
+HG01894 & 1,998 & .7913 & .7905 & .7992\\
+HG02597 & 1,997 & .8084 & .8072 & .8174\\\bottomrule
+\end{tabular}
+\end{table*}
+
+\section*{S5. Branch interventions and uncertainty}
+\begin{longtable}{lrrrrr}
+\caption{Table S6. M4 branch interventions.}\label{tab:s6ablations}\\
+\toprule Intervention & F1 & $\Delta$F1 & $\Delta$ROC-AUC & $\Delta$PR-AUC & Changed predictions\\\midrule\endfirsthead
+\toprule Intervention & F1 & $\Delta$F1 & $\Delta$ROC-AUC & $\Delta$PR-AUC & Changed predictions\\\midrule\endhead
+\bottomrule\endfoot
+Candidate zero & .7998 & -.0063 & -.0020 & -.0015 & 4.86\%\\
+Read zero & .7980 & -.0082 & -.0082 & -.0065 & 5.49\%\\
+Scalar zero & .7905 & -.0156 & -.0158 & -.0161 & 8.15\%\\
+Candidate shuffle & .8003 & -.0058 & -.0064 & -.0056 & 5.55\%\\
+Read shuffle & .8120 & +.0058 & +.0039 & +.0035 & 7.70\%\\
+Scalar shuffle & .8415 & +.0354 & +.0333 & +.0288 & 11.50\%\\
+\end{longtable}
+Zero ablation is a functional dependence check but out of distribution. Shuffle intervention breaks row correspondence and was unstable in this finite validation realization; it is therefore reported but not interpreted as causal feature importance.
+
+The paired bootstrap resampled complete aligned sample--candidate rows 1,000 times. It estimated M4--M0 F1 $+0.00697$ (95\% CI $+0.00164$ to $+0.01238$), M4--M2 $+0.00815$ ($+0.00292$ to $+0.01381$), and M2--M0 $-0.00096$ ($-0.00499$ to $+0.00337$). Rows can reuse candidate loci across people; therefore this is not a candidate-cluster bootstrap and the interval must not be read as fully independent-locus uncertainty.
+
+\section*{S6. Checksums and remaining limitations}
+The controlled metrics JSON SHA-256 is \texttt{8af000e4074f6e15e1cb0fc30c714d207d93d8dc68173e02251025f17a669b93}; aligned predictions CSV SHA-256 is \texttt{4617dfb2d6922a6a7dd56469785ead01667416240cfa81c14217bb7ff9844f52}; and ablations CSV SHA-256 is \texttt{bc4370aaa49bd05ac328eaf8a6f208dcccad9d7bf4a8a49e5d3ef6298be12b07}. The study remains limited by one seed, 15 training people, validation-selected thresholds, silver labels, selected-candidate classification rather than discovery, residual locus dependence and row-level uncertainty. Final claims require full 40-person training, three seeds, candidate-cluster uncertainty and a single untouched internal-test evaluation.
+\end{document}

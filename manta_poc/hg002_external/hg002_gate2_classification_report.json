@@ -1,0 +1,11 @@
+{
+  "sample": "HG002",
+  "truth_source": "GIAB v5.0q GRCh38 stvar (primary, Draft)",
+  "total_manta_pass_del": 5461,
+  "class_counts": {
+    "positive": 4333,
+    "known_negative": 512,
+    "excluded_outside_or_crossing_benchmark_bed": 616
+  },
+  "sanity_sum_check": true
+}

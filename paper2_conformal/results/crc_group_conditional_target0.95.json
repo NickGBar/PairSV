@@ -1,0 +1,220 @@
+{
+  "target_recall": 0.95,
+  "by_superpopulation": {
+    "AFR": {
+      "n_people": 6,
+      "people": [
+        "HG01914",
+        "HG01958",
+        "HG01985",
+        "HG01988",
+        "HG01990",
+        "HG02009"
+      ],
+      "by_model": {
+        "M0": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M2": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M4": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        }
+      }
+    },
+    "AMR": {
+      "n_people": 6,
+      "people": [
+        "HG00739",
+        "HG00742",
+        "HG01048",
+        "HG01051",
+        "HG01054",
+        "HG01058"
+      ],
+      "by_model": {
+        "M0": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M2": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M4": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        }
+      }
+    },
+    "EAS": {
+      "n_people": 6,
+      "people": [
+        "HG00442",
+        "HG00445",
+        "HG00448",
+        "HG00451",
+        "HG00457",
+        "HG00463"
+      ],
+      "by_model": {
+        "M0": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M2": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M4": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        }
+      }
+    },
+    "EUR": {
+      "n_people": 6,
+      "people": [
+        "HG00109",
+        "HG00110",
+        "HG00111",
+        "HG00112",
+        "HG00113",
+        "HG00114"
+      ],
+      "by_model": {
+        "M0": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M2": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M4": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        }
+      }
+    },
+    "SAS": {
+      "n_people": 6,
+      "people": [
+        "HG02603",
+        "HG02648",
+        "HG02651",
+        "HG02654",
+        "HG02657",
+        "HG02660"
+      ],
+      "by_model": {
+        "M0": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M2": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        },
+        "M4": {
+          "status": "INFEASIBLE",
+          "reason": "target_recall=0.95 requires alpha=0.050000 < minimum achievable risk 0.142857 = B/(N+1) at N=6. max_guaranteed_recall at this N is 0.857143. No threshold satisfies the constraint -- the theorem's own precondition (N >= B/(alpha-b) - 1) is violated.",
+          "N": 6,
+          "target_recall": 0.95,
+          "alpha": 0.050000000000000044,
+          "max_guaranteed_recall": 0.8571428571428571,
+          "degenerate_threshold": -Infinity,
+          "degenerate_meaning": "accept every candidate (recall=1, specificity=0)"
+        }
+      }
+    }
+  }
+}
